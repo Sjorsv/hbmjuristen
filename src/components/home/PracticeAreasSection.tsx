@@ -57,7 +57,7 @@ const practiceAreas = [
 
 const PracticeAreasSection = () => {
   return (
-    <section className="pt-16 pb-16 md:pt-20 md:pb-24 bg-background">
+    <section className="pt-8 pb-16 md:pt-12 md:pb-24 bg-background">
       <div className="container-editorial">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
