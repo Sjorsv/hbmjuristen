@@ -4,6 +4,7 @@ import { ChevronDown, Menu, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Button } from '@/components/ui/button';
 import MegaMenu from './MegaMenu';
+import logo from '@/assets/logo.png';
 
 const navItems = [
   { name: 'Rechtsgebieden', href: '/rechtsgebieden', hasMegaMenu: true },
@@ -44,14 +45,11 @@ const Header = () => {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link to="/" className="flex-shrink-0">
-            <div className="flex items-center gap-2">
-              <span className="text-2xl font-serif font-bold text-primary">
-                HBM
-              </span>
-              <span className="text-lg font-serif text-foreground">
-                Juristen
-              </span>
-            </div>
+            <img 
+              src={logo} 
+              alt="HBM Juristen - Juridisch advies & rechtsbijstand" 
+              className="h-10 w-auto"
+            />
           </Link>
 
           {/* Desktop Navigation + CTA */}
