@@ -24,7 +24,7 @@ const HeroSection = () => {
       </div>
 
       {/* Hero image with search bar overlay */}
-      <div className="container-editorial pb-16">
+      <div className="container-editorial pb-8">
         <div className="relative">
           {/* Image with animation */}
           <motion.div
