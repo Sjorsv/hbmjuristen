@@ -4,55 +4,67 @@ import heroImage from '@/assets/hero-office.jpg';
 
 const HeroSection = () => {
   return (
-    <section className="relative overflow-hidden">
-      {/* Hero image */}
-      <div className="relative h-[70vh] min-h-[500px] max-h-[800px]">
-        <img
-          src={heroImage}
-          alt="HBM Juristen kantoor"
-          className="absolute inset-0 w-full h-full object-cover"
-        />
-        <div className="absolute inset-0 bg-gradient-to-b from-foreground/20 via-foreground/10 to-background" />
+    <section className="relative bg-secondary/30">
+      {/* Text content - above image */}
+      <div className="container-editorial pt-16 pb-8">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, ease: 'easeOut' }}
+          className="max-w-3xl ml-auto text-right"
+        >
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-serif text-foreground mb-4 leading-tight">
+            Wij zijn <span className="text-primary font-bold">HBM Juristen</span>, uw 
+            <br className="hidden md:block" /> partner in juridisch advies
+          </h1>
+          <p className="text-lg md:text-xl text-primary">
+            Deskundig, betrokken en resultaatgericht
+          </p>
+        </motion.div>
       </div>
 
-      {/* Content overlay */}
-      <div className="container-editorial relative -mt-48 pb-16 z-10">
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, ease: 'easeOut' }}
-          className="text-center max-w-4xl mx-auto"
-        >
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif text-foreground mb-6 leading-tight">
-            HBM Juristen.{' '}
-            <span className="text-primary">Juridisch advies</span> en rechtsbijstand.
-          </h1>
-          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10">
-            Deskundig, betrokken en resultaatgericht – in Nederland en daarbuiten.
-          </p>
+      {/* Hero image with search bar overlay */}
+      <div className="container-editorial pb-16">
+        <div className="relative">
+          {/* Image with animation */}
+          <motion.div
+            initial={{ opacity: 0, scale: 1.02 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8, ease: 'easeOut', delay: 0.2 }}
+            className="relative overflow-hidden rounded-2xl"
+          >
+            <motion.img
+              src={heroImage}
+              alt="HBM Juristen kantoor"
+              className="w-full h-[400px] md:h-[500px] lg:h-[550px] object-cover"
+              initial={{ scale: 1.1 }}
+              animate={{ scale: 1 }}
+              transition={{ duration: 1.2, ease: 'easeOut' }}
+            />
+          </motion.div>
 
-          {/* Search component */}
+          {/* Search bar - positioned over image */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.3 }}
-            className="max-w-xl mx-auto"
+            transition={{ duration: 0.5, delay: 0.6 }}
+            className="absolute bottom-0 right-0 translate-y-1/2 w-full max-w-md lg:max-w-lg mr-4 md:mr-8"
           >
-            <div className="relative bg-background rounded-xl shadow-large border border-border">
-              <div className="flex items-center px-5 py-4">
-                <Search className="w-5 h-5 text-muted-foreground flex-shrink-0" />
+            <div className="bg-background rounded-xl shadow-large border border-border p-6">
+              <p className="text-sm text-primary mb-3 font-medium">
+                Zoek rechtsgebied, expertise of onderwerp
+              </p>
+              <div className="relative flex items-center border-b-2 border-primary/30 focus-within:border-primary transition-colors">
                 <input
                   type="text"
-                  placeholder="Zoek op rechtsgebied of onderwerp"
-                  className="flex-1 ml-3 bg-transparent text-foreground placeholder:text-muted-foreground focus:outline-none text-base"
+                  placeholder=""
+                  className="flex-1 bg-transparent text-foreground placeholder:text-muted-foreground focus:outline-none text-base py-2 pr-10"
                 />
-                <button className="hidden sm:flex bg-primary text-primary-foreground px-5 py-2 rounded-lg font-medium hover:bg-primary-light transition-colors">
-                  Zoeken
-                </button>
+                <Search className="w-5 h-5 text-muted-foreground absolute right-0" />
               </div>
             </div>
           </motion.div>
-        </motion.div>
+        </div>
       </div>
     </section>
   );
