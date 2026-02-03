@@ -24,8 +24,8 @@ const HeroSection = () => {
       </div>
 
       {/* Hero image with search bar overlay */}
-      <div className="container-editorial pb-8">
-        <div className="relative">
+      <div className="container-editorial">
+        <div className="relative mb-16">
           {/* Image with animation */}
           <motion.div
             initial={{ opacity: 0, scale: 1.02 }}
@@ -43,12 +43,12 @@ const HeroSection = () => {
             />
           </motion.div>
 
-          {/* Search bar - positioned over image */}
+          {/* Search bar - half overlapping image */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.6 }}
-            className="absolute bottom-0 right-0 translate-y-1/2 w-full max-w-md lg:max-w-lg mr-4 md:mr-8"
+            className="absolute -bottom-12 left-4 md:left-8 w-full max-w-md lg:max-w-lg"
           >
             <div className="bg-background rounded-xl shadow-large border border-border p-6">
               <p className="text-sm text-primary mb-3 font-medium">
