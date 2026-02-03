@@ -6,7 +6,6 @@ import { Button } from '@/components/ui/button';
 import MegaMenu from './MegaMenu';
 
 const navItems = [
-  { name: 'Home', href: '/' },
   { name: 'Rechtsgebieden', href: '/rechtsgebieden', hasMegaMenu: true },
   { name: 'Werkwijze', href: '/werkwijze' },
   { name: 'Kosten', href: '/kosten' },
