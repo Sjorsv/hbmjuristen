@@ -54,39 +54,37 @@ const Header = () => {
             </div>
           </Link>
 
-          {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center gap-1">
-            {navItems.map((item) => (
-              <div
-                key={item.name}
-                className="relative"
-                onMouseEnter={() => item.hasMegaMenu && setIsMegaMenuOpen(true)}
-                onMouseLeave={() => item.hasMegaMenu && setIsMegaMenuOpen(false)}
-              >
-                <Link
-                  to={item.href}
-                  className={`flex items-center gap-1 px-4 py-2 text-sm font-medium transition-colors ${
-                    location.pathname === item.href
-                      ? 'text-primary'
-                      : 'text-foreground hover:text-primary'
-                  }`}
+          {/* Desktop Navigation + CTA */}
+          <div className="hidden lg:flex items-center gap-1 ml-auto">
+            <nav className="flex items-center gap-1">
+              {navItems.map((item) => (
+                <div
+                  key={item.name}
+                  className="relative"
+                  onMouseEnter={() => item.hasMegaMenu && setIsMegaMenuOpen(true)}
+                  onMouseLeave={() => item.hasMegaMenu && setIsMegaMenuOpen(false)}
                 >
-                  {item.name}
-                  {item.hasMegaMenu && (
-                    <ChevronDown 
-                      className={`w-4 h-4 transition-transform ${
-                        isMegaMenuOpen ? 'rotate-180' : ''
-                      }`} 
-                    />
-                  )}
-                </Link>
-              </div>
-            ))}
-          </nav>
-
-          {/* CTA Button */}
-          <div className="hidden lg:flex items-center gap-4">
-            <Button variant="cta" size="lg">
+                  <Link
+                    to={item.href}
+                    className={`flex items-center gap-1 px-4 py-2 text-sm font-medium transition-colors ${
+                      location.pathname === item.href
+                        ? 'text-primary'
+                        : 'text-foreground hover:text-primary'
+                    }`}
+                  >
+                    {item.name}
+                    {item.hasMegaMenu && (
+                      <ChevronDown 
+                        className={`w-4 h-4 transition-transform ${
+                          isMegaMenuOpen ? 'rotate-180' : ''
+                        }`} 
+                      />
+                    )}
+                  </Link>
+                </div>
+              ))}
+            </nav>
+            <Button variant="cta" size="lg" className="ml-4">
               Neem contact op
             </Button>
           </div>
