@@ -48,7 +48,7 @@ const HeroSection = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.6 }}
-            className="absolute -bottom-12 left-4 md:left-8 w-full max-w-md lg:max-w-lg"
+            className="absolute -bottom-12 right-4 md:right-8 w-full max-w-md lg:max-w-lg"
           >
             <div className="bg-background rounded-xl shadow-large border border-border p-6">
               <p className="text-sm text-primary mb-3 font-medium">
