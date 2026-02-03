@@ -12,7 +12,6 @@ const navItems = [
   { name: 'Kosten', href: '/kosten' },
   { name: 'Content & Actualiteit', href: '/actualiteit' },
   { name: 'Over ons', href: '/over-ons' },
-  { name: 'Contact', href: '/contact' },
 ];
 
 const Header = () => {
