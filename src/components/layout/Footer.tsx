@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { Phone, Mail, MapPin, Linkedin, MessageCircle, Instagram, Facebook } from 'lucide-react';
+import logo from '@/assets/logo.png';
 
 const footerLinks = {
   'Rechtsgebieden': [
@@ -33,15 +34,12 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
           {/* Brand column */}
           <div className="lg:col-span-2">
-            <Link to="/" className="inline-block">
-              <div className="flex items-center gap-2 mb-4">
-                <span className="text-2xl font-serif font-bold text-primary">
-                  HBM
-                </span>
-                <span className="text-lg font-serif text-foreground">
-                  Juristen
-                </span>
-              </div>
+            <Link to="/" className="inline-block mb-4">
+              <img 
+                src={logo} 
+                alt="HBM Juristen - Juridisch advies & rechtsbijstand" 
+                className="h-12 w-auto"
+              />
             </Link>
             <p className="text-muted-foreground max-w-sm mb-6">
               HBM Juristen biedt deskundige juridische hulp aan particulieren en ondernemers. 
