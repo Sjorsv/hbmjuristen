@@ -8,8 +8,6 @@ import logo from '@/assets/logo.svg';
 
 const navItems = [
   { name: 'Rechtsgebieden', href: '/rechtsgebieden', hasMegaMenu: true },
-  { name: 'Kosten', href: '/kosten' },
-  { name: 'Blog & Pers', href: '/actualiteit' },
   { 
     name: 'Over ons', 
     href: '/over-ons', 
@@ -23,6 +21,21 @@ const navItems = [
       { name: 'Vacatures', href: '/vacatures' },
     ]
   },
+  { 
+    name: 'Informatie', 
+    href: '/informatie', 
+    hasDropdown: true,
+    dropdownItems: [
+      { name: 'Klachtenprocedure', href: '/klachtenprocedure' },
+      { name: 'Privacyverklaring', href: '/privacy' },
+      { name: 'Geheimhouding', href: '/geheimhouding' },
+      { name: 'Partner-Beleid', href: '/partner-beleid' },
+      { name: 'Kostenbeleid', href: '/kostenbeleid' },
+      { name: 'FAQ', href: '/faq' },
+      { name: 'Artificial Intelligence', href: '/ai' },
+    ]
+  },
+  { name: 'Blog & Pers', href: '/actualiteit' },
 ];
 
 const Header = () => {
