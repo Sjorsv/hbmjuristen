@@ -8,11 +8,11 @@ const UtilityBar = () => {
           {/* Contact info */}
           <div className="hidden md:flex items-center gap-6">
             <a 
-              href="tel:+31201234567" 
+              href="tel:+31202157540" 
               className="flex items-center gap-2 hover:opacity-80 transition-opacity"
             >
               <Phone className="w-3.5 h-3.5" />
-              <span>+31 20 123 4567</span>
+              <span>020-215 75 40</span>
             </a>
             <a 
               href="mailto:info@hbmjuristen.nl" 
@@ -48,7 +48,7 @@ const UtilityBar = () => {
                 <Linkedin className="w-4 h-4" />
               </a>
               <a 
-                href="https://wa.me/31201234567" 
+                href="https://wa.me/31202157540" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="hover:opacity-80 transition-opacity"
