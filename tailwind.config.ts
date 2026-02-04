@@ -17,6 +17,12 @@ export default {
         serif: ['Verdana', 'Geneva', 'sans-serif'],
         sans: ['Source Sans 3', 'system-ui', 'sans-serif'],
       },
+      fontSize: {
+        'display-sm': ['2rem', { lineHeight: '1.2', letterSpacing: '-0.01em' }],
+        'display-md': ['2.5rem', { lineHeight: '1.15', letterSpacing: '-0.02em' }],
+        'display-lg': ['3.5rem', { lineHeight: '1.1', letterSpacing: '-0.02em' }],
+        'display-xl': ['4.5rem', { lineHeight: '1.05', letterSpacing: '-0.02em' }],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
