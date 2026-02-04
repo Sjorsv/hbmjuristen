@@ -17,7 +17,7 @@ const HeroSection = () => {
             Wij zijn <span className="text-primary font-bold">HBM Juristen</span>, uw 
             <br className="hidden md:block" /> partner in juridisch advies
           </h1>
-          <p className="text-lg md:text-xl text-primary">
+          <p className="text-lg md:text-xl text-foreground font-sans">
             Deskundig, betrokken en resultaatgericht
           </p>
         </motion.div>
