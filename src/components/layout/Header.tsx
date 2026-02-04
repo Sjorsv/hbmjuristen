@@ -4,7 +4,7 @@ import { ChevronDown, Menu, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Button } from '@/components/ui/button';
 import MegaMenu from './MegaMenu';
-import logo from '@/assets/logo.png';
+import logo from '@/assets/logo.svg';
 
 const navItems = [
   { name: 'Rechtsgebieden', href: '/rechtsgebieden', hasMegaMenu: true },
