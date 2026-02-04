@@ -1,6 +1,27 @@
-import { Phone, Mail, Linkedin, MessageCircle, Instagram, Facebook } from 'lucide-react';
+import { useState, useRef, useEffect } from 'react';
+import { Phone, Mail, Linkedin, MessageCircle, Instagram, Facebook, ChevronDown } from 'lucide-react';
+
+const languages = [
+  { code: 'NL', name: 'Nederlands', flag: '🇳🇱' },
+  { code: 'EN', name: 'English', flag: '🇬🇧' },
+  { code: 'AR', name: 'العربية', flag: '🇸🇦' },
+];
 
 const UtilityBar = () => {
+  const [currentLang, setCurrentLang] = useState(languages[0]);
+  const [isOpen, setIsOpen] = useState(false);
+  const dropdownRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
+        setIsOpen(false);
+      }
+    };
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, []);
+
   return (
     <div className="bg-primary text-primary-foreground">
       <div className="container-editorial">
@@ -25,19 +46,38 @@ const UtilityBar = () => {
           
           {/* Language & social */}
           <div className="flex items-center gap-4 ml-auto">
-            {/* Language switch */}
-            <div className="flex items-center gap-1 text-sm">
-              <button className="px-1.5 py-0.5 font-medium hover:opacity-80 transition-opacity">
-                NL
+            {/* Language dropdown */}
+            <div className="relative" ref={dropdownRef}>
+              <button
+                onClick={() => setIsOpen(!isOpen)}
+                className="flex items-center gap-2 px-2 py-1 rounded hover:bg-primary-light transition-colors"
+              >
+                <span className="text-base">{currentLang.flag}</span>
+                <span className="font-medium">{currentLang.code}</span>
+                <ChevronDown className={`w-3.5 h-3.5 transition-transform ${isOpen ? 'rotate-180' : ''}`} />
               </button>
-              <span className="opacity-50">/</span>
-              <button className="px-1.5 py-0.5 opacity-70 hover:opacity-100 transition-opacity">
-                EN
-              </button>
-              <span className="opacity-50">/</span>
-              <button className="px-1.5 py-0.5 opacity-70 hover:opacity-100 transition-opacity">
-                AR
-              </button>
+              
+              {isOpen && (
+                <div className="absolute top-full right-0 mt-1 bg-background border border-border rounded-lg shadow-lg z-50 min-w-[140px] overflow-hidden">
+                  {languages.map((lang) => (
+                    <button
+                      key={lang.code}
+                      onClick={() => {
+                        setCurrentLang(lang);
+                        setIsOpen(false);
+                      }}
+                      className={`w-full flex items-center gap-3 px-4 py-2.5 text-sm transition-colors ${
+                        currentLang.code === lang.code
+                          ? 'bg-secondary text-primary font-medium'
+                          : 'text-foreground hover:bg-secondary'
+                      }`}
+                    >
+                      <span className="text-base">{lang.flag}</span>
+                      <span>{lang.name}</span>
+                    </button>
+                  ))}
+                </div>
+              )}
             </div>
             
             {/* Social icons */}
