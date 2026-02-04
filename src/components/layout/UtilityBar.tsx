@@ -1,4 +1,4 @@
-import { Phone, Mail, Linkedin, MessageCircle } from 'lucide-react';
+import { Phone, Mail, Linkedin, MessageCircle, Instagram, Facebook } from 'lucide-react';
 
 const UtilityBar = () => {
   return (
@@ -46,6 +46,24 @@ const UtilityBar = () => {
                 aria-label="LinkedIn"
               >
                 <Linkedin className="w-4 h-4" />
+              </a>
+              <a 
+                href="https://instagram.com" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="hover:opacity-80 transition-opacity"
+                aria-label="Instagram"
+              >
+                <Instagram className="w-4 h-4" />
+              </a>
+              <a 
+                href="https://facebook.com" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="hover:opacity-80 transition-opacity"
+                aria-label="Facebook"
+              >
+                <Facebook className="w-4 h-4" />
               </a>
               <a 
                 href="https://wa.me/31202157540" 
