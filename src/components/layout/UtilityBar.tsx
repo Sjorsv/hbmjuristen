@@ -23,14 +23,26 @@ const FlagGB = () => (
 const FlagSA = () => (
   <svg viewBox="0 0 24 16" className="w-5 h-3.5 rounded-sm overflow-hidden flex-shrink-0">
     <rect width="24" height="16" fill="#006C35" />
-    <text x="12" y="11" textAnchor="middle" fill="#FFFFFF" fontSize="6" fontFamily="Arial">لا إله</text>
   </svg>
 );
 
+const renderFlag = (code: string) => {
+  switch (code) {
+    case 'NL':
+      return <FlagNL />;
+    case 'EN':
+      return <FlagGB />;
+    case 'AR':
+      return <FlagSA />;
+    default:
+      return null;
+  }
+};
+
 const languages = [
-  { code: 'NL', name: 'Nederlands', Flag: FlagNL },
-  { code: 'EN', name: 'English', Flag: FlagGB },
-  { code: 'AR', name: 'العربية', Flag: FlagSA },
+  { code: 'NL', name: 'Nederlands' },
+  { code: 'EN', name: 'English' },
+  { code: 'AR', name: 'العربية' },
 ];
 
 const UtilityBar = () => {
@@ -47,8 +59,6 @@ const UtilityBar = () => {
     document.addEventListener('mousedown', handleClickOutside);
     return () => document.removeEventListener('mousedown', handleClickOutside);
   }, []);
-
-  const CurrentFlag = currentLang.Flag;
 
   return (
     <div className="bg-primary text-primary-foreground">
@@ -80,33 +90,30 @@ const UtilityBar = () => {
                 onClick={() => setIsOpen(!isOpen)}
                 className="flex items-center gap-2 px-2 py-1 rounded hover:bg-primary-light transition-colors"
               >
-                <CurrentFlag />
+                {renderFlag(currentLang.code)}
                 <span className="font-medium text-sm">{currentLang.code}</span>
                 <ChevronDown className={`w-3 h-3 transition-transform ${isOpen ? 'rotate-180' : ''}`} />
               </button>
               
               {isOpen && (
                 <div className="absolute top-full right-0 mt-1 bg-background rounded-lg shadow-lg z-50 min-w-[150px] py-1 overflow-hidden">
-                  {languages.map((lang) => {
-                    const LangFlag = lang.Flag;
-                    return (
-                      <button
-                        key={lang.code}
-                        onClick={() => {
-                          setCurrentLang(lang);
-                          setIsOpen(false);
-                        }}
-                        className={`w-full flex items-center gap-3 px-4 py-2.5 text-sm transition-colors ${
-                          currentLang.code === lang.code
-                            ? 'text-primary font-medium'
-                            : 'text-foreground hover:bg-muted'
-                        }`}
-                      >
-                        <LangFlag />
-                        <span>{lang.name}</span>
-                      </button>
-                    );
-                  })}
+                  {languages.map((lang) => (
+                    <button
+                      key={lang.code}
+                      onClick={() => {
+                        setCurrentLang(lang);
+                        setIsOpen(false);
+                      }}
+                      className={`w-full flex items-center gap-3 px-4 py-2.5 text-sm transition-colors ${
+                        currentLang.code === lang.code
+                          ? 'text-primary font-medium'
+                          : 'text-foreground hover:bg-muted'
+                      }`}
+                    >
+                      {renderFlag(lang.code)}
+                      <span>{lang.name}</span>
+                    </button>
+                  ))}
                 </div>
               )}
             </div>
