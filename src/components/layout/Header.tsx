@@ -9,7 +9,7 @@ import logo from '@/assets/logo.svg';
 const navItems = [
   { name: 'Rechtsgebieden', href: '/rechtsgebieden', hasMegaMenu: true },
   { name: 'Kosten', href: '/kosten' },
-  { name: 'Content & Actualiteit', href: '/actualiteit' },
+  { name: 'Blog & Pers', href: '/actualiteit' },
   { 
     name: 'Over ons', 
     href: '/over-ons', 
