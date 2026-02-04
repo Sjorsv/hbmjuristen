@@ -14,7 +14,7 @@ export default {
     },
     extend: {
       fontFamily: {
-        serif: ['Zilla Slab', 'Georgia', 'serif'],
+        serif: ['Verdana', 'Geneva', 'sans-serif'],
         sans: ['Source Sans 3', 'system-ui', 'sans-serif'],
       },
       colors: {
