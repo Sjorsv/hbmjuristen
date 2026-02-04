@@ -78,15 +78,15 @@ const ReviewsSection = () => {
           className="mt-16 flex flex-wrap justify-center items-center gap-8 md:gap-16"
         >
           <div className="text-center">
-            <p className="text-3xl font-serif font-bold text-primary">15+</p>
+            <p className="text-3xl font-serif font-bold text-primary">6+</p>
             <p className="text-sm text-muted-foreground mt-1">Jaar ervaring</p>
           </div>
           <div className="text-center">
-            <p className="text-3xl font-serif font-bold text-primary">5000+</p>
+            <p className="text-3xl font-serif font-bold text-primary">11330+</p>
             <p className="text-sm text-muted-foreground mt-1">Tevreden cliënten</p>
           </div>
           <div className="text-center">
-            <p className="text-3xl font-serif font-bold text-primary">98%</p>
+            <p className="text-3xl font-serif font-bold text-primary">99%</p>
             <p className="text-sm text-muted-foreground mt-1">Aanbeveling</p>
           </div>
           <div className="text-center">
