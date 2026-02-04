@@ -10,6 +10,7 @@ import PracticeAreas from "./pages/PracticeAreas";
 import PracticeAreaDetail from "./pages/PracticeAreaDetail";
 import Team from "./pages/Team";
 import AboutUs from "./pages/AboutUs";
+import Contact from "./pages/Contact";
 import Blog from "./pages/Blog";
 import BlogDetail from "./pages/BlogDetail";
 
@@ -28,6 +29,7 @@ const App = () => (
           <Route path="/rechtsgebieden/:slug" element={<PracticeAreaDetail />} />
           <Route path="/over-ons" element={<AboutUs />} />
           <Route path="/over-ons/team" element={<Team />} />
+          <Route path="/contact" element={<Contact />} />
           <Route path="/actualiteit" element={<Blog />} />
           <Route path="/actualiteit/:slug" element={<BlogDetail />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
