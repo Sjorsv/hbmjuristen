@@ -96,7 +96,7 @@ const UtilityBar = () => {
               </button>
               
               {isOpen && (
-                <div className="absolute top-full right-0 mt-1 bg-background rounded-lg shadow-lg z-50 min-w-[150px] py-1 overflow-hidden">
+                <div className="absolute top-full right-0 mt-1 bg-background rounded-lg shadow-lg z-[100] min-w-[150px] py-1 overflow-hidden">
                   {languages.map((lang) => (
                     <button
                       key={lang.code}
