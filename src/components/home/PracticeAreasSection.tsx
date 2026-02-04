@@ -14,16 +14,6 @@ const practiceAreas = [
     href: '/rechtsgebieden/consumentenrecht',
   },
   {
-    title: 'Wegenverkeersrecht & Letselschade',
-    description: 'Juridische bijstand bij verkeersovertredingen en letselschade claims.',
-    href: '/rechtsgebieden/wegenverkeersrecht',
-  },
-  {
-    title: 'Huurrecht',
-    description: 'Advies en bijstand bij huurgeschillen en woningproblemen.',
-    href: '/rechtsgebieden/huurrecht',
-  },
-  {
     title: 'Bestuursrecht',
     description: 'Bezwaar en beroep tegen overheidsbesluiten en vergunningen.',
     href: '/rechtsgebieden/bestuursrecht',
@@ -39,14 +29,24 @@ const practiceAreas = [
     href: '/rechtsgebieden/vreemdelingenrecht',
   },
   {
-    title: 'Sociale zekerheidsrecht',
-    description: 'Bijstand bij uitkeringskwesties en sociale voorzieningen.',
-    href: '/rechtsgebieden/sociale-zekerheidsrecht',
-  },
-  {
     title: 'Personen en familierecht',
     description: 'Begeleiding bij echtscheiding, alimentatie en voogdij.',
     href: '/rechtsgebieden/personen-familierecht',
+  },
+  {
+    title: 'Arbeids Mediation',
+    description: 'Professionele bemiddeling bij arbeidsconflicten en geschillen.',
+    href: '/rechtsgebieden/arbeids-mediation',
+  },
+  {
+    title: 'Family Mediation',
+    description: 'Bemiddeling bij familiezaken zoals echtscheiding en omgang.',
+    href: '/rechtsgebieden/family-mediation',
+  },
+  {
+    title: 'China',
+    description: 'Juridische ondersteuning voor zaken met betrekking tot China.',
+    href: '/rechtsgebieden/china',
   },
   {
     title: 'Marokko',
