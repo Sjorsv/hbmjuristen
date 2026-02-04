@@ -139,8 +139,8 @@ const Header = () => {
                 </div>
               ))}
             </nav>
-            <Button variant="cta" size="lg" className="ml-4">
-              Neem contact op
+            <Button variant="cta" size="lg" className="ml-4" asChild>
+              <Link to="/contact">Neem contact op</Link>
             </Button>
           </div>
 
@@ -195,8 +195,8 @@ const Header = () => {
                 ))}
               </ul>
               <div className="mt-6 pt-6 border-t border-border">
-                <Button variant="cta" size="lg" className="w-full">
-                  Neem contact op
+                <Button variant="cta" size="lg" className="w-full" asChild>
+                  <Link to="/contact">Neem contact op</Link>
                 </Button>
               </div>
             </nav>

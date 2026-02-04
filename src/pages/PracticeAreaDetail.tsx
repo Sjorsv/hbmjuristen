@@ -129,9 +129,11 @@ const PracticeAreaDetail = () => {
               Neem contact met ons op voor een vrijblijvende kennismaking.
             </p>
             
-            <Button variant="cta" size="lg" className="gap-2">
-              <Phone className="w-4 h-4" />
-              Neem contact op
+            <Button variant="cta" size="lg" asChild className="gap-2">
+              <Link to="/contact">
+                <Phone className="w-4 h-4" />
+                Neem contact op
+              </Link>
             </Button>
           </motion.div>
         </div>
