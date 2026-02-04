@@ -75,7 +75,7 @@ const PracticeAreaDetail = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="text-display-md md:text-display-lg text-foreground"
+            className="text-display-lg md:text-display-xl text-foreground"
           >
             {practiceArea.title}
           </motion.h1>
