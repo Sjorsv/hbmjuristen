@@ -34,6 +34,10 @@ const UtilityBar = () => {
               <button className="px-1.5 py-0.5 opacity-70 hover:opacity-100 transition-opacity">
                 EN
               </button>
+              <span className="opacity-50">/</span>
+              <button className="px-1.5 py-0.5 opacity-70 hover:opacity-100 transition-opacity">
+                AR
+              </button>
             </div>
             
             {/* Social icons */}
