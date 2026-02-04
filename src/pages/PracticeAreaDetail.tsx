@@ -101,7 +101,7 @@ const PracticeAreaDetail = () => {
 
       {/* Content Section */}
       <section className="container-editorial py-10 md:py-14">
-        <div className="max-w-3xl">
+        <div className="max-w-[620px] mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
