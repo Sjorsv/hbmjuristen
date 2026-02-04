@@ -66,7 +66,7 @@ const Footer = () => {
               </a>
               <div className="flex items-start gap-3 text-muted-foreground">
                 <MapPin className="w-4 h-4 mt-0.5 flex-shrink-0" />
-                <span>Keizersgracht 123<br />1015 CK Amsterdam</span>
+                <span>Keizersgracht 391-A<br />1016 EJ Amsterdam</span>
               </div>
             </div>
             
