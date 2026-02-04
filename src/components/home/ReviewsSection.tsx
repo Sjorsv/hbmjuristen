@@ -3,18 +3,18 @@ import { motion } from 'framer-motion';
 
 const reviews = [
   {
-    name: 'Jan de Vries',
-    text: 'Uitstekende begeleiding bij mijn ontslagzaak. Het team was professioneel, empathisch en behaalde een geweldig resultaat.',
+    name: 'Fatima Masjedi',
+    text: 'Very happy with my experience with mr. Hamich from hbm juristen! He\'s always been attentive and fast when I needed help, no matter the time or place. He\'s highly reliable and I got great results every time. Highly recommend!',
     rating: 5,
   },
   {
-    name: 'Maria Bakker',
-    text: 'HBM Juristen hielp mij met een complexe huurkwestie. Snelle communicatie en helder advies. Zeer tevreden!',
+    name: 'Shreyasi Das',
+    text: 'It was great having the conversation with Khalid V. It was a clear and concise interview, and all doubts were cleared. Looking forward to more!',
     rating: 5,
   },
   {
-    name: 'Ahmed El Amrani',
-    text: 'Fantastische hulp bij mijn verblijfsvergunning. Het team kent de materie en denkt oplossingsgericht mee.',
+    name: 'Assia Deboun',
+    text: 'HBM Juristen heeft mijn ontslagzaak gewonnen, maar belangrijker nog: ze gaven me mijn zelfvertrouwen terug. De jurist begreep mij en gaf mij kracht om deze…',
     rating: 5,
   },
 ];
