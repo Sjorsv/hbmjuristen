@@ -18,11 +18,15 @@ const footerLinks = {
     { name: 'Vacatures', href: '/vacatures' },
   ],
   'Informatie': [
-    { name: 'Blog & Nieuws', href: '/actualiteit' },
+    { name: 'Blog', href: '/actualiteit' },
     { name: 'Klachtenprocedure', href: '/klachtenprocedure' },
-    { name: 'Privacy', href: '/privacy' },
-    { name: 'Algemene voorwaarden', href: '/voorwaarden' },
-    { name: 'Contact', href: '/contact' },
+    { name: 'Privacyverklaring', href: '/privacy' },
+    { name: 'Geheimhouding', href: '/geheimhouding' },
+    { name: 'Partner-Beleid', href: '/partner-beleid' },
+    { name: 'Kostenbeleid', href: '/kostenbeleid' },
+    { name: 'Tarieven', href: '/tarieven' },
+    { name: 'FAQ', href: '/faq' },
+    { name: 'Artificial Intelligence', href: '/ai' },
   ],
 };
 
