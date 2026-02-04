@@ -7,8 +7,11 @@ const footerLinks = {
     { name: 'Arbeidsrecht', href: '/rechtsgebieden/arbeidsrecht' },
     { name: 'Bestuursrecht', href: '/rechtsgebieden/bestuursrecht' },
     { name: 'Consumentenrecht', href: '/rechtsgebieden/consumentenrecht' },
-    { name: 'Huurrecht', href: '/rechtsgebieden/huurrecht' },
     { name: 'Vreemdelingenrecht', href: '/rechtsgebieden/vreemdelingenrecht' },
+    { name: 'Arbeids Mediation', href: '/rechtsgebieden/arbeids-mediation' },
+    { name: 'Family Mediation', href: '/rechtsgebieden/family-mediation' },
+    { name: 'China', href: '/rechtsgebieden/china' },
+    { name: 'Marokko', href: '/rechtsgebieden/marokko' },
   ],
   'Over HBM': [
     { name: 'Wie zijn wij', href: '/over-ons' },
