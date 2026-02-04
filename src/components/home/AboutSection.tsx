@@ -56,10 +56,10 @@ const AboutSection = () => {
             </div>
             <div className="mt-8">
               <Link
-                to="/werkwijze"
+                to="/over-ons"
                 className="arrow-link text-lg"
               >
-                Lees meer over onze werkwijze
+                Lees meer over ons
                 <ArrowRight className="w-5 h-5" />
               </Link>
             </div>
