@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Phone, Mail, MapPin, Linkedin, MessageCircle, Instagram, Facebook } from 'lucide-react';
+import { Phone, Mail, MapPin, MessageCircle, Instagram, Facebook } from 'lucide-react';
 import logo from '@/assets/logo.svg';
 
 const footerLinks = {
@@ -77,15 +77,6 @@ const Footer = () => {
             
             {/* Social links */}
             <div className="flex items-center gap-4 mt-6">
-              <a 
-                href="https://linkedin.com" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full bg-primary text-primary-foreground flex items-center justify-center hover:bg-primary-light transition-colors"
-                aria-label="LinkedIn"
-              >
-                <Linkedin className="w-5 h-5" />
-              </a>
               <a 
                 href="https://instagram.com" 
                 target="_blank" 
