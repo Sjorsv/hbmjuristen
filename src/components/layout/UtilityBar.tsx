@@ -50,15 +50,15 @@ const UtilityBar = () => {
             <div className="relative" ref={dropdownRef}>
               <button
                 onClick={() => setIsOpen(!isOpen)}
-                className="flex items-center gap-2 px-2 py-1 rounded hover:bg-primary-light transition-colors"
+                className="flex items-center gap-1.5 px-2 py-1 rounded hover:bg-primary-light transition-colors"
               >
-                <span className="text-base">{currentLang.flag}</span>
-                <span className="font-medium">{currentLang.code}</span>
-                <ChevronDown className={`w-3.5 h-3.5 transition-transform ${isOpen ? 'rotate-180' : ''}`} />
+                <span className="text-sm">{currentLang.flag}</span>
+                <span className="font-medium text-sm">{currentLang.code}</span>
+                <ChevronDown className={`w-3 h-3 transition-transform ${isOpen ? 'rotate-180' : ''}`} />
               </button>
               
               {isOpen && (
-                <div className="absolute top-full right-0 mt-1 bg-background border border-border rounded-lg shadow-lg z-50 min-w-[140px] overflow-hidden">
+                <div className="absolute top-full right-0 mt-1 bg-background rounded-lg shadow-lg z-50 min-w-[130px] py-1 overflow-hidden">
                   {languages.map((lang) => (
                     <button
                       key={lang.code}
@@ -66,13 +66,13 @@ const UtilityBar = () => {
                         setCurrentLang(lang);
                         setIsOpen(false);
                       }}
-                      className={`w-full flex items-center gap-3 px-4 py-2.5 text-sm transition-colors ${
+                      className={`w-full flex items-center gap-2 px-4 py-2 text-sm transition-colors ${
                         currentLang.code === lang.code
-                          ? 'bg-secondary text-primary font-medium'
-                          : 'text-foreground hover:bg-secondary'
+                          ? 'text-primary font-medium'
+                          : 'text-foreground hover:bg-muted'
                       }`}
                     >
-                      <span className="text-base">{lang.flag}</span>
+                      <span className="text-sm">{lang.flag}</span>
                       <span>{lang.name}</span>
                     </button>
                   ))}
