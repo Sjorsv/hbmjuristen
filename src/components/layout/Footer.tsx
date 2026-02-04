@@ -14,10 +14,11 @@ const footerLinks = {
     { name: 'Marokko', href: '/rechtsgebieden/marokko' },
   ],
   'Over HBM': [
+    { name: 'Missie & Visie', href: '/over-ons/missie-visie' },
     { name: 'Wie zijn wij', href: '/over-ons' },
     { name: 'Ons team', href: '/over-ons/team' },
     { name: 'Werkwijze', href: '/werkwijze' },
-    { name: 'Kosten', href: '/kosten' },
+    { name: 'Tarieven', href: '/tarieven' },
     { name: 'Vacatures', href: '/vacatures' },
   ],
   'Informatie': [
@@ -27,7 +28,6 @@ const footerLinks = {
     { name: 'Geheimhouding', href: '/geheimhouding' },
     { name: 'Partner-Beleid', href: '/partner-beleid' },
     { name: 'Kostenbeleid', href: '/kostenbeleid' },
-    { name: 'Tarieven', href: '/tarieven' },
     { name: 'FAQ', href: '/faq' },
     { name: 'Artificial Intelligence', href: '/ai' },
   ],
