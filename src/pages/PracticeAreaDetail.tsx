@@ -100,7 +100,7 @@ const PracticeAreaDetail = () => {
       </section>
 
       {/* Content Section */}
-      <section className="container-editorial section-padding">
+      <section className="container-editorial py-10 md:py-14">
         <div className="max-w-3xl">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
