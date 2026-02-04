@@ -51,11 +51,11 @@ const Footer = () => {
             {/* Contact info */}
             <div className="space-y-3">
               <a 
-                href="tel:+31201234567" 
+                href="tel:+31202157540" 
                 className="flex items-center gap-3 text-foreground hover:text-primary transition-colors"
               >
                 <Phone className="w-4 h-4" />
-                <span>+31 20 123 4567</span>
+                <span>020-215 75 40</span>
               </a>
               <a 
                 href="mailto:info@hbmjuristen.nl" 
@@ -82,7 +82,7 @@ const Footer = () => {
                 <Linkedin className="w-5 h-5" />
               </a>
               <a 
-                href="https://wa.me/31201234567" 
+                href="https://wa.me/31202157540" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-primary text-primary-foreground flex items-center justify-center hover:bg-primary-light transition-colors"
