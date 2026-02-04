@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect } from 'react';
-import { Phone, Mail, Linkedin, MessageCircle, Instagram, Facebook, ChevronDown } from 'lucide-react';
+import { Phone, Mail, MessageCircle, Instagram, Facebook, ChevronDown } from 'lucide-react';
 
 // SVG Flag components
 const FlagNL = () => (
@@ -120,15 +120,6 @@ const UtilityBar = () => {
             
             {/* Social icons */}
             <div className="flex items-center gap-3">
-              <a 
-                href="https://linkedin.com" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="hover:opacity-80 transition-opacity"
-                aria-label="LinkedIn"
-              >
-                <Linkedin className="w-4 h-4" />
-              </a>
               <a 
                 href="https://instagram.com" 
                 target="_blank" 
