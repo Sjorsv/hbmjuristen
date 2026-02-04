@@ -1,6 +1,6 @@
 import { useParams, Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { ArrowRight, Phone } from 'lucide-react';
+import { ArrowRight, ArrowLeft, Phone } from 'lucide-react';
 import Layout from '@/components/layout/Layout';
 import { Button } from '@/components/ui/button';
 import heroImage from '@/assets/hero-office.jpg';
@@ -55,13 +55,27 @@ const PracticeAreaDetail = () => {
     <Layout>
       {/* Hero Section - Smaller version */}
       <section className="relative">
-        {/* Title above image */}
-        <div className="container-editorial pt-12 pb-8">
+        {/* Back link and Title above image */}
+        <div className="container-editorial pt-8 pb-6">
+          <motion.div
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.4 }}
+          >
+            <Link 
+              to="/rechtsgebieden" 
+              className="inline-flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors mb-6"
+            >
+              <ArrowLeft className="w-4 h-4" />
+              Ga terug
+            </Link>
+          </motion.div>
+          
           <motion.h1 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            className="text-display-lg font-light text-foreground"
+            transition={{ duration: 0.6, delay: 0.1 }}
+            className="text-display-md md:text-display-lg text-foreground"
           >
             {practiceArea.title}
           </motion.h1>
