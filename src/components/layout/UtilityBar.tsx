@@ -20,14 +20,15 @@ const FlagGB = () => (
   </svg>
 );
 
-const FlagMA = () => (
+const FlagTR = () => (
   <svg viewBox="0 0 24 16" className="w-5 h-3.5 rounded-sm overflow-hidden flex-shrink-0">
-    <rect width="24" height="16" fill="#C1272D" />
-    <path 
-      d="M12 4L13.09 7.26L16.54 7.26L13.73 9.24L14.82 12.5L12 10.52L9.18 12.5L10.27 9.24L7.46 7.26L10.91 7.26L12 4Z" 
-      fill="none" 
-      stroke="#006233" 
-      strokeWidth="0.8"
+    <rect width="24" height="16" fill="#E30A17" />
+    <circle cx="9" cy="8" r="4" fill="#FFFFFF" />
+    <circle cx="10" cy="8" r="3.2" fill="#E30A17" />
+    <polygon 
+      points="14,8 12.2,8.6 13,6.9 11.2,7.6 12,6 11.2,8.4 13,7.4 12.2,9.1 14,8" 
+      fill="#FFFFFF"
+      transform="translate(0.5, 0)"
     />
   </svg>
 );
@@ -48,7 +49,7 @@ const UtilityBar = () => {
       case 'EN':
         return <FlagGB />;
       case 'AR':
-        return <FlagMA />;
+        return <FlagTR />;
       default:
         return null;
     }
