@@ -14,6 +14,7 @@ import Contact from "./pages/Contact";
 import MissionVision from "./pages/MissionVision";
 import Blog from "./pages/Blog";
 import BlogDetail from "./pages/BlogDetail";
+import Press from "./pages/Press";
 
 const queryClient = new QueryClient();
 
@@ -32,8 +33,10 @@ const App = () => (
           <Route path="/over-ons/missie-visie" element={<MissionVision />} />
           <Route path="/over-ons/team" element={<Team />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/actualiteit" element={<Blog />} />
-          <Route path="/actualiteit/:slug" element={<BlogDetail />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/:slug" element={<BlogDetail />} />
+          <Route path="/pers" element={<Press />} />
+          <Route path="/pers/:slug" element={<BlogDetail />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

@@ -7,12 +7,10 @@ import insight1 from '@/assets/insight-1.jpg';
 import insight2 from '@/assets/insight-2.jpg';
 import insight3 from '@/assets/insight-3.jpg';
 
-type ArticleType = 'all' | 'blog' | 'pers';
 type CategoryType = 'all' | 'arbeidsrecht' | 'nieuws' | 'bestuursrecht' | 'consumentenrecht' | 'vreemdelingenrecht';
 
 interface Article {
   id: string;
-  type: 'blog' | 'pers';
   category: string;
   categorySlug: CategoryType;
   title: string;
@@ -25,98 +23,64 @@ interface Article {
 const articles: Article[] = [
   {
     id: '1',
-    type: 'blog',
     category: 'Arbeidsrecht',
     categorySlug: 'arbeidsrecht',
     title: 'Nieuwe wetgeving rondom het ontslagrecht in 2025',
     excerpt: 'De belangrijkste wijzigingen in het ontslagrecht die per 2025 van kracht worden.',
     date: '28 januari 2025',
     image: insight1,
-    href: '/actualiteit/ontslagrecht-2025',
+    href: '/blog/ontslagrecht-2025',
   },
   {
     id: '2',
-    type: 'blog',
     category: 'Nieuws',
     categorySlug: 'nieuws',
     title: 'Hoge Raad verduidelijkt regels voor transitievergoeding',
     excerpt: 'Een belangrijke uitspraak die gevolgen heeft voor werkgevers en werknemers.',
     date: '15 januari 2025',
     image: insight2,
-    href: '/actualiteit/transitievergoeding',
+    href: '/blog/transitievergoeding',
   },
   {
     id: '3',
-    type: 'blog',
     category: 'Nieuws',
     categorySlug: 'nieuws',
     title: 'Wijzigingen in het huurrecht: wat betekent dit voor verhuurders?',
     excerpt: 'De impact van nieuwe huurrecht regelgeving op de verhuurmarkt.',
     date: '8 januari 2025',
     image: insight3,
-    href: '/actualiteit/huurrecht-wijzigingen',
-  },
-  {
-    id: '4',
-    type: 'pers',
-    category: 'Nieuws',
-    categorySlug: 'nieuws',
-    title: 'HBM Juristen opent nieuw kantoor in Amsterdam Centrum',
-    excerpt: 'Uitbreiding van onze dienstverlening met een nieuwe locatie aan de Keizersgracht.',
-    date: '5 januari 2025',
-    image: insight1,
-    href: '/actualiteit/nieuw-kantoor',
+    href: '/blog/huurrecht-wijzigingen',
   },
   {
     id: '5',
-    type: 'blog',
     category: 'Bestuursrecht',
     categorySlug: 'bestuursrecht',
     title: 'Bezwaar maken tegen een besluit van de gemeente',
     excerpt: 'Stap voor stap uitleg over het bezwaarprocedure bij overheidsbesluiten.',
     date: '2 januari 2025',
     image: insight2,
-    href: '/actualiteit/bezwaar-gemeente',
-  },
-  {
-    id: '6',
-    type: 'pers',
-    category: 'Arbeidsrecht',
-    categorySlug: 'arbeidsrecht',
-    title: 'HBM Juristen wint belangrijke arbeidsrechtzaak',
-    excerpt: 'Succesvolle uitspraak voor cliënt in ontslagprocedure.',
-    date: '20 december 2024',
-    image: insight3,
-    href: '/actualiteit/arbeidsrechtzaak',
+    href: '/blog/bezwaar-gemeente',
   },
   {
     id: '7',
-    type: 'blog',
     category: 'Vreemdelingenrecht',
     categorySlug: 'vreemdelingenrecht',
     title: 'Nieuwe regels voor gezinshereniging in 2025',
     excerpt: 'Belangrijke updates voor aanvragen van verblijfsvergunningen.',
     date: '15 december 2024',
     image: insight1,
-    href: '/actualiteit/gezinshereniging-2025',
+    href: '/blog/gezinshereniging-2025',
   },
   {
     id: '8',
-    type: 'blog',
     category: 'Consumentenrecht',
     categorySlug: 'consumentenrecht',
     title: 'Uw rechten bij online aankopen',
     excerpt: 'Wat u moet weten over retourneren en garantie bij webwinkels.',
     date: '10 december 2024',
     image: insight2,
-    href: '/actualiteit/online-aankopen-rechten',
+    href: '/blog/online-aankopen-rechten',
   },
-];
-
-const typeFilters: { value: ArticleType; label: string }[] = [
-  { value: 'all', label: 'Alles' },
-  { value: 'blog', label: 'Blog' },
-  { value: 'pers', label: 'Pers' },
 ];
 
 const categoryFilters: { value: CategoryType; label: string }[] = [
@@ -129,13 +93,10 @@ const categoryFilters: { value: CategoryType; label: string }[] = [
 ];
 
 const Blog = () => {
-  const [activeType, setActiveType] = useState<ArticleType>('all');
   const [activeCategory, setActiveCategory] = useState<CategoryType>('all');
 
   const filteredArticles = articles.filter((article) => {
-    const typeMatch = activeType === 'all' || article.type === activeType;
-    const categoryMatch = activeCategory === 'all' || article.categorySlug === activeCategory;
-    return typeMatch && categoryMatch;
+    return activeCategory === 'all' || article.categorySlug === activeCategory;
   });
 
   return (
@@ -164,7 +125,7 @@ const Blog = () => {
               transition={{ duration: 0.6, delay: 0.1 }}
               className="text-3xl md:text-4xl lg:text-5xl font-serif text-foreground"
             >
-              Blog & Pers
+              Blog
             </motion.h1>
             
             <motion.p
@@ -173,8 +134,8 @@ const Blog = () => {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="text-lg text-muted-foreground leading-relaxed"
             >
-              Blijf op de hoogte van de laatste juridische ontwikkelingen, nieuws 
-              en inzichten van onze juristen. Ontdek artikelen over diverse 
+              Blijf op de hoogte van de laatste juridische ontwikkelingen en 
+              inzichten van onze juristen. Ontdek artikelen over diverse 
               rechtsgebieden en actuele zaken.
             </motion.p>
           </div>
@@ -187,41 +148,21 @@ const Blog = () => {
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.4, delay: 0.3 }}
-          className="flex flex-col sm:flex-row gap-6"
+          className="flex flex-wrap gap-2"
         >
-          {/* Type filter */}
-          <div className="flex flex-wrap gap-2">
-            {typeFilters.map((filter) => (
-              <button
-                key={filter.value}
-                onClick={() => setActiveType(filter.value)}
-                className={`px-4 py-2 text-sm font-medium rounded-full transition-all duration-200 ${
-                  activeType === filter.value
-                    ? 'bg-primary text-primary-foreground'
-                    : 'bg-section-grey text-foreground hover:bg-section-grey-darker'
-                }`}
-              >
-                {filter.label}
-              </button>
-            ))}
-          </div>
-
-          {/* Category filter */}
-          <div className="flex flex-wrap gap-2">
-            {categoryFilters.map((filter) => (
-              <button
-                key={filter.value}
-                onClick={() => setActiveCategory(filter.value)}
-                className={`px-4 py-2 text-sm font-medium rounded-full transition-all duration-200 ${
-                  activeCategory === filter.value
-                    ? 'bg-primary text-primary-foreground'
-                    : 'bg-section-grey text-foreground hover:bg-section-grey-darker'
-                }`}
-              >
-                {filter.label}
-              </button>
-            ))}
-          </div>
+          {categoryFilters.map((filter) => (
+            <button
+              key={filter.value}
+              onClick={() => setActiveCategory(filter.value)}
+              className={`px-4 py-2 text-sm font-medium rounded-full transition-all duration-200 ${
+                activeCategory === filter.value
+                  ? 'bg-primary text-primary-foreground'
+                  : 'bg-section-grey text-foreground hover:bg-section-grey-darker'
+              }`}
+            >
+              {filter.label}
+            </button>
+          ))}
         </motion.div>
 
         {/* Results count */}
@@ -257,19 +198,10 @@ const Blog = () => {
                       alt={article.title}
                       className="w-full h-56 object-cover transition-transform duration-500 group-hover:scale-105"
                     />
-                    {/* Tags */}
-                    <div className="absolute top-4 left-4 flex gap-2">
-                      <span className="bg-primary text-primary-foreground text-xs font-medium px-3 py-1 rounded-full">
-                        {article.category}
-                      </span>
-                      <span className={`text-xs font-medium px-3 py-1 rounded-full ${
-                        article.type === 'pers' 
-                          ? 'bg-accent text-accent-foreground' 
-                          : 'bg-secondary text-secondary-foreground'
-                      }`}>
-                        {article.type === 'pers' ? 'Pers' : 'Blog'}
-                      </span>
-                    </div>
+                    {/* Category badge */}
+                    <span className="absolute top-4 left-4 bg-primary text-primary-foreground text-xs font-medium px-3 py-1 rounded-full">
+                      {article.category}
+                    </span>
                   </div>
 
                   {/* Content */}
@@ -298,10 +230,7 @@ const Blog = () => {
               Geen artikelen gevonden met de huidige filters.
             </p>
             <button
-              onClick={() => {
-                setActiveType('all');
-                setActiveCategory('all');
-              }}
+              onClick={() => setActiveCategory('all')}
               className="mt-4 text-primary hover:underline"
             >
               Reset filters
