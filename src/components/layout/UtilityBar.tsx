@@ -1,5 +1,5 @@
-import { useState, useRef, useEffect } from 'react';
-import { Phone, Mail, MessageCircle, Instagram, Facebook, ChevronDown } from 'lucide-react';
+import { useState } from 'react';
+import { Phone, Mail, MessageCircle, Instagram, Facebook } from 'lucide-react';
 
 // SVG Flag components
 const FlagNL = () => (
@@ -26,19 +26,6 @@ const FlagSA = () => (
   </svg>
 );
 
-const renderFlag = (code: string) => {
-  switch (code) {
-    case 'NL':
-      return <FlagNL />;
-    case 'EN':
-      return <FlagGB />;
-    case 'AR':
-      return <FlagSA />;
-    default:
-      return null;
-  }
-};
-
 const languages = [
   { code: 'NL', name: 'Nederlands' },
   { code: 'EN', name: 'English' },
@@ -46,19 +33,20 @@ const languages = [
 ];
 
 const UtilityBar = () => {
-  const [currentLang, setCurrentLang] = useState(languages[0]);
-  const [isOpen, setIsOpen] = useState(false);
-  const dropdownRef = useRef<HTMLDivElement>(null);
+  const [currentLang, setCurrentLang] = useState('NL');
 
-  useEffect(() => {
-    const handleClickOutside = (event: MouseEvent) => {
-      if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
-        setIsOpen(false);
-      }
-    };
-    document.addEventListener('mousedown', handleClickOutside);
-    return () => document.removeEventListener('mousedown', handleClickOutside);
-  }, []);
+  const renderFlag = (code: string) => {
+    switch (code) {
+      case 'NL':
+        return <FlagNL />;
+      case 'EN':
+        return <FlagGB />;
+      case 'AR':
+        return <FlagSA />;
+      default:
+        return null;
+    }
+  };
 
   return (
     <div className="bg-primary text-primary-foreground">
@@ -84,38 +72,23 @@ const UtilityBar = () => {
           
           {/* Language & social */}
           <div className="flex items-center gap-4 ml-auto">
-            {/* Language dropdown */}
-            <div className="relative" ref={dropdownRef}>
-              <button
-                onClick={() => setIsOpen(!isOpen)}
-                className="flex items-center gap-2 px-2 py-1 rounded hover:bg-primary-light transition-colors"
-              >
-                {renderFlag(currentLang.code)}
-                <span className="font-medium text-sm">{currentLang.code}</span>
-                <ChevronDown className={`w-3 h-3 transition-transform ${isOpen ? 'rotate-180' : ''}`} />
-              </button>
-              
-              {isOpen && (
-                <div className="absolute top-full right-0 mt-1 bg-background rounded-lg shadow-lg z-[100] min-w-[150px] py-1 overflow-hidden">
-                  {languages.map((lang) => (
-                    <button
-                      key={lang.code}
-                      onClick={() => {
-                        setCurrentLang(lang);
-                        setIsOpen(false);
-                      }}
-                      className={`w-full flex items-center gap-3 px-4 py-2.5 text-sm transition-colors ${
-                        currentLang.code === lang.code
-                          ? 'text-primary font-medium'
-                          : 'text-foreground hover:bg-muted'
-                      }`}
-                    >
-                      {renderFlag(lang.code)}
-                      <span>{lang.name}</span>
-                    </button>
-                  ))}
-                </div>
-              )}
+            {/* Language flags inline */}
+            <div className="flex items-center gap-2">
+              {languages.map((lang) => (
+                <button
+                  key={lang.code}
+                  onClick={() => setCurrentLang(lang.code)}
+                  className={`p-1 rounded transition-opacity ${
+                    currentLang === lang.code
+                      ? 'opacity-100 ring-1 ring-primary-foreground/50'
+                      : 'opacity-60 hover:opacity-100'
+                  }`}
+                  aria-label={lang.name}
+                  title={lang.name}
+                >
+                  {renderFlag(lang.code)}
+                </button>
+              ))}
             </div>
             
             {/* Social icons */}
