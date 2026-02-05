@@ -12,6 +12,7 @@ import Team from "./pages/Team";
 import AboutUs from "./pages/AboutUs";
 import Contact from "./pages/Contact";
 import MissionVision from "./pages/MissionVision";
+import Werkwijze from "./pages/Werkwijze";
 import Blog from "./pages/Blog";
 import BlogDetail from "./pages/BlogDetail";
 import Press from "./pages/Press";
@@ -32,6 +33,7 @@ const App = () => (
           <Route path="/over-ons" element={<AboutUs />} />
           <Route path="/over-ons/missie-visie" element={<MissionVision />} />
           <Route path="/over-ons/team" element={<Team />} />
+          <Route path="/werkwijze" element={<Werkwijze />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/:slug" element={<BlogDetail />} />
