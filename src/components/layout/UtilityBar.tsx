@@ -20,9 +20,15 @@ const FlagGB = () => (
   </svg>
 );
 
-const FlagSA = () => (
+const FlagMA = () => (
   <svg viewBox="0 0 24 16" className="w-5 h-3.5 rounded-sm overflow-hidden flex-shrink-0">
-    <rect width="24" height="16" fill="#006C35" />
+    <rect width="24" height="16" fill="#C1272D" />
+    <path 
+      d="M12 4L13.09 7.26L16.54 7.26L13.73 9.24L14.82 12.5L12 10.52L9.18 12.5L10.27 9.24L7.46 7.26L10.91 7.26L12 4Z" 
+      fill="none" 
+      stroke="#006233" 
+      strokeWidth="0.8"
+    />
   </svg>
 );
 
@@ -42,7 +48,7 @@ const UtilityBar = () => {
       case 'EN':
         return <FlagGB />;
       case 'AR':
-        return <FlagSA />;
+        return <FlagMA />;
       default:
         return null;
     }
