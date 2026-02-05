@@ -33,7 +33,7 @@ const CareerSection = () => {
             </p>
             <Link
               to="/vacatures"
-              className="inline-flex items-center gap-2 bg-primary-foreground text-primary px-6 py-3 rounded-xl font-medium hover:bg-primary-foreground/90 transition-colors"
+              className="inline-flex items-center gap-2 bg-primary-foreground text-primary px-6 py-3 rounded-md font-medium hover:bg-primary-foreground/90 transition-colors"
             >
               Bekijk vacatures
               <ArrowRight className="w-5 h-5" />
