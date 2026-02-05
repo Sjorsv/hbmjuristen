@@ -11,21 +11,21 @@ const insights = [
     title: 'Nieuwe wetgeving rondom het ontslagrecht in 2025',
     date: '28 januari 2025',
     image: insight1,
-    href: '/actualiteit/ontslagrecht-2025',
+    href: '/blog/ontslagrecht-2025',
   },
   {
     category: 'Nieuws',
     title: 'Hoge Raad verduidelijkt regels voor transitievergoeding',
     date: '15 januari 2025',
     image: insight2,
-    href: '/actualiteit/transitievergoeding',
+    href: '/blog/transitievergoeding',
   },
   {
     category: 'Nieuws',
     title: 'Wijzigingen in het huurrecht: wat betekent dit voor verhuurders?',
     date: '8 januari 2025',
     image: insight3,
-    href: '/actualiteit/huurrecht-wijzigingen',
+    href: '/blog/huurrecht-wijzigingen',
   },
 ];
 
@@ -45,7 +45,7 @@ const InsightsSection = () => {
             Inzichten & actualiteit
           </h2>
           <Link
-            to="/actualiteit"
+            to="/blog"
             className="arrow-link"
           >
             Meer artikelen

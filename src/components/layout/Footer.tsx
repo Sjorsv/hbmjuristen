@@ -22,7 +22,8 @@ const footerLinks = {
     { name: 'Vacatures', href: '/vacatures' },
   ],
   'Informatie': [
-    { name: 'Blog & Pers', href: '/actualiteit' },
+    { name: 'Blog', href: '/blog' },
+    { name: 'Pers', href: '/pers' },
     { name: 'Klachtenprocedure', href: '/klachtenprocedure' },
     { name: 'Privacyverklaring', href: '/privacy' },
     { name: 'Geheimhouding', href: '/geheimhouding' },

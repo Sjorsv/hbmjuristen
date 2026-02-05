@@ -35,9 +35,9 @@ const navItems = [
       { name: 'Artificial Intelligence', href: '/ai' },
     ]
   },
-  { name: 'Blog & Pers', href: '/actualiteit' },
+  { name: 'Blog', href: '/blog' },
+  { name: 'Pers', href: '/pers' },
 ];
-
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMegaMenuOpen, setIsMegaMenuOpen] = useState(false);
