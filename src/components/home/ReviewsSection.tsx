@@ -1,5 +1,12 @@
-import { Star } from 'lucide-react';
+import { Star, ChevronLeft, ChevronRight } from 'lucide-react';
 import { motion } from 'framer-motion';
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from '@/components/ui/carousel';
 
 const reviews = [
   {
@@ -14,7 +21,22 @@ const reviews = [
   },
   {
     name: 'Assia Deboun',
-    text: 'HBM Juristen heeft mijn ontslagzaak gewonnen, maar belangrijker nog: ze gaven me mijn zelfvertrouwen terug. De jurist begreep mij en gaf mij kracht om deze…',
+    text: 'HBM Juristen heeft mijn ontslagzaak gewonnen, maar belangrijker nog: ze gaven me mijn zelfvertrouwen terug. De jurist begreep mij en gaf mij kracht om deze moeilijke periode door te komen.',
+    rating: 5,
+  },
+  {
+    name: 'Mohammed El Amrani',
+    text: 'Uitstekende service en zeer professioneel. Ze hebben mij geholpen met een complex arbeidsgeschil en het resultaat was boven verwachting. Ik beveel HBM Juristen van harte aan.',
+    rating: 5,
+  },
+  {
+    name: 'Lisa van der Berg',
+    text: 'Ik was erg tevreden over de begeleiding bij mijn mediationtraject. De communicatie was helder en ze hebben mij stap voor stap door het proces geleid.',
+    rating: 5,
+  },
+  {
+    name: 'Ahmed Hassan',
+    text: 'Professional, betrouwbaar en altijd bereikbaar. HBM Juristen heeft mij fantastisch geholpen met mijn zaak. De persoonlijke aanpak maakt echt het verschil.',
     rating: 5,
   },
 ];
@@ -39,35 +61,49 @@ const ReviewsSection = () => {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {reviews.map((review, index) => (
-            <motion.div
-              key={review.name}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="bg-background rounded-2xl p-8 shadow-soft"
-            >
-              {/* Stars */}
-              <div className="flex gap-1 mb-4">
-                {Array.from({ length: review.rating }).map((_, i) => (
-                  <Star key={i} className="w-5 h-5 fill-primary text-primary" />
-                ))}
-              </div>
-              
-              {/* Quote */}
-              <blockquote className="text-foreground leading-relaxed mb-6">
-                "{review.text}"
-              </blockquote>
-              
-              {/* Author */}
-              <p className="font-medium text-foreground">
-                {review.name}
-              </p>
-            </motion.div>
-          ))}
-        </div>
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5, delay: 0.1 }}
+        >
+          <Carousel
+            opts={{
+              align: 'start',
+              loop: true,
+            }}
+            className="w-full"
+          >
+            <CarouselContent className="-ml-4">
+              {reviews.map((review, index) => (
+                <CarouselItem key={review.name} className="pl-4 md:basis-1/2 lg:basis-1/3">
+                  <div className="bg-background rounded-2xl p-8 shadow-soft h-full">
+                    {/* Stars */}
+                    <div className="flex gap-1 mb-4">
+                      {Array.from({ length: review.rating }).map((_, i) => (
+                        <Star key={i} className="w-5 h-5 fill-primary text-primary" />
+                      ))}
+                    </div>
+                    
+                    {/* Quote */}
+                    <blockquote className="text-foreground leading-relaxed mb-6">
+                      "{review.text}"
+                    </blockquote>
+                    
+                    {/* Author */}
+                    <p className="font-medium text-foreground">
+                      {review.name}
+                    </p>
+                  </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <div className="flex justify-center gap-4 mt-8">
+              <CarouselPrevious className="static translate-y-0" />
+              <CarouselNext className="static translate-y-0" />
+            </div>
+          </Carousel>
+        </motion.div>
 
         {/* Trust indicators */}
         <motion.div
