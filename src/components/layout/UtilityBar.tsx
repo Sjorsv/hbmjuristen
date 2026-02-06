@@ -36,7 +36,7 @@ const FlagTR = () => (
 const languages = [
   { code: 'NL', name: 'Nederlands' },
   { code: 'EN', name: 'English' },
-  { code: 'AR', name: 'العربية' },
+  { code: 'TR', name: 'Türkçe' },
 ];
 
 const UtilityBar = () => {
@@ -48,7 +48,7 @@ const UtilityBar = () => {
         return <FlagNL />;
       case 'EN':
         return <FlagGB />;
-      case 'AR':
+      case 'TR':
         return <FlagTR />;
       default:
         return null;
