@@ -7,7 +7,7 @@ import MegaMenu from './MegaMenu';
 import logo from '@/assets/logo.svg';
 
 const navItems = [
-  { name: 'Rechtsgebieden', href: '/rechtsgebieden', hasMegaMenu: true },
+  { name: 'Expertises', href: '/rechtsgebieden', hasMegaMenu: true },
   { 
     name: 'Over ons', 
     href: '/over-ons', 
@@ -15,28 +15,13 @@ const navItems = [
     dropdownItems: [
       { name: 'Missie & Visie', href: '/over-ons/missie-visie' },
       { name: 'Wie zijn wij', href: '/over-ons' },
-      { name: 'Ons team', href: '/over-ons/team' },
       { name: 'Werkwijze', href: '/werkwijze' },
       { name: 'Tarieven', href: '/tarieven' },
-      { name: 'Vacatures', href: '/vacatures' },
     ]
   },
-  { 
-    name: 'Informatie', 
-    href: '/informatie', 
-    hasDropdown: true,
-    dropdownItems: [
-      { name: 'Klachtenprocedure', href: '/klachtenprocedure' },
-      { name: 'Privacyverklaring', href: '/privacy' },
-      { name: 'Geheimhouding', href: '/geheimhouding' },
-      { name: 'Partner-Beleid', href: '/partner-beleid' },
-      { name: 'Kostenbeleid', href: '/kostenbeleid' },
-      { name: 'FAQ', href: '/faq' },
-      { name: 'Artificial Intelligence', href: '/ai' },
-    ]
-  },
+  { name: 'Ons team', href: '/over-ons/team' },
+  { name: 'Vacatures', href: '/vacatures' },
   { name: 'Blog', href: '/blog' },
-  { name: 'Pers', href: '/pers' },
 ];
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
