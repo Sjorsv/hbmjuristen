@@ -82,7 +82,7 @@ const ReviewsSection = () => {
             <p className="text-sm text-muted-foreground mt-1">Jaar ervaring</p>
           </div>
           <div className="text-center">
-            <p className="text-3xl font-serif font-bold text-primary">11330+</p>
+            <p className="text-3xl font-serif font-bold text-primary">9.850+</p>
             <p className="text-sm text-muted-foreground mt-1">Tevreden cliënten</p>
           </div>
           <div className="text-center">
