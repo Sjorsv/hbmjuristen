@@ -20,23 +20,18 @@ const FlagGB = () => (
   </svg>
 );
 
-const FlagTR = () => (
+const FlagSA = () => (
   <svg viewBox="0 0 24 16" className="w-5 h-3.5 rounded-sm overflow-hidden flex-shrink-0">
-    <rect width="24" height="16" fill="#E30A17" />
-    <circle cx="9" cy="8" r="4" fill="#FFFFFF" />
-    <circle cx="10" cy="8" r="3.2" fill="#E30A17" />
-    <polygon 
-      points="14,8 12.2,8.6 13,6.9 11.2,7.6 12,6 11.2,8.4 13,7.4 12.2,9.1 14,8" 
-      fill="#FFFFFF"
-      transform="translate(0.5, 0)"
-    />
+    <rect width="24" height="16" fill="#006C35" />
+    <text x="12" y="7" fill="#FFFFFF" fontSize="3" textAnchor="middle" fontFamily="serif">لا إله إلا الله</text>
+    <rect x="4" y="10" width="16" height="1.5" rx="0.5" fill="#FFFFFF" />
   </svg>
 );
 
 const languages = [
   { code: 'NL', name: 'Nederlands' },
   { code: 'EN', name: 'English' },
-  { code: 'TR', name: 'Türkçe' },
+  { code: 'AR', name: 'العربية' },
 ];
 
 const UtilityBar = () => {
@@ -48,8 +43,8 @@ const UtilityBar = () => {
         return <FlagNL />;
       case 'EN':
         return <FlagGB />;
-      case 'TR':
-        return <FlagTR />;
+      case 'AR':
+        return <FlagSA />;
       default:
         return null;
     }
