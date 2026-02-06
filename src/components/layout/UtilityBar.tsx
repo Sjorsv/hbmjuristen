@@ -122,12 +122,12 @@ const UtilityBar = () => {
             </div>
             
             {/* Social icons */}
-            <div className="flex items-center gap-3">
+            <div className="flex items-center gap-2">
               <a 
                 href="https://instagram.com" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="hover:opacity-80 transition-opacity"
+                className="bg-white rounded-full p-1.5 hover:opacity-80 transition-opacity"
                 aria-label="Instagram"
               >
                 <InstagramIcon />
@@ -136,7 +136,7 @@ const UtilityBar = () => {
                 href="https://facebook.com" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="hover:opacity-80 transition-opacity"
+                className="bg-white rounded-full p-1.5 hover:opacity-80 transition-opacity"
                 aria-label="Facebook"
               >
                 <FacebookIcon />
@@ -145,7 +145,7 @@ const UtilityBar = () => {
                 href="https://wa.me/31202157540" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="hover:opacity-80 transition-opacity"
+                className="bg-white rounded-full p-1.5 hover:opacity-80 transition-opacity"
                 aria-label="WhatsApp"
               >
                 <WhatsAppIcon />
