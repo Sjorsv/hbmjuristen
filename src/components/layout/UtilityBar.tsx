@@ -103,15 +103,15 @@ const UtilityBar = () => {
           {/* Language & social */}
           <div className="flex items-center gap-4 ml-auto">
             {/* Language flags inline */}
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-1 bg-primary-light/40 rounded-md px-1.5 py-1">
               {languages.map((lang) => (
                 <button
                   key={lang.code}
                   onClick={() => setCurrentLang(lang.code)}
-                  className={`p-1 rounded transition-opacity ${
+                  className={`p-1 rounded transition-all ${
                     currentLang === lang.code
-                      ? 'opacity-100 ring-1 ring-primary-foreground/50'
-                      : 'opacity-60 hover:opacity-100'
+                      ? 'opacity-100 bg-primary-light/60'
+                      : 'opacity-70 hover:opacity-100'
                   }`}
                   aria-label={lang.name}
                   title={lang.name}
