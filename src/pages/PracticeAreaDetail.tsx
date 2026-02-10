@@ -103,6 +103,11 @@ const practiceAreasData: Record<string, {
       'Geschil onderhoud of nieuwe woning',
     ],
   },
+  'china': {
+    title: 'China',
+    intro: 'HBM Juristen biedt juridische ondersteuning aan cliënten die actief zijn binnen het handels- en investeringsverkeer tussen China en Marokko.\n\nWij staan cliënten bij in handelscontracten, samenwerkingsovereenkomsten, investeringsstructuren, geschillenbeslechting, markttoetreding en compliance.',
+    services: [],
+  },
 };
 
 const otherPracticeAreas = [
