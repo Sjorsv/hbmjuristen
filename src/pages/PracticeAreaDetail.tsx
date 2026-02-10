@@ -94,6 +94,15 @@ const practiceAreasData: Record<string, {
     intro: 'Het Sociale Zekerheidsrecht omvat onder meer de Werkloosheidswet (WW), de Ziektewet (ZW), de Algemene Ouderdomswet (AOW), de Wet werk en Inkomen naar Arbeidsvermogen (WIA) en de Wet Werk en Bijstand (WWB).\n\nHet is een geheel aan rechten en verplichtingen van iedereen die te maken heeft met sociale zekerheid: werkgevers, werknemers, arbeidsongeschikten, werklozen, ouderen en zelfstandigen. Komt iemand, tijdelijk of blijvend, in financiële moeilijkheden, dan vormt de overheid het vangnet door middel van sociale verzekeringen en sociale voorzieningen.',
     services: [],
   },
+  'huurrecht': {
+    title: 'Huurrecht',
+    intro: 'Heeft u problemen met de verhuurder over huurgeld, huurcontract of onderhoud? U kunt als huurder of eigenaar van een woning bij ons terecht voor een adequate aanpak voor uw problemen.',
+    services: [
+      'Huurgeschil',
+      'Woonurgentie',
+      'Geschil onderhoud of nieuwe woning',
+    ],
+  },
 };
 
 const otherPracticeAreas = [
