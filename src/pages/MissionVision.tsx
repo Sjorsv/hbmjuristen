@@ -85,32 +85,19 @@ const MissionVision = () => {
           >
             <div>
               <h2 className="text-2xl md:text-3xl font-serif text-foreground mb-4">
-                Onze missie
+                Missie
               </h2>
               <p className="text-lg text-foreground leading-relaxed">
-                HBM Juristen staat naast u met deskundig juridisch advies en effectieve rechtsbijstand. 
-                Wij maken het recht toegankelijk voor iedereen die onze hulp nodig heeft — 
-                van particulieren tot ondernemers en zzp'ers. Met parate kennis, flexibiliteit 
-                en een persoonlijke aanpak zorgen wij ervoor dat uw belangen worden beschermd.
+                HBM Juristen streeft ernaar de toonaangevende juridische partner te zijn voor cliënten wereldwijd. Onze missie is het bieden van hoogwaardige, grensoverschrijdende juridische dienstverlening, gebaseerd op diepgaande kennis van zowel het Nederlandse als Marokkaanse recht. Wij zetten ons in om complexe juridische vraagstukken op te lossen, rechtvaardigheid te bevorderen en juridische zekerheid te bieden aan onze cliënten. Met een onwankelbare toewijding aan kwaliteit en toegankelijkheid, streven wij ernaar het vertrouwen in juridische instellingen te versterken en een positieve maatschappelijke impact te realiseren.
               </p>
             </div>
 
             <div>
               <h2 className="text-2xl md:text-3xl font-serif text-foreground mb-4">
-                Onze visie
+                Visie
               </h2>
               <p className="text-lg text-foreground leading-relaxed">
-                Wij geloven dat juridische ondersteuning gedurfd, helder en oplossingsgericht moet zijn. 
-                Bij HBM Juristen wordt niet geschermd met loze ideeën — wij denken in concrete oplossingen 
-                en staan aan uw kant, ongeacht de situatie. Onze visie is een juridische praktijk waar 
-                expertise en menselijkheid hand in hand gaan, met een no-nonsense mentaliteit die resultaat oplevert.
-              </p>
-            </div>
-
-            <div className="pt-4">
-              <p className="text-lg text-muted-foreground leading-relaxed">
-                Als lid van de Nederlandse Juristen Vereniging (NJV) en Vereniging voor Arbeidsrecht (VvA) 
-                waarborgen wij de hoogste kwaliteitsstandaarden. Wij zijn actief in Nederland, België en Marokko.
+                HBM Juristen wil zich profileren als een juridische praktijk die grenzen overstijgt, zowel geografisch als inhoudelijk. Wij zien het als onze plicht en ambitie om ons te onderscheiden door innovatie, expertise en daadkracht. Onze visie is om een baken van vertrouwen te zijn in een steeds complexer wordende wereld, waar grensoverschrijdende juridische vraagstukken eerder regel dan uitzondering zijn. Door onze unieke specialisatie en voortdurende focus op klanttevredenheid, streven wij ernaar de standaard te bepalen in de juridische sector, met kantoren die stevig verankerd zijn in Amsterdam, Shanghai en Casablanca. HBM Juristen is niet alleen een juridische dienstverlener, maar een strategische partner voor wie zekerheid en succes nastreeft in een wereld waar rechtvaardigheid altijd centraal staat.
               </p>
             </div>
           </motion.div>
