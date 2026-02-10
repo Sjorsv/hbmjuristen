@@ -1,56 +1,76 @@
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { ArrowLeft, Mail, Phone } from 'lucide-react';
+import { ArrowLeft } from 'lucide-react';
 import Layout from '@/components/layout/Layout';
+import teamElabadi from '@/assets/team-elabadi.jpg';
+import teamAkbib from '@/assets/team-akbib.jpg';
+import teamElkhaili from '@/assets/team-elkhaili.jpg';
+import teamZaki from '@/assets/team-zaki.jpg';
+import teamHamich from '@/assets/team-hamich.jpg';
+import teamReus from '@/assets/team-reus.jpg';
 
 const teamMembers = [
   {
-    name: 'Hassan Bouchnafa',
-    role: 'Oprichter & Jurist',
-    expertise: 'Arbeidsrecht, Bestuursrecht',
-    email: 'h.bouchnafa@hbmjuristen.nl',
-    phone: '020-215 75 40',
-    image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&h=500&fit=crop&crop=face',
+    name: 'W. Elabadi',
+    role: 'Partner-advocaat Marokko',
+    image: teamElabadi,
+    bio: [
+      'Mevrouw Elabadi is advocate in Marokko en heeft ondernemingsrecht gestudeerd aan de Universiteit van Casablanca en rechten en financiën gestudeerd aan de École Supérieure de Commerce de Paris (ESCP) in Parijs.',
+      'Verder heeft mevrouw Elabadi heeft een juridische specialisatie opgedaan aan de City Law School in Londen.',
+      'Mevrouw Elabadi is gespecialiseerd in verschillende rechtsgebieden waaronder het ondernemingsrecht en financieel recht. Zij is werkzaam in heel Marokko met ruime internationale ervaring op het gebied procesvoering.',
+    ],
+    languages: 'Arabisch, Frans en Engels',
   },
   {
-    name: 'Maria van den Berg',
-    role: 'Senior Jurist',
-    expertise: 'Vreemdelingenrecht, Familierecht',
-    email: 'm.vandenberg@hbmjuristen.nl',
-    phone: '020-215 75 41',
-    image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=500&fit=crop&crop=face',
+    name: 'J. Akbib',
+    role: 'Partner-advocaat Marokko',
+    image: teamAkbib,
+    bio: [
+      'Mevrouw Akbib is advocaat in Marokko en gespecialiseerd op douane-regelgeving in Marokko, een nichegebied waarin zij zich heeft onderscheiden als deskundige.',
+      'Als voormalige professor in het privaatrecht heeft zij diepgaande kennis van de academische wereld en heeft zij een waardevolle bijdrage geleverd aan het juridisch onderwijs.',
+      'Na haar academische carrière heeft advocate Akbib haar vaardigheden verder ontwikkeld als zelfstandig advocaat in Marokko, waar zij haar juridische diensten verleent aan cliënten door het hele land.',
+      'Mevrouw Akbib is gespecialiseerd in de volgende rechtsgebieden: familierecht, commercieel recht en civiel recht.',
+    ],
+    languages: 'Arabisch, Frans en Engels',
   },
   {
-    name: 'Ahmed El Mansouri',
-    role: 'Jurist',
-    expertise: 'Consumentenrecht, Huurrecht',
-    email: 'a.elmansouri@hbmjuristen.nl',
-    phone: '020-215 75 42',
-    image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=500&fit=crop&crop=face',
+    name: 'A. El Khaili',
+    role: 'Partner-advocaat Marokko',
+    image: teamElkhaili,
+    bio: [
+      'De heer A. El Khaili is advocaat in Marokko (Noord-Afrika) en gespecialiseerd in het (islamitisch) familierecht, strafrecht, commercieel recht en vastgoed- en erfrecht.',
+    ],
+    languages: 'Arabisch, Frans en Engels',
   },
   {
-    name: 'Sophie de Groot',
-    role: 'Jurist',
-    expertise: 'Arbeidsrecht, Mediation',
-    email: 's.degroot@hbmjuristen.nl',
-    phone: '020-215 75 43',
-    image: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&h=500&fit=crop&crop=face',
+    name: 'A. Zaki',
+    role: 'Juriste',
+    image: teamZaki,
+    bio: [
+      'Mevrouw A. Zaki is juriste en heeft een specialisatie in het bedrijfsrecht verworven aan zowel de Marokkaanse universiteit van Casablanca als aan de Franse universiteit van Nice.',
+      'Mevrouw Zaki is als juriste gespecialiseerd in het privaatrecht, rechtswetenschappelijk onderzoek, vastgoedrecht en op het gebied van zakelijke aangelegenheden.',
+    ],
+    languages: 'Arabisch, Frans en Engels',
   },
   {
-    name: 'Youssef Bakker',
-    role: 'Junior Jurist',
-    expertise: 'Bestuursrecht, Sociale zekerheid',
-    email: 'y.bakker@hbmjuristen.nl',
-    phone: '020-215 75 44',
-    image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=500&fit=crop&crop=face',
+    name: 'K. Hamich',
+    role: 'Jurist | Arbeidsmediator | Familiemediator',
+    image: teamHamich,
+    bio: [
+      'De heer K. Hamich is jurist en gecertificeerd familie- en arbeidsmediator, met ruime ervaring in scheidingsmediation en andere complexe familiaire vraagstukken. Zijn strategische benadering en adviserende rol worden breed gewaardeerd door cliënten.',
+      'Voorafgaand aan zijn werkzaamheden bij HBM Juristen heeft hij binnen de publieke sector uitgebreide ervaring opgebouwd als senior jurist in zowel bestuursrecht als privaatrecht. Hij richt zich op realistische en duurzame oplossingen, waarbij conflictbemiddeling wordt ingezet als volwaardig alternatief of effectieve aanvulling op de traditionele rechtsgang.',
+      'Door zijn zorgvuldige werkwijze, analytisch inzicht en professionele begeleiding is hij een betrouwbare partner voor ondernemingen en particulieren die behoefte hebben aan deskundige juridische ondersteuning. Daarnaast is hij gecertificeerd als interne auditor, beoordeelt hij periodiek o.a. op kwaliteitsbeheersing, controleert informatiebeveiligingsmaatregelen en onderzoekt arbeidsveiligheid en gezondheidsrisico\'s in lijn met de laatste ISO-normen.',
+    ],
+    languages: 'Nederlands, Arabisch, Chinees en Engels',
   },
   {
-    name: 'Lisa Jansen',
-    role: 'Mediator',
-    expertise: 'Family Mediation, Arbeids Mediation',
-    email: 'l.jansen@hbmjuristen.nl',
-    phone: '020-215 75 45',
-    image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=500&fit=crop&crop=face',
+    name: 'M. Reus',
+    role: 'Stagiaire',
+    image: teamReus,
+    bio: [
+      'Mevrouw M. Reus is momenteel bezig met haar afstudeeronderzoek in Nederlands recht en Marokkaans recht bij HBM Juristen, waarna zij haar carrière wil voortzetten in de advocatuur.',
+    ],
+    languages: undefined,
   },
 ];
 
@@ -98,28 +118,27 @@ const Team = () => {
         </div>
       </section>
 
-      {/* Team grid */}
+      {/* Team members */}
       <section className="container-editorial py-10 md:py-14">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+        <div className="space-y-16">
           {teamMembers.map((member, index) => (
             <motion.div
               key={member.name}
               initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="group"
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: index * 0.05 }}
+              className="grid grid-cols-1 md:grid-cols-[300px_1fr] gap-8 items-start"
             >
+              {/* Photo */}
               <div className="relative overflow-hidden rounded-2xl bg-section-grey">
-                {/* Image */}
                 <div className="aspect-[4/5] overflow-hidden">
                   <img 
                     src={member.image} 
                     alt={member.name}
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    className="w-full h-full object-cover object-top"
                   />
                 </div>
-                
-                {/* Info overlay */}
                 <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-primary via-primary/90 to-transparent pt-16 pb-5 px-5">
                   <h3 className="text-lg font-serif font-medium text-primary-foreground">
                     {member.name}
@@ -129,28 +148,23 @@ const Team = () => {
                   </p>
                 </div>
               </div>
-              
-              {/* Details below card */}
-              <div className="mt-4 space-y-2">
-                <p className="text-sm text-muted-foreground">
-                  {member.expertise}
-                </p>
-                <div className="flex flex-col gap-1">
-                  <a 
-                    href={`mailto:${member.email}`}
-                    className="inline-flex items-center gap-2 text-sm text-foreground hover:text-primary transition-colors"
-                  >
-                    <Mail className="w-3.5 h-3.5" />
-                    {member.email}
-                  </a>
-                  <a 
-                    href={`tel:${member.phone.replace(/[^0-9+]/g, '')}`}
-                    className="inline-flex items-center gap-2 text-sm text-foreground hover:text-primary transition-colors"
-                  >
-                    <Phone className="w-3.5 h-3.5" />
-                    {member.phone}
-                  </a>
+
+              {/* Bio */}
+              <div className="space-y-4">
+                <div>
+                  <h2 className="text-2xl font-serif text-foreground">{member.name}</h2>
+                  <p className="text-muted-foreground mt-1">{member.role}</p>
                 </div>
+                {member.bio.map((paragraph, i) => (
+                  <p key={i} className="text-foreground leading-relaxed">
+                    {paragraph}
+                  </p>
+                ))}
+                {member.languages && (
+                  <p className="text-muted-foreground text-sm mt-4">
+                    <span className="font-medium text-foreground">Talen:</span> {member.languages}
+                  </p>
+                )}
               </div>
             </motion.div>
           ))}
