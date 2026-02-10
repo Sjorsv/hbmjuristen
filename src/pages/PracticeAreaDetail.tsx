@@ -76,6 +76,16 @@ const practiceAreasData: Record<string, {
       'Concurrentie- en relatiebedingen',
     ],
   },
+  'family-mediation': {
+    title: 'Familiemediation',
+    intro: 'Conflicten binnen de familie vragen om een beheerste en toekomstgerichte aanpak. Onze gecertificeerde familiemediator begeleidt partijen bij echtscheidingen, vermogensverdelingen, alimentatieafspraken, erkenning en gezag en de uitwerking van huwelijkse voorwaarden. De focus ligt op duurzame afspraken en de-escalatie van conflicten.',
+    services: [
+      'Mediation bij scheidingen, gericht op duurzame en uitvoerbare afspraken',
+      'Opstellen van ouderschapsplannen, zorg- en omgangsregelingen',
+      'Ondersteuning bij familieafspraken',
+      'De-escalerende begeleiding van familieconflicten met culturele en religieuze aspecten, met aandacht voor communicatie en toekomstbestendigheid',
+    ],
+  },
 };
 
 const otherPracticeAreas = [
