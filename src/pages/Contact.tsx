@@ -253,10 +253,24 @@ const Contact = () => {
                   </div>
                   <div>
                     <p className="font-medium text-foreground">
-                      Keizersgracht 391-A
+                      Singel 126-130
                     </p>
                     <p className="text-sm text-muted-foreground">
-                      1016 EJ Amsterdam
+                      1015 AE Amsterdam, Nederland
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+                    <MapPin className="w-5 h-5 text-primary" />
+                  </div>
+                  <div>
+                    <p className="font-medium text-foreground">
+                      Rue Mozart et Bd d'Anfa
+                    </p>
+                    <p className="text-sm text-muted-foreground">
+                      Casablanca 20250, Marokko
                     </p>
                   </div>
                 </div>
@@ -282,10 +296,10 @@ const Contact = () => {
               <div className="text-center">
                 <MapPin className="w-8 h-8 text-muted-foreground mx-auto mb-2" />
                 <p className="text-muted-foreground text-sm">
-                  Keizersgracht 391-A, Amsterdam
+                  Singel 126-130, Amsterdam
                 </p>
                 <a 
-                  href="https://maps.google.com/?q=Keizersgracht+391-A+Amsterdam"
+                  href="https://maps.google.com/?q=Singel+126-130+Amsterdam"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-primary text-sm hover:underline mt-2 inline-block"
