@@ -27,6 +27,7 @@ import Klachtenprocedure from "./pages/Klachtenprocedure";
 import Geheimhouding from "./pages/Geheimhouding";
 import Privacy from "./pages/Privacy";
 import ArtificialIntelligence from "./pages/ArtificialIntelligence";
+import Vacatures from "./pages/Vacatures";
 
 const queryClient = new QueryClient();
 
@@ -61,6 +62,7 @@ const App = () => (
             <Route path="/klachtenprocedure" element={<Klachtenprocedure />} />
             <Route path="/geheimhouding" element={<Geheimhouding />} />
             <Route path="/privacy" element={<Privacy />} />
+            <Route path="/vacatures" element={<Vacatures />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
