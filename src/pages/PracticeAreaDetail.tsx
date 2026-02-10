@@ -11,6 +11,7 @@ const practiceAreasData: Record<string, {
   intro: string;
   services: string[];
   extra?: string;
+  sections?: { heading: string; text: string; items?: string[] }[];
 }> = {
   'arbeidsrecht': {
     title: 'Arbeidsrecht',
@@ -107,6 +108,104 @@ const practiceAreasData: Record<string, {
     title: 'China',
     intro: 'HBM Juristen biedt juridische ondersteuning aan cliënten die actief zijn binnen het handels- en investeringsverkeer tussen China en Marokko.\n\nWij staan cliënten bij in handelscontracten, samenwerkingsovereenkomsten, investeringsstructuren, geschillenbeslechting, markttoetreding en compliance.',
     services: [],
+  },
+  'marokko': {
+    title: 'Marokkaans Recht',
+    intro: 'HBM Juristen beschikt over een gespecialiseerde praktijk voor het Marokkaanse recht. Wij behoren tot de beperkte groep Europese juridische dienstverleners met structurele aanwezigheid in zowel Nederland als Marokko. Vanuit Amsterdam en Casablanca ondersteunen wij cliënten uit Europa, Azië en Afrika bij juridische vraagstukken die specialistische kennis van het Marokkaanse recht vereisen.\n\nOnze werkwijze is gebaseerd op een vaste samenwerking met gecontracteerde advocaten en juristen in Marokko. Onze collega\'s zijn vertrouwd met de rechtscultuur, de gang van zaken binnen rechtbanken, administratieve autoriteiten en alternatieve geschiloplossing. De combinatie van lokale expertise en internationale coördinatie zorgt voor een stabiel en betrouwbaar juridisch kader, zowel voor particulieren als ondernemingen.\n\nDoor de voortdurende interactie tussen Nederland en Marokko ontstaat een effectieve cross-border structuur waarin kennis van beide rechtsstelsels wordt geïntegreerd. Hierdoor kunnen wij cliënten begeleiden bij geschillen, investeringsprojecten, familierechtelijke procedures, contractvorming en ondernemingsrechtelijke trajecten. Wij werken met duidelijke afspraken, transparante communicatie en juridische precisie, met oog voor de sociale, bestuurlijke en culturele context van Marokko.',
+    services: [],
+    sections: [
+      {
+        heading: 'Civiel recht en Erfrecht',
+        text: 'Het civiel recht wordt beheerst door onder meer het Marokkaanse familierecht en Wet nr. 39-08 inzake het Wetboek van Zakelijke Rechten. Dit rechtsgebied omvat vastgoedkwesties zoals eigendom, verkoop en verkrijging van onroerend goed, inclusief alle daaraan verbonden zakelijke rechten zoals vruchtgebruik, erfpacht en hypotheken.\n\nOnze dienstverlening omvat juridisch advies, procesvertegenwoordiging, het uitvoeren van diverse procedures en islamitische erfrechtregels in het geval van een nalatenschap.\n\nOns civielrechtelijk werk is gebaseerd op de Marokkaanse familiecode en de Wet op de Zakelijke Rechten (nr. 39-08) en omvat:',
+        items: [
+          'Koop, verkoop en eigendomsoverdracht van onroerend goed',
+          'Erfenisprocedures, taxatie van bezittingen en toepassing van testamenten',
+          'Toepassing van islamitisch erfrecht bij overlijden',
+        ],
+      },
+      {
+        heading: 'Ondernemingsrecht',
+        text: 'Binnen het ondernemingsrecht in Marokko biedt HBM Juristen gespecialiseerde ondersteuning aan bedrijven die actief zijn in of verbonden zijn met de Marokkaanse markt. Onze begeleiding richt zich op zowel de inrichting als de bescherming van ondernemingen, met aandacht voor de lokale wettelijke vereisten, bestuursrechtelijke procedures en commerciële praktijk.\n\nWij adviseren en vertegenwoordigen ondernemingen bij onder meer:',
+        items: [
+          'Oprichting van rechtspersonen en beoordeling van contractuele verplichtingen',
+          'Commerciële geschillen met leveranciers, afnemers of zakenpartners',
+          'Bescherming van handelsnamen, merken en andere bedrijfsidentiteit',
+          'Vraagstukken rond bestuurdersaansprakelijkheid en interne governance',
+          'Vroegtijdige signalering en aanpak van financiële risico\'s ter voorkoming van faillissementssituaties',
+        ],
+      },
+      {
+        heading: 'Familierecht',
+        text: 'Het Marokkaanse familierecht wordt beheerst door de Moudawana (Familiewetboek), waarin de wettelijke kaders en procedures zijn vastgesteld voor onder meer huwelijk (artikel 65 e.v.), zowel tussen Marokkaanse burgers als gemengde huwelijken, scheiding in haar diverse vormen (waaronder talaq en khol\', artikel 71 e.v.), voogdijregelingen (hadana, artikelen 163-186), erfrecht en vermogensrechtelijke afwikkeling (artikel 321 e.v.), en alimentatiegeschillen.\n\nOnze gespecialiseerde advocaten en juristen zijn ervaren in de toepassing van de Moudawana, vertegenwoordigen cliënten tijdens zittingen, verzamelen en presenteren bewijs, voeren verweer of procederen waar nodig, en ondersteunen bij onderhandelingen om geschillen waar mogelijk minnelijk te beslechten.\n\nOnze diensten omvatten onder meer:',
+        items: [
+          'Huwelijk tussen Marokkaanse en/of internationale partijen (art. 65 e.v.)',
+          'Echtscheiding, inclusief talaq en khol\' (art. 71 e.v.)',
+          'Kinderzorg en voogdij (Hadana) (art. 163–186)',
+          'Alimentatie, erfenis en vermogensverdeling (art. 321 e.v.)',
+        ],
+      },
+      {
+        heading: 'Bankrecht en consumentenbescherming',
+        text: 'Wij behandelen krediet- en invorderingsdossiers op basis van de relevante bankwetgeving en adviseren over consumentenrechten volgens de consumentenbeschermingswetgeving. Wij behandelen geschillen over financieringen, contractuele verplichtingen, bankproducten en vastgoedtransacties.\n\nOnze diensten bestrijken zowel de belangen van financiële instellingen als consumenten. Wij staan cliënten bij in o.a. over:',
+        items: [
+          'Invordering en kredietdossiers conform Wet nr. 103-12',
+          'Consumentenrechten op basis van Wet nr. 31-08, zoals het herroepingsrecht (art. 151)',
+          'Financieringsvraagstukken, vastgoedtransacties en contractuele geschillen',
+        ],
+      },
+      {
+        heading: 'Intellectuele Eigendomsrechten (IE-recht)',
+        text: 'Wij verzorgen de registratie, bescherming en handhaving van IE-rechten zoals merken, octrooien en handelsnamen, en adviseren over licenties, exploitatie en gerechtelijke procedures. Op basis van Wet nr. 17-97 beschermen wij de intellectuele eigendom van onze cliënten, waaronder:',
+        items: [
+          'Octrooien (art. 16 e.v.)',
+          'Merkrechten (art. 133 e.v.)',
+          'Handelsnamen (art. 177 e.v.)',
+          'Registratie en IE-strategie',
+          'Licentie- en exploitatieadvies',
+          'Handhaving bij inbreuk en gerechtelijke procedures',
+        ],
+      },
+      {
+        heading: 'Douanerecht en Internationale Handel',
+        text: 'De douaneprocedures in Marokko worden hoofdzakelijk geregeld door het Douanewetboek en Accijnsreglement (Code des Douanes et Impôts Indirects), zoals beheerd door de Administration des Douanes et Impôts Indirects (ADII).\n\nOnze ondersteuning richt zich op zowel bedrijven als particulieren en omvat onder meer:',
+        items: [
+          'Juridisch advies bij import/exportprojecten en logistieke ketens',
+          'Analyse van douanedocumentatie en naleving van invoer- of uitvoerbepalingen',
+          'Begeleiding bij geschillen of inbeslagnames door de douane',
+          'Vertegenwoordiging bij administratieve bezwaarprocedures en gerechtelijke beroepszaken',
+          'Optimalisatie van fiscale douanerechten en toepassing van handelsverdragen',
+        ],
+      },
+      {
+        heading: 'Financieel recht en belastingrecht',
+        text: 'Wij begeleiden cliënten bij uiteenlopende fiscale en financiële vraagstukken, met als doel een optimaal fiscaal resultaat te bereiken binnen de grenzen van de wet.\n\nWij begeleiden cliënten bij fiscale en financiële kwesties om te zorgen voor:',
+        items: [
+          'Fiscale optimalisatie binnen de wettelijke kaders',
+          'Geschillen met belastingautoriteiten, inclusief onderhandelingen en gerechtelijke procedures',
+          'Compliance met het Algemeen Belastingwetboek',
+        ],
+      },
+      {
+        heading: 'Arbeidsrecht',
+        text: 'Wij staan cliënten bij in de precontractuele, contractuele en postcontractuele fase van de arbeidsrelatie, inclusief ontslagprocedures, loonclaims, afwezigheid en arbeidsovereenkomsten.\n\nHet arbeidsrecht wordt door ons gehanteerd binnen drie fasen:\n\nPre-contractueel: onderhandelingen, risicoanalyse en het opstellen van arbeidsovereenkomsten.\n\nContractueel: uitvoering of wijziging van arbeidsovereenkomsten, waaronder kwesties zoals taakomschrijving, werktijden, verlofrechten en organisatorische beperkingen.\n\nPost-contractueel: begeleiding bij beëindiging van arbeidsovereenkomsten, zowel in onderling overleg als bij geschillen.',
+        items: [],
+      },
+      {
+        heading: 'Juridisch advies Marokkaans Recht',
+        text: 'HBM Juristen biedt gespecialiseerd juridisch advies binnen het rechtsstelsel van Marokko. Onze advocaten en juristen zijn volledig toegerust om cliënten te adviseren binnen uiteenlopende Marokkaanse rechtsgebieden, waaronder civiel recht, familierecht, ondernemingsrecht, arbeidsrecht, douanerecht, intellectuele eigendomsrechten en fiscale regelgeving.\n\nWij analyseren de relevante feiten en stukken, passen de toepasselijke Marokkaanse wet- en regelgeving toe en verstrekken een helder, systematisch en praktisch advies.',
+        items: [],
+      },
+      {
+        heading: 'Strafrecht',
+        text: 'HBM Juristen verstrekt gespecialiseerd juridisch advies binnen het strafrecht van Marokko. Wij richten ons op de beoordeling van strafrechtelijke dossiers, de analyse van toepasselijke wetgeving en de uitleg van de procedurele stappen binnen het Marokkaanse strafproces.\n\nOnze dienstverlening bestaat uitsluitend uit juridisch advies: wij analyseren de feiten, wijzen op risico\'s en mogelijkheden binnen het Marokkaanse strafrecht en bieden cliënten een helder kader om verdere beslissingen te kunnen nemen.',
+        items: [],
+      },
+      {
+        heading: 'Islamitische leer',
+        text: 'In het Marokkaanse rechtsstelsel speelt de sharia, of islamitische rechtsleer, een belangrijke rol als referentiebron voor specifieke rechtsgebieden, in het bijzonder binnen het personen- en familierecht. Hoewel de algemene Marokkaanse wetgeving is gecodificeerd binnen een civielrechtelijke traditie die sterk leunt op moderne staatsrechtelijke uitgangspunten, blijft de sharia de normatieve basis voor bepalingen omtrent huwelijk, echtscheiding, voogdij, erfopvolging en andere onderdelen van het familierecht.\n\nOnze praktijk beschikt over diepgaande en actuele kennis van zowel de Moudawana als de onderliggende sharia-principes, waardoor wij cliënten effectief kunnen adviseren en vertegenwoordigen bij grensoverschrijdende familierechtelijke kwesties en situaties waarin islamitisch recht een doorslaggevende rol speelt.\n\nDankzij deze gespecialiseerde expertise kunnen wij complexe vraagstukken helder structureren en juridische strategieën ontwikkelen die aansluiten bij de Marokkaanse rechtspraktijk en de verwachtingen van onze internationale cliënten.',
+        items: [],
+      },
+    ],
   },
 };
 
@@ -227,6 +326,31 @@ const PracticeAreaDetail = () => {
                   }
                   return <p key={i}>{paragraph}</p>;
                 })}
+              </div>
+            )}
+
+            {practiceArea.sections && practiceArea.sections.length > 0 && (
+              <div className="space-y-10 mb-8">
+                {practiceArea.sections.map((section, i) => (
+                  <div key={i}>
+                    <h2 className="text-xl font-semibold text-foreground mb-4">{section.heading}</h2>
+                    <div className="text-lg text-foreground leading-relaxed space-y-4">
+                      {section.text.split('\n\n').map((p, j) => (
+                        <p key={j}>{p}</p>
+                      ))}
+                    </div>
+                    {section.items && section.items.length > 0 && (
+                      <ul className="space-y-2 mt-4">
+                        {section.items.map((item, k) => (
+                          <li key={k} className="flex items-start gap-2 text-foreground">
+                            <span className="text-primary mt-0.5">–</span>
+                            {item}
+                          </li>
+                        ))}
+                      </ul>
+                    )}
+                  </div>
+                ))}
               </div>
             )}
 
