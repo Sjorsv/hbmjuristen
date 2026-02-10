@@ -21,6 +21,7 @@ import AuditAcceptatiebeleid from "./pages/AuditAcceptatiebeleid";
 import Cookiebeleid from "./pages/Cookiebeleid";
 import Emailbeleid from "./pages/Emailbeleid";
 import Kostenbeleid from "./pages/Kostenbeleid";
+import Partnerbeleid from "./pages/Partnerbeleid";
 import ArtificialIntelligence from "./pages/ArtificialIntelligence";
 
 const queryClient = new QueryClient();
@@ -51,6 +52,7 @@ const App = () => (
           <Route path="/cookies" element={<Cookiebeleid />} />
           <Route path="/e-mailbeleid" element={<Emailbeleid />} />
           <Route path="/kostenbeleid" element={<Kostenbeleid />} />
+          <Route path="/partner-beleid" element={<Partnerbeleid />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
