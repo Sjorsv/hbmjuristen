@@ -17,6 +17,7 @@ import Blog from "./pages/Blog";
 import BlogDetail from "./pages/BlogDetail";
 import Press from "./pages/Press";
 import AlgemeneVoorwaarden from "./pages/AlgemeneVoorwaarden";
+import ArtificialIntelligence from "./pages/ArtificialIntelligence";
 
 const queryClient = new QueryClient();
 
@@ -41,6 +42,7 @@ const App = () => (
           <Route path="/pers" element={<Press />} />
           <Route path="/pers/:slug" element={<BlogDetail />} />
           <Route path="/voorwaarden" element={<AlgemeneVoorwaarden />} />
+          <Route path="/artificial-intelligence" element={<ArtificialIntelligence />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
