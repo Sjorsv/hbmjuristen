@@ -78,7 +78,7 @@ const YouthLegalDevelopmentProgram = () => {
             <Button variant="cta" size="lg" asChild className="gap-2">
               <a href="mailto:info@hbmjuristen.nl?subject=Aanmelding Youth Legal Development Program">
                 <Mail className="w-4 h-4" />
-                Meld u aan per e-mail
+                Meld je aan per e-mail
               </a>
             </Button>
           </motion.div>
