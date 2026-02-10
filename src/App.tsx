@@ -29,6 +29,7 @@ import Privacy from "./pages/Privacy";
 import ArtificialIntelligence from "./pages/ArtificialIntelligence";
 import Vacatures from "./pages/Vacatures";
 import YouthLegalDevelopmentProgram from "./pages/YouthLegalDevelopmentProgram";
+import Tarieven from "./pages/Tarieven";
 
 const queryClient = new QueryClient();
 
@@ -65,6 +66,7 @@ const App = () => (
             <Route path="/privacy" element={<Privacy />} />
             <Route path="/vacatures" element={<Vacatures />} />
             <Route path="/youth-legal-development-program" element={<YouthLegalDevelopmentProgram />} />
+            <Route path="/tarieven" element={<Tarieven />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
