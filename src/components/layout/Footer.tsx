@@ -29,6 +29,8 @@ const footerLinks = {
     { name: 'Geheimhouding', href: '/geheimhouding' },
     { name: 'Partner-Beleid', href: '/partner-beleid' },
     { name: 'Kostenbeleid', href: '/kostenbeleid' },
+    { name: 'Audit en Acceptatiebeleid', href: '/audit-acceptatiebeleid' },
+    { name: 'E-mailbeleid', href: '/e-mailbeleid' },
     { name: 'FAQ', href: '/faq' },
     { name: 'Artificial Intelligence', href: '/artificial-intelligence' },
   ],
