@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { Phone, Mail, MapPin, MessageCircle, Instagram, Facebook } from 'lucide-react';
-import logo from '@/assets/logo.svg';
+import logo from '@/assets/logo.png';
 
 const footerLinks = {
   'Rechtsgebieden': [
