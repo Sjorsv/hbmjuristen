@@ -178,12 +178,20 @@ const Vacatures = () => {
             </p>
           </div>
 
-          <Button variant="cta" asChild className="gap-2">
-            <a href="mailto:info@hbmjuristen.nl?subject=Stagesollicitatie">
-              <Mail className="w-4 h-4" />
-              Solliciteer voor een stage
-            </a>
-          </Button>
+          <div className="flex flex-wrap gap-3">
+            <Button variant="cta" asChild className="gap-2">
+              <a href="mailto:info@hbmjuristen.nl?subject=Stagesollicitatie">
+                <Mail className="w-4 h-4" />
+                Solliciteer voor een stage
+              </a>
+            </Button>
+            <Button variant="outline" asChild className="gap-2">
+              <Link to="/youth-legal-development-program">
+                Youth Legal Development Program
+                <ArrowRight className="w-4 h-4" />
+              </Link>
+            </Button>
+          </div>
         </motion.div>
       </section>
     </Layout>
