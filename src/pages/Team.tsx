@@ -11,6 +11,17 @@ import teamReus from '@/assets/team-reus.jpg';
 
 const teamMembers = [
   {
+    name: 'K. Hamich',
+    role: 'Jurist | Arbeidsmediator | Familiemediator',
+    image: teamHamich,
+    bio: [
+      'De heer K. Hamich is jurist en gecertificeerd familie- en arbeidsmediator, met ruime ervaring in scheidingsmediation en andere complexe familiaire vraagstukken. Zijn strategische benadering en adviserende rol worden breed gewaardeerd door cliënten.',
+      'Voorafgaand aan zijn werkzaamheden bij HBM Juristen heeft hij binnen de publieke sector uitgebreide ervaring opgebouwd als senior jurist in zowel bestuursrecht als privaatrecht. Hij richt zich op realistische en duurzame oplossingen, waarbij conflictbemiddeling wordt ingezet als volwaardig alternatief of effectieve aanvulling op de traditionele rechtsgang.',
+      'Door zijn zorgvuldige werkwijze, analytisch inzicht en professionele begeleiding is hij een betrouwbare partner voor ondernemingen en particulieren die behoefte hebben aan deskundige juridische ondersteuning. Daarnaast is hij gecertificeerd als interne auditor, beoordeelt hij periodiek o.a. op kwaliteitsbeheersing, controleert informatiebeveiligingsmaatregelen en onderzoekt arbeidsveiligheid en gezondheidsrisico\'s in lijn met de laatste ISO-normen.',
+    ],
+    languages: 'Nederlands, Arabisch, Chinees en Engels',
+  },
+  {
     name: 'W. Elabadi',
     role: 'Partner-advocaat Marokko',
     image: teamElabadi,
@@ -51,17 +62,6 @@ const teamMembers = [
       'Mevrouw Zaki is als juriste gespecialiseerd in het privaatrecht, rechtswetenschappelijk onderzoek, vastgoedrecht en op het gebied van zakelijke aangelegenheden.',
     ],
     languages: 'Arabisch, Frans en Engels',
-  },
-  {
-    name: 'K. Hamich',
-    role: 'Jurist | Arbeidsmediator | Familiemediator',
-    image: teamHamich,
-    bio: [
-      'De heer K. Hamich is jurist en gecertificeerd familie- en arbeidsmediator, met ruime ervaring in scheidingsmediation en andere complexe familiaire vraagstukken. Zijn strategische benadering en adviserende rol worden breed gewaardeerd door cliënten.',
-      'Voorafgaand aan zijn werkzaamheden bij HBM Juristen heeft hij binnen de publieke sector uitgebreide ervaring opgebouwd als senior jurist in zowel bestuursrecht als privaatrecht. Hij richt zich op realistische en duurzame oplossingen, waarbij conflictbemiddeling wordt ingezet als volwaardig alternatief of effectieve aanvulling op de traditionele rechtsgang.',
-      'Door zijn zorgvuldige werkwijze, analytisch inzicht en professionele begeleiding is hij een betrouwbare partner voor ondernemingen en particulieren die behoefte hebben aan deskundige juridische ondersteuning. Daarnaast is hij gecertificeerd als interne auditor, beoordeelt hij periodiek o.a. op kwaliteitsbeheersing, controleert informatiebeveiligingsmaatregelen en onderzoekt arbeidsveiligheid en gezondheidsrisico\'s in lijn met de laatste ISO-normen.',
-    ],
-    languages: 'Nederlands, Arabisch, Chinees en Engels',
   },
   {
     name: 'M. Reus',
