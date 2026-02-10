@@ -136,12 +136,20 @@ const Vacatures = () => {
                 </ul>
               </div>
 
-              <Button variant="cta" asChild className="gap-2">
-                <a href="mailto:info@hbmjuristen.nl?subject=Sollicitatie: ${vacature.title}">
-                  <Mail className="w-4 h-4" />
-                  Solliciteer per e-mail
-                </a>
-              </Button>
+              <div className="flex flex-wrap gap-3">
+                <Button variant="outline" asChild className="gap-2">
+                  <Link to={`/vacatures/${index}`}>
+                    Bekijk vacature
+                    <ArrowRight className="w-4 h-4" />
+                  </Link>
+                </Button>
+                <Button variant="cta" asChild className="gap-2">
+                  <a href={`mailto:info@hbmjuristen.nl?subject=Sollicitatie: ${vacature.title}`}>
+                    <Mail className="w-4 h-4" />
+                    Solliciteer per e-mail
+                  </a>
+                </Button>
+              </div>
             </motion.div>
           ))}
         </div>
