@@ -19,6 +19,7 @@ import Press from "./pages/Press";
 import AlgemeneVoorwaarden from "./pages/AlgemeneVoorwaarden";
 import AuditAcceptatiebeleid from "./pages/AuditAcceptatiebeleid";
 import Cookiebeleid from "./pages/Cookiebeleid";
+import Emailbeleid from "./pages/Emailbeleid";
 import ArtificialIntelligence from "./pages/ArtificialIntelligence";
 
 const queryClient = new QueryClient();
@@ -47,6 +48,7 @@ const App = () => (
           <Route path="/artificial-intelligence" element={<ArtificialIntelligence />} />
           <Route path="/audit-acceptatiebeleid" element={<AuditAcceptatiebeleid />} />
           <Route path="/cookies" element={<Cookiebeleid />} />
+          <Route path="/e-mailbeleid" element={<Emailbeleid />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
