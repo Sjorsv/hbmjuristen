@@ -23,6 +23,7 @@ import Emailbeleid from "./pages/Emailbeleid";
 import Kostenbeleid from "./pages/Kostenbeleid";
 import Partnerbeleid from "./pages/Partnerbeleid";
 import FAQPage from "./pages/FAQ";
+import Klachtenprocedure from "./pages/Klachtenprocedure";
 import ArtificialIntelligence from "./pages/ArtificialIntelligence";
 
 const queryClient = new QueryClient();
@@ -54,7 +55,8 @@ const App = () => (
           <Route path="/e-mailbeleid" element={<Emailbeleid />} />
           <Route path="/kostenbeleid" element={<Kostenbeleid />} />
           <Route path="/partner-beleid" element={<Partnerbeleid />} />
-          <Route path="/faq" element={<FAQPage />} />
+           <Route path="/faq" element={<FAQPage />} />
+            <Route path="/klachtenprocedure" element={<Klachtenprocedure />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
