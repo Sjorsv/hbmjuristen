@@ -16,6 +16,7 @@ import Werkwijze from "./pages/Werkwijze";
 import Blog from "./pages/Blog";
 import BlogDetail from "./pages/BlogDetail";
 import Press from "./pages/Press";
+import AlgemeneVoorwaarden from "./pages/AlgemeneVoorwaarden";
 
 const queryClient = new QueryClient();
 
@@ -39,6 +40,7 @@ const App = () => (
           <Route path="/blog/:slug" element={<BlogDetail />} />
           <Route path="/pers" element={<Press />} />
           <Route path="/pers/:slug" element={<BlogDetail />} />
+          <Route path="/voorwaarden" element={<AlgemeneVoorwaarden />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
