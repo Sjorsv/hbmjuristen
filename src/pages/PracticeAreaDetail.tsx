@@ -40,6 +40,11 @@ const practiceAreasData: Record<string, {
       'Belastingzaken',
     ],
   },
+  'verbintenissenrecht': {
+    title: 'Verbintenissenrecht',
+    intro: 'Een verbintenis is een vermogensrechtelijke rechtsbetrekking tussen twee of meer personen op grond waarvan de ene partij (schuldenaar) verplicht is tot een bepaalde prestatie, waartoe de andere partij (schuldeiser) is gerechtigd. Het gaat daarbij echter niet enkel om verbintenissen die partijen zelf zijn aangegaan zoals een verbintenis in het kader van een koopovereenkomst maar ook om verbintenissen die uit de wet voortvloeien. Bijvoorbeeld de verplichting om iemand zijn schade te vergoeden na een aanrijding. Wordt een contract niet goed nagekomen? Wij staan u bij met juridisch advies en rechtsbijstand.',
+    services: [],
+  },
 };
 
 const otherPracticeAreas = [
@@ -49,6 +54,7 @@ const otherPracticeAreas = [
   { name: 'Huurrecht', description: 'Huurgeschillen en woningrecht', href: '/rechtsgebieden/huurrecht' },
   { name: 'Personen- en familierecht', description: 'Echtscheiding en familiezaken', href: '/rechtsgebieden/personen-familierecht' },
   { name: 'Sociale zekerheidsrecht', description: 'Uitkeringen en toeslagen', href: '/rechtsgebieden/sociale-zekerheidsrecht' },
+  { name: 'Verbintenissenrecht', description: 'Contracten en schadevergoeding', href: '/rechtsgebieden/verbintenissenrecht' },
 ];
 
 const PracticeAreaDetail = () => {
@@ -132,18 +138,22 @@ const PracticeAreaDetail = () => {
               {practiceArea.intro}
             </p>
             
-            <h2 className="text-xl font-semibold text-foreground mb-4">
-              Wij behandelen o.a. de volgende zaken:
-            </h2>
-            
-            <ul className="space-y-2 mb-8">
-              {practiceArea.services.map((service, index) => (
-                <li key={index} className="flex items-center gap-2 text-foreground">
-                  <span className="text-primary">–</span>
-                  {service}
-                </li>
-              ))}
-            </ul>
+            {practiceArea.services.length > 0 && (
+              <>
+                <h2 className="text-xl font-semibold text-foreground mb-4">
+                  Wij behandelen o.a. de volgende zaken:
+                </h2>
+                
+                <ul className="space-y-2 mb-8">
+                  {practiceArea.services.map((service, index) => (
+                    <li key={index} className="flex items-center gap-2 text-foreground">
+                      <span className="text-primary">–</span>
+                      {service}
+                    </li>
+                  ))}
+                </ul>
+              </>
+            )}
             
             <p className="text-lg text-foreground leading-relaxed mb-8">
               Meer weten over onze diensten? Onze juristen staan u graag te woord. 
