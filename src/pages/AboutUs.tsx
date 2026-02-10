@@ -64,20 +64,24 @@ const AboutUs = () => {
             className="space-y-6"
           >
             <p className="text-lg text-foreground leading-relaxed">
-              HBM Juristen is een bevlogen en doelgerichte juristenkantoor waar u terecht kunt voor juridisch advies en rechtsbijstand. U kunt bij ons terecht voor zaken als ontslag of een bijstandskwestie, verkeersrecht, vreemdelingenzaken, letselschade, huur- en woonrecht of consumentenzaken. Particulieren, ondernemers en zzp'ers weten ons te vinden dankzij onze parate kennis en flexibele samenwerking.
+              HBM Juristen is een bevlogen en doelgericht juristenkantoor waar u terechtkunt voor juridisch advies en rechtsbijstand. Wij bieden geen halve oplossingen, maar messcherp juridisch advies en krachtige ondersteuning. Of het nu gaat om ontslag, vreemdelingenzaken, verbintenissenrecht, familiemediation, arbeidsmediation, bestuursrecht of Marokkaans recht – wij staan aan uw zijde.
             </p>
             
             <p className="text-lg text-foreground leading-relaxed">
-              Wij zijn een hecht en loyaal team met een enorme gedrevenheid voor het juridische vak. De kennis en snelheid waarmee wij dagelijks werken zijn indrukwekkend. Wij combineren expertise en praktijkervaring om uw juridische zaak zo goed mogelijk te verdedigen. Bij ons wordt niet vrolijk geschermd met ideeën waar de oplossing geen plaats heeft. Wij staan aan uw kant en denken in oplossingen, ongeacht de situatie. Dat doen wij gedurfd, helder en met een no-nonsense mentaliteit.
+              Ons team heeft een enorme gedrevenheid voor het juridische vak. De kennis en snelheid waarmee wij dagelijks werken, zijn indrukwekkend. Voor nieuwe cliënten bieden wij daarom een geheel kosteloos eerste telefonische consult, zodat u laagdrempelig de eerste stap kunt zetten naar passende juridische ondersteuning. Zowel particulieren als ondernemers weten ons te vinden dankzij onze diepe juridische kennis en heldere communicatie.
             </p>
             
             <p className="text-lg text-foreground leading-relaxed">
-              HBM Juristen is lid van de Nederlandse Juristen Vereniging (NJV) en Vereniging voor Arbeidsrecht (VvA) en actief in Nederland, België en Marokko.
+              Wij combineren expertise en praktijkervaring om uw juridische zaak zo goed mogelijk te verdedigen. Elke zaak – hoe ingewikkeld ook – wordt aangepakt met de juiste expertise en samenwerking. Bij ons wordt niet geschermd met ideeën zonder praktische oplossingen. Wij staan aan uw kant en denken in oplossingen, ongeacht de situatie. Dat doen wij gedurfd, helder en met een no-nonsense mentaliteit – precies wat onze cliënten van ons verwachten.
+            </p>
+            
+            <p className="text-lg text-foreground leading-relaxed">
+              HBM Juristen is lid van de Nederlandse Juristen Vereniging (NJV) en de Nederlandse Mediatorsvereniging (NMv). Wij zijn actief in Nederland, Marokko en China.
             </p>
 
             <div className="flex items-center gap-2 text-lg text-foreground">
               <MapPin className="w-5 h-5 text-primary flex-shrink-0" />
-              <span>Goed bereikbaar: centraal gelegen in het centrum van Amsterdam.</span>
+              <span>Goed bereikbaar: centraal gelegen in Amsterdam.</span>
             </div>
             
             <div className="pt-6 flex flex-col sm:flex-row gap-4">
