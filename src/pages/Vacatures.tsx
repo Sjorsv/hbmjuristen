@@ -148,39 +148,35 @@ const Vacatures = () => {
       </section>
 
       {/* Stage sectie */}
-      <section className="bg-section-grey">
-        <div className="container-editorial section-padding">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="max-w-[620px]"
-          >
-            <div className="flex items-center gap-3 mb-6">
-              <GraduationCap className="w-6 h-6 text-primary" />
-              <h2 className="text-3xl md:text-4xl font-serif text-foreground">Stage</h2>
-            </div>
+      <section className="container-editorial pb-10 md:pb-14">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="bg-section-grey rounded-2xl p-6 md:p-8"
+        >
+          <div className="flex items-center gap-3 mb-6">
+            <GraduationCap className="w-6 h-6 text-primary" />
+            <h2 className="text-2xl font-serif text-foreground">Stage</h2>
+          </div>
 
-            <div className="space-y-6 text-lg text-foreground leading-relaxed">
-              <p>
-                Stagiairs kunnen het gehele jaar door solliciteren. Wij selecteren kandidaten op kwaliteiten, ervaring en professionele houding. Een stage omvat een gestructureerd programma met professionele begeleiding door de praktijkopleider, aangevuld met zowel theoretische als praktische werkzaamheden en de uitvoering van door de onderwijsinstelling opgelegde stageopdrachten.
-              </p>
-              <p>
-                Sollicitaties kunnen uitsluitend per e-mail worden ingediend, voorzien van curriculum vitae (CV) en motivatiebrief. Wij beoordelen aanmeldingen zorgvuldig en nemen contact op wanneer u wordt uitgenodigd voor een kennismaking.
-              </p>
-            </div>
+          <div className="space-y-4 text-foreground leading-relaxed mb-6">
+            <p>
+              Stagiairs kunnen het gehele jaar door solliciteren. Wij selecteren kandidaten op kwaliteiten, ervaring en professionele houding. Een stage omvat een gestructureerd programma met professionele begeleiding door de praktijkopleider, aangevuld met zowel theoretische als praktische werkzaamheden en de uitvoering van door de onderwijsinstelling opgelegde stageopdrachten.
+            </p>
+            <p>
+              Sollicitaties kunnen uitsluitend per e-mail worden ingediend, voorzien van curriculum vitae (CV) en motivatiebrief. Wij beoordelen aanmeldingen zorgvuldig en nemen contact op wanneer u wordt uitgenodigd voor een kennismaking.
+            </p>
+          </div>
 
-            <div className="pt-6">
-              <Button variant="cta" size="lg" asChild className="gap-2">
-                <a href="mailto:info@hbmjuristen.nl?subject=Stagesollicitatie">
-                  <Mail className="w-4 h-4" />
-                  Solliciteer voor een stage
-                </a>
-              </Button>
-            </div>
-          </motion.div>
-        </div>
+          <Button variant="cta" asChild className="gap-2">
+            <a href="mailto:info@hbmjuristen.nl?subject=Stagesollicitatie">
+              <Mail className="w-4 h-4" />
+              Solliciteer voor een stage
+            </a>
+          </Button>
+        </motion.div>
       </section>
     </Layout>
   );
