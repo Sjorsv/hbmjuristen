@@ -10,6 +10,7 @@ const practiceAreasData: Record<string, {
   title: string;
   intro: string;
   services: string[];
+  extra?: string;
 }> = {
   'arbeidsrecht': {
     title: 'Arbeidsrecht',
@@ -75,6 +76,7 @@ const practiceAreasData: Record<string, {
       'Ziekteverzuim en re-integratietrajecten',
       'Concurrentie- en relatiebedingen',
     ],
+    extra: 'Werkwijze\n\nHet mediationtraject begint met een kennismaking en intake waarin de mediator de situatie, het doel en de geschiktheid van mediation beoordeelt. Wanneer beide partijen instemmen, wordt een mediationovereenkomst ondertekend waarin vertrouwelijkheid, vrijwilligheid en kosten zijn vastgelegd. Vervolgens vinden de mediationgesprekken plaats, bestaande uit een of meerdere sessies waarin de mediator belangen verkent, standpunten ordent en partijen begeleidt bij het zoeken naar haalbare oplossingen, zowel in gezamenlijke gesprekken als waar nodig in afzonderlijke sessies. Zodra overeenstemming is bereikt, worden de gemaakte afspraken schriftelijk vastgelegd in een overeenkomst of plan, gevolgd door eventuele nazorg zoals een evaluatie of ondersteuning bij de uitvoering van de afspraken.\n\nOnze mediationdiensten zijn gecertificeerd door Conflictbemiddeling Nederland. Deze kwalificatie weerspiegelt onze toewijding aan kwaliteit en professionaliteit in iedere zaak.',
   },
   'family-mediation': {
     title: 'Familiemediation',
@@ -85,6 +87,7 @@ const practiceAreasData: Record<string, {
       'Ondersteuning bij familieafspraken',
       'De-escalerende begeleiding van familieconflicten met culturele en religieuze aspecten, met aandacht voor communicatie en toekomstbestendigheid',
     ],
+    extra: 'Werkwijze\n\nHet mediationtraject begint met een kennismaking en intake waarin de mediator de situatie, het doel en de geschiktheid van mediation beoordeelt. Wanneer beide partijen instemmen, wordt een mediationovereenkomst ondertekend waarin vertrouwelijkheid, vrijwilligheid en kosten zijn vastgelegd. Vervolgens vinden de mediationgesprekken plaats, bestaande uit een of meerdere sessies waarin de mediator belangen verkent, standpunten ordent en partijen begeleidt bij het zoeken naar haalbare oplossingen, zowel in gezamenlijke gesprekken als waar nodig in afzonderlijke sessies. Zodra overeenstemming is bereikt, worden de gemaakte afspraken schriftelijk vastgelegd in een overeenkomst of plan, gevolgd door eventuele nazorg zoals een evaluatie of ondersteuning bij de uitvoering van de afspraken.\n\nOnze mediationdiensten zijn gecertificeerd door Conflictbemiddeling Nederland. Deze kwalificatie weerspiegelt onze toewijding aan kwaliteit en professionaliteit in iedere zaak.',
   },
 };
 
@@ -197,7 +200,17 @@ const PracticeAreaDetail = () => {
                 </ul>
               </>
             )}
-            
+            {practiceArea.extra && (
+              <div className="text-lg text-foreground leading-relaxed mb-8 space-y-4">
+                {practiceArea.extra.split('\n\n').map((paragraph, i) => {
+                  if (i === 0 && paragraph === paragraph.replace(/\n/g, '').trim() && paragraph.length < 50) {
+                    return <h2 key={i} className="text-xl font-semibold text-foreground">{paragraph}</h2>;
+                  }
+                  return <p key={i}>{paragraph}</p>;
+                })}
+              </div>
+            )}
+
             <p className="text-lg text-foreground leading-relaxed mb-8">
               Meer weten over onze diensten? Onze juristen staan u graag te woord. 
               Neem contact met ons op voor een vrijblijvende kennismaking.
