@@ -89,6 +89,11 @@ const practiceAreasData: Record<string, {
     ],
     extra: 'Werkwijze\n\nHet mediationtraject begint met een kennismaking en intake waarin de mediator de situatie, het doel en de geschiktheid van mediation beoordeelt. Wanneer beide partijen instemmen, wordt een mediationovereenkomst ondertekend waarin vertrouwelijkheid, vrijwilligheid en kosten zijn vastgelegd. Vervolgens vinden de mediationgesprekken plaats, bestaande uit een of meerdere sessies waarin de mediator belangen verkent, standpunten ordent en partijen begeleidt bij het zoeken naar haalbare oplossingen, zowel in gezamenlijke gesprekken als waar nodig in afzonderlijke sessies. Zodra overeenstemming is bereikt, worden de gemaakte afspraken schriftelijk vastgelegd in een overeenkomst of plan, gevolgd door eventuele nazorg zoals een evaluatie of ondersteuning bij de uitvoering van de afspraken.\n\nOnze mediationdiensten zijn gecertificeerd door Conflictbemiddeling Nederland. Deze kwalificatie weerspiegelt onze toewijding aan kwaliteit en professionaliteit in iedere zaak.',
   },
+  'sociale-zekerheidsrecht': {
+    title: 'Sociale zekerheidsrecht',
+    intro: 'Het Sociale Zekerheidsrecht omvat onder meer de Werkloosheidswet (WW), de Ziektewet (ZW), de Algemene Ouderdomswet (AOW), de Wet werk en Inkomen naar Arbeidsvermogen (WIA) en de Wet Werk en Bijstand (WWB).\n\nHet is een geheel aan rechten en verplichtingen van iedereen die te maken heeft met sociale zekerheid: werkgevers, werknemers, arbeidsongeschikten, werklozen, ouderen en zelfstandigen. Komt iemand, tijdelijk of blijvend, in financiële moeilijkheden, dan vormt de overheid het vangnet door middel van sociale verzekeringen en sociale voorzieningen.',
+    services: [],
+  },
 };
 
 const otherPracticeAreas = [
