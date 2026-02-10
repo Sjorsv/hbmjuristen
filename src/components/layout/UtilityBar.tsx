@@ -56,10 +56,24 @@ const FlagSA = () => (
   </svg>
 );
 
+const FlagCN = () => (
+  <svg viewBox="0 0 24 16" className="w-5 h-3.5 rounded-sm overflow-hidden flex-shrink-0">
+    <rect width="24" height="16" fill="#DE2910" />
+    <g fill="#FFDE00">
+      <polygon points="4,2 4.6,4 6.6,4 5,5.2 5.6,7.2 4,6 2.4,7.2 3,5.2 1.4,4 3.4,4" />
+      <polygon points="8,1 8.3,1.8 9.2,1.8 8.5,2.3 8.7,3.1 8,2.6 7.3,3.1 7.5,2.3 6.8,1.8 7.7,1.8" />
+      <polygon points="10,3 10.3,3.8 11.2,3.8 10.5,4.3 10.7,5.1 10,4.6 9.3,5.1 9.5,4.3 8.8,3.8 9.7,3.8" />
+      <polygon points="10,5.5 10.3,6.3 11.2,6.3 10.5,6.8 10.7,7.6 10,7.1 9.3,7.6 9.5,6.8 8.8,6.3 9.7,6.3" />
+      <polygon points="8,7.5 8.3,8.3 9.2,8.3 8.5,8.8 8.7,9.6 8,9.1 7.3,9.6 7.5,8.8 6.8,8.3 7.7,8.3" />
+    </g>
+  </svg>
+);
+
 const languages = [
   { code: 'NL', name: 'Nederlands' },
   { code: 'EN', name: 'English' },
   { code: 'AR', name: 'العربية' },
+  { code: 'ZH', name: '中文' },
 ];
 
 const UtilityBar = () => {
@@ -73,6 +87,8 @@ const UtilityBar = () => {
         return <FlagGB />;
       case 'AR':
         return <FlagSA />;
+      case 'ZH':
+        return <FlagCN />;
       default:
         return null;
     }
