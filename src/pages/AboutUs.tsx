@@ -82,7 +82,7 @@ const AboutUs = () => {
               HBM Juristen is lid van de Nederlandse Juristen Vereniging (NJV) en de Nederlandse Mediatorsvereniging (NMv). Wij zijn actief in Nederland, Marokko en China.
             </p>
 
-            <div className="flex items-center justify-center gap-10 pt-4">
+            <div className="flex items-center gap-10 pt-4">
               <img src={logoNjv} alt="Nederlandse Juristen Vereiniging" className="h-16 object-contain" />
               <img src={logoNmv} alt="Nederlandse Mediatorsvereniging" className="h-16 object-contain" />
               <img src={logoBb} alt="Bureau Beroepszaken" className="h-16 object-contain" />
