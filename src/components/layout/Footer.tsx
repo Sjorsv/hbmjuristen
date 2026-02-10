@@ -30,7 +30,7 @@ const footerLinks = {
     { name: 'Partner-Beleid', href: '/partner-beleid' },
     { name: 'Kostenbeleid', href: '/kostenbeleid' },
     { name: 'FAQ', href: '/faq' },
-    { name: 'Artificial Intelligence', href: '/ai' },
+    { name: 'Artificial Intelligence', href: '/artificial-intelligence' },
   ],
 };
 
