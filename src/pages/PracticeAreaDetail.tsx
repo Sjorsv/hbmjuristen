@@ -54,6 +54,17 @@ const practiceAreasData: Record<string, {
       'Gezinshereniging op grond van artikel 8 EVRM',
     ],
   },
+  'personen-familierecht': {
+    title: 'Personen- en familierecht',
+    intro: 'HBM Juristen adviseert over veel onderwerpen binnen het personen- en familierecht.',
+    services: [
+      'Scheiden',
+      'Kinderalimentatie',
+      'Adoptie',
+      'Voogdij',
+      'Huwelijkse voorwaarden en nog veel meer',
+    ],
+  },
 };
 
 const otherPracticeAreas = [
