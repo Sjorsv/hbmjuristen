@@ -45,6 +45,15 @@ const practiceAreasData: Record<string, {
     intro: 'Een verbintenis is een vermogensrechtelijke rechtsbetrekking tussen twee of meer personen op grond waarvan de ene partij (schuldenaar) verplicht is tot een bepaalde prestatie, waartoe de andere partij (schuldeiser) is gerechtigd. Het gaat daarbij echter niet enkel om verbintenissen die partijen zelf zijn aangegaan zoals een verbintenis in het kader van een koopovereenkomst maar ook om verbintenissen die uit de wet voortvloeien. Bijvoorbeeld de verplichting om iemand zijn schade te vergoeden na een aanrijding. Wordt een contract niet goed nagekomen? Wij staan u bij met juridisch advies en rechtsbijstand.',
     services: [],
   },
+  'vreemdelingenrecht': {
+    title: 'Vreemdelingenrecht',
+    intro: 'Wilt u uw partner overhalen uit het buitenland of is uw aanvraag voor een visum afgewezen? Wij staan u gedurende de gehele procedure bij.',
+    services: [
+      'Visumaanvraag',
+      'MVV (TEV) bij gezinshereniging',
+      'Gezinshereniging op grond van artikel 8 EVRM',
+    ],
+  },
 };
 
 const otherPracticeAreas = [
