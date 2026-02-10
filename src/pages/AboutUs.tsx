@@ -4,6 +4,9 @@ import { ArrowRight, ArrowLeft, Phone, MapPin, Users } from 'lucide-react';
 import Layout from '@/components/layout/Layout';
 import { Button } from '@/components/ui/button';
 import teamImage from '@/assets/team-working.jpg';
+import logoNmv from '@/assets/logo-nmv.png';
+import logoBb from '@/assets/logo-bb.png';
+import logoNjv from '@/assets/logo-njv.png';
 
 const AboutUs = () => {
   return (
@@ -78,6 +81,12 @@ const AboutUs = () => {
             <p className="text-lg text-foreground leading-relaxed">
               HBM Juristen is lid van de Nederlandse Juristen Vereniging (NJV) en de Nederlandse Mediatorsvereniging (NMv). Wij zijn actief in Nederland, Marokko en China.
             </p>
+
+            <div className="flex items-center gap-8 pt-2">
+              <img src={logoNjv} alt="Nederlandse Juristen Vereniging" className="h-12 object-contain" />
+              <img src={logoNmv} alt="Nederlandse Mediatorsvereniging" className="h-12 object-contain" />
+              <img src={logoBb} alt="Bureau Beroepszaken" className="h-12 object-contain" />
+            </div>
 
             <div className="flex items-center gap-2 text-lg text-foreground">
               <MapPin className="w-5 h-5 text-primary flex-shrink-0" />
