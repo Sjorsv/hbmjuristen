@@ -32,6 +32,14 @@ const practiceAreasData: Record<string, {
       'Abonnement',
     ],
   },
+  'bestuursrecht': {
+    title: 'Bestuursrecht',
+    intro: 'Het bestuursrecht regelt de rechtsverhoudingen tussen burgers en overheid. Met al uw zaken tegen een overheidsinstelling kunt u bij ons terecht. Wij brengen onze kennis en ervaring graag voor u in het geding. Vanzelfsprekend begeleiden wij u tijdens iedere fase van uw geschil, van het eerste bezwaarschrift tot aan het beroep bij de rechtbank.',
+    services: [
+      'Bijstandsuitkering, WW, WAO / WIA -uitkering',
+      'Belastingzaken',
+    ],
+  },
 };
 
 const otherPracticeAreas = [
