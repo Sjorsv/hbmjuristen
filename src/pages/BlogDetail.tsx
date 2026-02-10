@@ -94,7 +94,7 @@ const BlogDetail = () => {
             transition={{ duration: 0.4 }}
           >
             <Link 
-              to="/actualiteit" 
+              to={post.type === 'pers' ? '/pers' : '/blog'}
               className="inline-flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors mb-6"
             >
               <ArrowLeft className="w-4 h-4" />
