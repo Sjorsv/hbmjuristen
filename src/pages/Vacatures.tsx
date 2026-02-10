@@ -166,7 +166,7 @@ const Vacatures = () => {
         >
           <div className="flex items-center gap-3 mb-6">
             <GraduationCap className="w-6 h-6 text-primary" />
-            <h2 className="text-2xl font-serif text-foreground">Stage</h2>
+            <h2 className="text-2xl font-serif text-foreground">Stage lopen bij HBM Juristen?</h2>
           </div>
 
           <div className="space-y-4 text-foreground leading-relaxed mb-6">
