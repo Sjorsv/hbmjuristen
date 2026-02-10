@@ -22,6 +22,16 @@ const practiceAreasData: Record<string, {
       'Arbeidsvoorwaarden',
     ],
   },
+  'consumentenrecht': {
+    title: 'Consumentenrecht',
+    intro: 'Heeft u een product gekocht dat defect is? Is uw aankoop niet geleverd? Zit u vast aan een duur abonnement of is er onduidelijkheid over de garantietermijn van uw aankoop? U heeft meer rechten dan u waarschijnlijk denkt. Onze juristen staan u bij.',
+    services: [
+      'Garantie',
+      'Defect of beschadigd product',
+      'Levering',
+      'Abonnement',
+    ],
+  },
 };
 
 const otherPracticeAreas = [
@@ -36,6 +46,9 @@ const otherPracticeAreas = [
 const PracticeAreaDetail = () => {
   const { slug } = useParams<{ slug: string }>();
   const practiceArea = slug ? practiceAreasData[slug] : null;
+  const filteredOtherAreas = otherPracticeAreas.filter(
+    (area) => !area.href.endsWith(`/${slug}`)
+  );
 
   if (!practiceArea) {
     return (
@@ -153,7 +166,7 @@ const PracticeAreaDetail = () => {
             </h2>
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {otherPracticeAreas.map((area, index) => (
+              {filteredOtherAreas.map((area, index) => (
                 <motion.div
                   key={area.name}
                   initial={{ opacity: 0, y: 20 }}
