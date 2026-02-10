@@ -98,7 +98,49 @@ const AboutUs = () => {
         </div>
       </section>
 
-      {/* Quick Links Section */}
+      {/* Toen en nu Section */}
+      <section className="container-editorial py-10 md:py-14">
+        <div className="max-w-[620px] mx-auto">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="space-y-10"
+          >
+            <h2 className="text-3xl md:text-4xl font-serif text-foreground">
+              Toen en nu
+            </h2>
+
+            <p className="text-lg text-foreground leading-relaxed">
+              HBM Juristen begon in 2020 als een brede juridische praktijk die cliënten ondersteunde in uiteenlopende rechtsgebieden. De generalistische aanpak van de beginperiode bood inzicht in de behoeften van verschillende cliënten en maakte duidelijk waar gespecialiseerde kennis daadwerkelijk toegevoegde waarde kon bieden.
+            </p>
+
+            <div>
+              <h3 className="text-xl font-semibold text-foreground mb-4">2020–2023</h3>
+              <p className="text-lg text-foreground leading-relaxed">
+                Tot 2023 bestond een aanzienlijk deel van de werkzaamheden uit juridisch advies in familiezaken, in het bijzonder echtscheidingsdossiers en procedures waarin hoorzittingen een centrale rol speelden. Opvallend was de continue en relatief hoge toestroom van cliënten uit België, die mede bijdroeg aan een intensief werkrooster. In die periode was de praktijk zeven dagen per week geopend van 08.00 tot 21.00 uur, waarbij dossiers en spoedoverleggen regelmatig tot 23.00 uur doorliepen. Deze werkwijze was passend bij de toenmalige vraag, maar legde ook de basis voor een latere herstructurering.
+              </p>
+            </div>
+
+            <div>
+              <h3 className="text-xl font-semibold text-foreground mb-4">2024–heden</h3>
+              <div className="space-y-6 text-lg text-foreground leading-relaxed">
+                <p>
+                  In 2024 is de openingstijd teruggebracht tot 21.00 uur en dit jaar is de dienstverlening verder geconcentreerd tot de middaguren, zodat werkzaamheden zorgvuldig, gecontroleerd en met een hogere mate van specialisatie kunnen worden uitgevoerd. Deze ontwikkeling markeert een bewuste keuze voor kwaliteit boven kwantiteit, een meer beheersbare procesvoering en een duidelijker afbakening van de rechtsgebieden waarin de praktijk uitblinkt.
+                </p>
+                <p>
+                  HBM Juristen richt zich inmiddels op een aantal kernspecialisaties, waaronder civiele procedures, internationale dossiers, Marokkaans recht, mediation en vreemdelingenzaken. De hedendaagse praktijk werkt vanuit inhoudelijke diepgang, een internationale oriëntatie en een consequente focus op kwaliteit en zorgvuldigheid.
+                </p>
+                <p>
+                  Waar HBM Juristen in 2020 begon als een algemene praktijk, staat het kantoor nu voor specialistische juridische dienstverlening die aansluit bij de actuele juridische realiteit in binnen- en buitenland. Deze ontwikkeling weerspiegelt een continue professionele groei en een duidelijke koers richting duurzame, hoogwaardige en gespecialiseerde rechtsbijstand.
+                </p>
+              </div>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
       <section className="bg-section-grey">
         <div className="container-editorial section-padding">
           <motion.div
