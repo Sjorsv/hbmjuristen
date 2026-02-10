@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { ArrowLeft } from 'lucide-react';
+import { ArrowLeft, Phone, Mail, MessageCircle } from 'lucide-react';
 import Layout from '@/components/layout/Layout';
 import {
   Accordion,
@@ -99,6 +99,50 @@ const FAQ = () => {
                 </AccordionItem>
               ))}
             </Accordion>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Contact blok */}
+      <section className="container-editorial pb-14">
+        <div className="max-w-[620px] mx-auto">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.5 }}
+            className="rounded-2xl bg-section-grey p-8 md:p-10"
+          >
+            <h2 className="text-xl font-semibold text-foreground mb-2">
+              Staat uw vraag er niet bij?
+            </h2>
+            <p className="text-muted-foreground mb-6">
+              Neem gerust contact met ons op. Wij helpen u graag verder.
+            </p>
+            <div className="space-y-3">
+              <a 
+                href="tel:+31202157540" 
+                className="flex items-center gap-3 text-foreground hover:text-primary transition-colors"
+              >
+                <Phone className="w-4 h-4" />
+                <span>020-215 75 40</span>
+              </a>
+              <a 
+                href="mailto:info@hbmjuristen.nl" 
+                className="flex items-center gap-3 text-foreground hover:text-primary transition-colors"
+              >
+                <Mail className="w-4 h-4" />
+                <span>info@hbmjuristen.nl</span>
+              </a>
+              <a 
+                href="https://wa.me/31202157540" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="flex items-center gap-3 text-foreground hover:text-primary transition-colors"
+              >
+                <MessageCircle className="w-4 h-4" />
+                <span>WhatsApp</span>
+              </a>
+            </div>
           </motion.div>
         </div>
       </section>
