@@ -65,6 +65,17 @@ const practiceAreasData: Record<string, {
       'Huwelijkse voorwaarden en nog veel meer',
     ],
   },
+  'arbeids-mediation': {
+    title: 'Arbeidsmediation',
+    intro: 'Voor zowel werkgevers als werknemers.\n\nOnze gecertificeerde arbeidsmediator intervenieert in alle fasen van arbeidsconflicten en ondersteunt partijen bij het herstellen van de arbeidsrelatie of het zorgvuldig afronden daarvan. De begeleiding omvat onder meer bemiddeling bij arbeidsconflicten, procedures rondom beëindiging van de arbeidsovereenkomst, vraagstukken over ziekteverzuim en re-integratie, loon- en discriminatiegeschillen en beoordeling van concurrentie- en relatiebedingen. Indien nodig vertegenwoordigen wij cliënten in procedures bij de kantonrechter, het UWV en in formele bemiddelingsgesprekken.',
+    services: [
+      'Bemiddeling bij conflicten via gecertificeerde mediation',
+      'Ontslagprocedures (op staande voet, VSO-onderhandelingen)',
+      'Discriminatie, pesten en loonkwesties',
+      'Ziekteverzuim en re-integratietrajecten',
+      'Concurrentie- en relatiebedingen',
+    ],
+  },
 };
 
 const otherPracticeAreas = [
@@ -154,9 +165,11 @@ const PracticeAreaDetail = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
           >
-            <p className="text-lg text-foreground leading-relaxed mb-8">
-              {practiceArea.intro}
-            </p>
+            <div className="text-lg text-foreground leading-relaxed mb-8 space-y-4">
+              {practiceArea.intro.split('\n\n').map((paragraph, i) => (
+                <p key={i}>{paragraph}</p>
+              ))}
+            </div>
             
             {practiceArea.services.length > 0 && (
               <>
