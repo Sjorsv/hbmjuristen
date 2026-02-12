@@ -125,7 +125,7 @@ const Footer = () => {
                   <li key={link.name}>
                     <Link
                       to={link.href}
-                      className="text-muted-foreground hover:text-primary transition-colors"
+                      className="text-muted-foreground hover:text-primary hover:font-semibold transition-colors"
                     >
                       {link.name}
                     </Link>
@@ -143,13 +143,13 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-muted-foreground">
             <p>© {new Date().getFullYear()} HBM Juristen. Alle rechten voorbehouden.</p>
             <div className="flex items-center gap-6">
-              <Link to="/privacy" className="hover:text-primary transition-colors">
+              <Link to="/privacy" className="hover:text-primary hover:font-semibold transition-colors">
                 Privacyverklaring
               </Link>
-              <Link to="/voorwaarden" className="hover:text-primary transition-colors">
+              <Link to="/voorwaarden" className="hover:text-primary hover:font-semibold transition-colors">
                 Algemene voorwaarden
               </Link>
-              <Link to="/cookies" className="hover:text-primary transition-colors">
+              <Link to="/cookies" className="hover:text-primary hover:font-semibold transition-colors">
                 Cookiebeleid
               </Link>
             </div>
