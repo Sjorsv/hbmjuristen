@@ -6,7 +6,7 @@ import logoNmv from '@/assets/logo-nmv.png';
 import logoBb from '@/assets/logo-bb.png';
 
 const footerLinks = {
-  'Rechtsgebieden': [
+  'Expertises': [
     { name: 'Arbeidsrecht', href: '/rechtsgebieden/arbeidsrecht' },
     { name: 'Bestuursrecht', href: '/rechtsgebieden/bestuursrecht' },
     { name: 'Consumentenrecht', href: '/rechtsgebieden/consumentenrecht' },
