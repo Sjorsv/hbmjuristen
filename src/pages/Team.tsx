@@ -11,17 +11,6 @@ import teamReus from '@/assets/team-reus.jpg';
 
 const teamMembers = [
   {
-    name: 'K. Hamich',
-    role: 'Jurist | Arbeidsmediator | Familiemediator',
-    image: teamHamich,
-    bio: [
-      'De heer K. Hamich is jurist en gecertificeerd familie- en arbeidsmediator, met ruime ervaring in scheidingsmediation en andere complexe familiaire vraagstukken. Zijn strategische benadering en adviserende rol worden breed gewaardeerd door cliënten.',
-      'Voorafgaand aan zijn werkzaamheden bij HBM Juristen heeft hij binnen de publieke sector uitgebreide ervaring opgebouwd als senior jurist in zowel bestuursrecht als privaatrecht. Hij richt zich op realistische en duurzame oplossingen, waarbij conflictbemiddeling wordt ingezet als volwaardig alternatief of effectieve aanvulling op de traditionele rechtsgang.',
-      'Door zijn zorgvuldige werkwijze, analytisch inzicht en professionele begeleiding is hij een betrouwbare partner voor ondernemingen en particulieren die behoefte hebben aan deskundige juridische ondersteuning. Daarnaast is hij gecertificeerd als interne auditor, beoordeelt hij periodiek o.a. op kwaliteitsbeheersing, controleert informatiebeveiligingsmaatregelen en onderzoekt arbeidsveiligheid en gezondheidsrisico\'s in lijn met de laatste ISO-normen.',
-    ],
-    languages: 'Nederlands, Arabisch, Chinees en Engels',
-  },
-  {
     name: 'W. Elabadi',
     role: 'Partner-advocaat Marokko',
     image: teamElabadi,
@@ -29,6 +18,15 @@ const teamMembers = [
       'Mevrouw Elabadi is advocate in Marokko en heeft ondernemingsrecht gestudeerd aan de Universiteit van Casablanca en rechten en financiën gestudeerd aan de École Supérieure de Commerce de Paris (ESCP) in Parijs.',
       'Verder heeft mevrouw Elabadi heeft een juridische specialisatie opgedaan aan de City Law School in Londen.',
       'Mevrouw Elabadi is gespecialiseerd in verschillende rechtsgebieden waaronder het ondernemingsrecht en financieel recht. Zij is werkzaam in heel Marokko met ruime internationale ervaring op het gebied procesvoering.',
+    ],
+    languages: 'Arabisch, Frans en Engels',
+  },
+  {
+    name: 'A. El Khaili',
+    role: 'Partner-advocaat Marokko',
+    image: teamElkhaili,
+    bio: [
+      'De heer A. El Khaili is advocaat in Marokko (Noord-Afrika) en gespecialiseerd in het (islamitisch) familierecht, strafrecht, commercieel recht en vastgoed- en erfrecht.',
     ],
     languages: 'Arabisch, Frans en Engels',
   },
@@ -45,13 +43,15 @@ const teamMembers = [
     languages: 'Arabisch, Frans en Engels',
   },
   {
-    name: 'A. El Khaili',
-    role: 'Partner-advocaat Marokko',
-    image: teamElkhaili,
+    name: 'K. Hamich',
+    role: 'Jurist | Arbeidsmediator | Familiemediator',
+    image: teamHamich,
     bio: [
-      'De heer A. El Khaili is advocaat in Marokko (Noord-Afrika) en gespecialiseerd in het (islamitisch) familierecht, strafrecht, commercieel recht en vastgoed- en erfrecht.',
+      'De heer K. Hamich is jurist en gecertificeerd familie- en arbeidsmediator, met ruime ervaring in scheidingsmediation en andere complexe familiaire vraagstukken. Zijn strategische benadering en adviserende rol worden breed gewaardeerd door cliënten.',
+      'Voorafgaand aan zijn werkzaamheden bij HBM Juristen heeft hij binnen de publieke sector uitgebreide ervaring opgebouwd als senior jurist in zowel bestuursrecht als privaatrecht. Hij richt zich op realistische en duurzame oplossingen, waarbij conflictbemiddeling wordt ingezet als volwaardig alternatief of effectieve aanvulling op de traditionele rechtsgang.',
+      'Door zijn zorgvuldige werkwijze, analytisch inzicht en professionele begeleiding is hij een betrouwbare partner voor ondernemingen en particulieren die behoefte hebben aan deskundige juridische ondersteuning. Daarnaast is hij gecertificeerd als interne auditor, beoordeelt hij periodiek o.a. op kwaliteitsbeheersing, controleert informatiebeveiligingsmaatregelen en onderzoekt arbeidsveiligheid en gezondheidsrisico\'s in lijn met de laatste ISO-normen.',
     ],
-    languages: 'Arabisch, Frans en Engels',
+    languages: 'Nederlands, Arabisch, Chinees en Engels',
   },
   {
     name: 'A. Zaki',
