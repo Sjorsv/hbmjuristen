@@ -9,23 +9,22 @@ interface MegaMenuProps {
 
 const practiceAreas = {
   'Arbeid & Bestuur': [
-    { name: 'Arbeidsrecht', description: 'Advies en bijstand bij arbeidsgeschillen', href: '/rechtsgebieden/arbeidsrecht' },
+    { name: 'Arbeidsrecht', description: 'Advies bij arbeidsconflicten en ontslag', href: '/rechtsgebieden/arbeidsrecht' },
     { name: 'Bestuursrecht', description: 'Bezwaar en beroep tegen overheidsbesluiten', href: '/rechtsgebieden/bestuursrecht' },
-    { name: 'Sociale zekerheidsrecht', description: 'Uitkeringen en toeslagen', href: '/rechtsgebieden/sociale-zekerheidsrecht' },
+    { name: 'Arbeids Mediation', description: 'Bemiddeling bij arbeidsconflicten', href: '/rechtsgebieden/arbeids-mediation' },
   ],
   'Privaatrecht': [
     { name: 'Consumentenrecht', description: 'Bescherming bij consumentengeschillen', href: '/rechtsgebieden/consumentenrecht' },
-    { name: 'Huurrecht', description: 'Huurgeschillen en woningrecht', href: '/rechtsgebieden/huurrecht' },
     { name: 'Verbintenissenrecht', description: 'Contracten en overeenkomsten', href: '/rechtsgebieden/verbintenissenrecht' },
-    { name: 'Personen- en familierecht', description: 'Echtscheiding en familiezaken', href: '/rechtsgebieden/personen-familierecht' },
+    { name: 'Personen en familierecht', description: 'Echtscheiding en familiezaken', href: '/rechtsgebieden/personen-familierecht' },
+    { name: 'Family Mediation', description: 'Bemiddeling bij familiezaken', href: '/rechtsgebieden/family-mediation' },
   ],
-  'Overig': [
+  'Wonen & Migratie': [
     { name: 'Vreemdelingenrecht', description: 'Verblijfsvergunningen en asiel', href: '/rechtsgebieden/vreemdelingenrecht' },
-    { name: 'Wegenverkeersrecht & letselschade', description: 'Verkeersovertredingen en schade', href: '/rechtsgebieden/wegenverkeersrecht' },
   ],
   'Internationaal': [
-    { name: 'Marokko', description: 'Juridische zaken in Marokko', href: '/rechtsgebieden/marokko' },
-    { name: 'België', description: 'Grensoverschrijdend advies', href: '/rechtsgebieden/belgie' },
+    { name: 'China', description: 'Juridische zaken met betrekking tot China', href: '/rechtsgebieden/china' },
+    { name: 'Marokko', description: 'Juridische zaken met betrekking tot Marokko', href: '/rechtsgebieden/marokko' },
   ],
 };
 
