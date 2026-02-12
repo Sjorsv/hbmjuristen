@@ -182,7 +182,7 @@ const Footer = () => {
                   English
                 </span>
                 <span className="inline-flex items-center gap-1.5">
-                  <svg width="20" height="14" viewBox="0 0 20 14" className="rounded-sm flex-shrink-0"><rect width="20" height="14" fill="#006C35"/><rect width="13.33" height="14" fill="#FFF"/><rect width="6.67" height="14" fill="#CE1126"/></svg>
+                  <svg width="20" height="14" viewBox="0 0 24 16" className="rounded-sm flex-shrink-0"><rect width="24" height="16" fill="#006C35"/><text x="12" y="7" fill="#FFFFFF" fontSize="3" textAnchor="middle" fontFamily="serif">لا إله إلا الله</text><rect x="4" y="10" width="16" height="1.5" rx="0.5" fill="#FFFFFF"/></svg>
                   العربية
                 </span>
                 <span className="inline-flex items-center gap-1.5">
