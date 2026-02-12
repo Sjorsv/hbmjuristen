@@ -7,26 +7,26 @@ interface MegaMenuProps {
   onClose: () => void;
 }
 
-const practiceAreas = {
-  'Arbeid & Bestuur': [
+const practiceAreas = [
+  [
     { name: 'Arbeidsrecht', description: 'Advies bij arbeidsconflicten en ontslag', href: '/rechtsgebieden/arbeidsrecht' },
     { name: 'Bestuursrecht', description: 'Bezwaar en beroep tegen overheidsbesluiten', href: '/rechtsgebieden/bestuursrecht' },
-    { name: 'Arbeids Mediation', description: 'Bemiddeling bij arbeidsconflicten', href: '/rechtsgebieden/arbeids-mediation' },
+    { name: 'Arbeidsmediation', description: 'Bemiddeling bij arbeidsconflicten', href: '/rechtsgebieden/arbeids-mediation' },
   ],
-  'Privaatrecht': [
+  [
     { name: 'Consumentenrecht', description: 'Bescherming bij consumentengeschillen', href: '/rechtsgebieden/consumentenrecht' },
-    { name: 'Verbintenissenrecht', description: 'Contracten en overeenkomsten', href: '/rechtsgebieden/verbintenissenrecht' },
     { name: 'Personen en familierecht', description: 'Echtscheiding en familiezaken', href: '/rechtsgebieden/personen-familierecht' },
-    { name: 'Family Mediation', description: 'Bemiddeling bij familiezaken', href: '/rechtsgebieden/family-mediation' },
+    { name: 'Familiemediation', description: 'Bemiddeling bij familiezaken', href: '/rechtsgebieden/family-mediation' },
   ],
-  'Wonen & Migratie': [
-    { name: 'Vreemdelingenrecht', description: 'Verblijfsvergunningen en asiel', href: '/rechtsgebieden/vreemdelingenrecht' },
+  [
+    { name: 'Vreemdelingenrecht', description: 'Verblijfsvergunning en visum', href: '/rechtsgebieden/vreemdelingenrecht' },
+    { name: 'Verbintenissenrecht', description: 'Contracten en overeenkomsten', href: '/rechtsgebieden/verbintenissenrecht' },
   ],
-  'Internationaal': [
+  [
     { name: 'China', description: 'Juridische zaken met betrekking tot China', href: '/rechtsgebieden/china' },
     { name: 'Marokko', description: 'Juridische zaken met betrekking tot Marokko', href: '/rechtsgebieden/marokko' },
   ],
-};
+];
 
 const MegaMenu = ({ isOpen, onClose }: MegaMenuProps) => {
   return (
@@ -53,13 +53,10 @@ const MegaMenu = ({ isOpen, onClose }: MegaMenuProps) => {
           >
             <div className="container-editorial py-10">
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                {Object.entries(practiceAreas).map(([category, areas]) => (
-                  <div key={category}>
-                    <h3 className="font-sans text-sm font-semibold text-muted-foreground uppercase tracking-wider mb-4">
-                      {category}
-                    </h3>
+                {practiceAreas.map((column, colIndex) => (
+                  <div key={colIndex}>
                     <ul className="space-y-3">
-                      {areas.map((area) => (
+                      {column.map((area) => (
                         <li key={area.name}>
                           <Link
                             to={area.href}
