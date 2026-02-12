@@ -173,10 +173,22 @@ const Footer = () => {
                 </div>
               </div>
               <div className="flex items-center gap-5 text-sm text-muted-foreground">
-                <span className="inline-flex items-center gap-1.5">🇳🇱 Nederlands</span>
-                <span className="inline-flex items-center gap-1.5">🇬🇧 English</span>
-                <span className="inline-flex items-center gap-1.5">🇸🇦 العربية</span>
-                <span className="inline-flex items-center gap-1.5">🇨🇳 中文</span>
+                <span className="inline-flex items-center gap-1.5">
+                  <svg width="20" height="14" viewBox="0 0 20 14" className="rounded-sm flex-shrink-0"><rect width="20" height="4.67" fill="#AE1C28"/><rect y="4.67" width="20" height="4.67" fill="#FFF"/><rect y="9.33" width="20" height="4.67" fill="#21468B"/></svg>
+                  Nederlands
+                </span>
+                <span className="inline-flex items-center gap-1.5">
+                  <svg width="20" height="14" viewBox="0 0 20 14" className="rounded-sm flex-shrink-0"><rect width="20" height="14" fill="#012169"/><path d="M0,0 L20,14 M20,0 L0,14" stroke="#FFF" strokeWidth="2.5"/><path d="M0,0 L20,14 M20,0 L0,14" stroke="#C8102E" strokeWidth="1.5"/><path d="M10,0 V14 M0,7 H20" stroke="#FFF" strokeWidth="4"/><path d="M10,0 V14 M0,7 H20" stroke="#C8102E" strokeWidth="2.5"/></svg>
+                  English
+                </span>
+                <span className="inline-flex items-center gap-1.5">
+                  <svg width="20" height="14" viewBox="0 0 20 14" className="rounded-sm flex-shrink-0"><rect width="20" height="14" fill="#006C35"/><rect width="13.33" height="14" fill="#FFF"/><rect width="6.67" height="14" fill="#CE1126"/></svg>
+                  العربية
+                </span>
+                <span className="inline-flex items-center gap-1.5">
+                  <svg width="20" height="14" viewBox="0 0 20 14" className="rounded-sm flex-shrink-0"><rect width="20" height="14" fill="#DE2910"/><circle cx="5" cy="5" r="2" fill="#FFDE00"/></svg>
+                  中文
+                </span>
               </div>
             </div>
           </div>
