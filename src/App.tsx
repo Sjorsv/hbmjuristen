@@ -17,7 +17,8 @@ import Blog from "./pages/Blog";
 import BlogDetail from "./pages/BlogDetail";
 import Press from "./pages/Press";
 import AlgemeneVoorwaarden from "./pages/AlgemeneVoorwaarden";
-import AuditAcceptatiebeleid from "./pages/AuditAcceptatiebeleid";
+import Audit from "./pages/Audit";
+import Acceptatiebeleid from "./pages/Acceptatiebeleid";
 import Cookiebeleid from "./pages/Cookiebeleid";
 import Emailbeleid from "./pages/Emailbeleid";
 import Kostenbeleid from "./pages/Kostenbeleid";
@@ -55,7 +56,8 @@ const App = () => (
           <Route path="/pers/:slug" element={<BlogDetail />} />
           <Route path="/voorwaarden" element={<AlgemeneVoorwaarden />} />
           <Route path="/artificial-intelligence" element={<ArtificialIntelligence />} />
-          <Route path="/audit-acceptatiebeleid" element={<AuditAcceptatiebeleid />} />
+          <Route path="/audit" element={<Audit />} />
+          <Route path="/acceptatiebeleid" element={<Acceptatiebeleid />} />
           <Route path="/cookies" element={<Cookiebeleid />} />
           <Route path="/e-mailbeleid" element={<Emailbeleid />} />
           <Route path="/kostenbeleid" element={<Kostenbeleid />} />
