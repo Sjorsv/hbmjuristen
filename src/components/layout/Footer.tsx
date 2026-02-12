@@ -72,11 +72,11 @@ const Footer = () => {
                 <Mail className="w-4 h-4" />
                 <span>info@hbmjuristen.nl</span>
               </a>
-              <div className="flex items-start gap-3 text-muted-foreground">
+              <div className="flex items-start gap-3 text-foreground font-medium">
                 <MapPin className="w-4 h-4 mt-0.5 flex-shrink-0" />
                 <span>Singel 126-130<br />1015 AE Amsterdam<br />Nederland</span>
               </div>
-              <div className="flex items-start gap-3 text-muted-foreground">
+              <div className="flex items-start gap-3 text-foreground font-medium">
                 <MapPin className="w-4 h-4 mt-0.5 flex-shrink-0" />
                 <span>Rue Mozart et Bd d'Anfa<br />Casablanca 20250<br />Marokko</span>
               </div>
