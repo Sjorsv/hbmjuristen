@@ -106,7 +106,7 @@ const ReviewsSection = () => {
         </motion.div>
 
         {/* Trust indicators */}
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -129,7 +129,7 @@ const ReviewsSection = () => {
             <p className="text-3xl font-serif font-bold text-primary">4.9</p>
             <p className="text-sm text-muted-foreground mt-1">Google beoordeling</p>
           </div>
-        </motion.div>
+        </motion.div> */}
       </div>
     </section>
   );
