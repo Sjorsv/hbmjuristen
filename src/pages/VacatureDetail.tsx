@@ -69,7 +69,7 @@ const VacatureDetail = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.3 }}
-          className="max-w-[620px] space-y-10"
+          className="max-w-[620px] mx-auto space-y-10"
         >
           <div>
             <h2 className="text-xl font-serif text-foreground mb-4">Over de functie</h2>
