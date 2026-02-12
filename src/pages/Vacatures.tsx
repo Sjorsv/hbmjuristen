@@ -3,48 +3,7 @@ import { motion } from 'framer-motion';
 import { ArrowLeft, ArrowRight, Mail, Briefcase, GraduationCap, Clock, MapPin } from 'lucide-react';
 import Layout from '@/components/layout/Layout';
 import { Button } from '@/components/ui/button';
-
-const vacatures = [
-  {
-    title: 'Jurist Civiel Recht',
-    type: 'Vast dienstverband',
-    location: 'Amsterdam',
-    hours: '32–40 uur per week',
-    description: 'Wij zoeken een gedreven jurist met ervaring in het civiele recht om ons team te versterken. Je werkt zelfstandig aan dossiers en adviseert cliënten over uiteenlopende civielrechtelijke kwesties.',
-    requirements: [
-      'Afgeronde WO-opleiding Rechtsgeleerdheid',
-      'Minimaal 2 jaar werkervaring in het civiele recht',
-      'Uitstekende beheersing van de Nederlandse taal in woord en geschrift',
-      'Proactieve en oplossingsgerichte werkhouding',
-    ],
-  },
-  {
-    title: 'Jurist Vreemdelingenrecht',
-    type: 'Vast dienstverband',
-    location: 'Amsterdam',
-    hours: '32–40 uur per week',
-    description: 'Voor onze groeiende praktijk in het vreemdelingenrecht zijn wij op zoek naar een ervaren jurist die cliënten bijstaat in asiel- en migratiezaken.',
-    requirements: [
-      'Afgeronde WO-opleiding Rechtsgeleerdheid',
-      'Aantoonbare kennis van het vreemdelingenrecht',
-      'Ervaring met het voeren van procedures bij de IND en rechtbank',
-      'Beheersing van Engels en/of Frans is een pré',
-    ],
-  },
-  {
-    title: 'Mediator (Parttime)',
-    type: 'Parttime',
-    location: 'Amsterdam',
-    hours: '16–24 uur per week',
-    description: 'Wij zijn op zoek naar een gecertificeerd mediator voor familie- en arbeidsmediation. Je begeleidt partijen naar een duurzame oplossing in complexe geschillen.',
-    requirements: [
-      'MfN-registermediator of gelijkwaardige certificering',
-      'Ervaring in familie- en/of arbeidsmediation',
-      'Empathisch, neutraal en oplossingsgericht',
-      'Beschikbaar voor minimaal 2 dagen per week',
-    ],
-  },
-];
+import { vacatures } from '@/data/vacatures';
 
 const Vacatures = () => {
   return (
@@ -93,7 +52,7 @@ const Vacatures = () => {
         <div className="space-y-8">
           {vacatures.map((vacature, index) => (
             <motion.div
-              key={vacature.title}
+              key={vacature.slug}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -138,7 +97,7 @@ const Vacatures = () => {
 
               <div className="flex flex-wrap gap-3">
                 <Button variant="outline" asChild className="gap-2">
-                  <Link to={`/vacatures/${index}`}>
+                  <Link to={`/vacatures/${vacature.slug}`}>
                     Bekijk vacature
                     <ArrowRight className="w-4 h-4" />
                   </Link>

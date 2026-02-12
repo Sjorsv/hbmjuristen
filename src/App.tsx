@@ -29,6 +29,7 @@ import Geheimhouding from "./pages/Geheimhouding";
 import Privacy from "./pages/Privacy";
 import ArtificialIntelligence from "./pages/ArtificialIntelligence";
 import Vacatures from "./pages/Vacatures";
+import VacatureDetail from "./pages/VacatureDetail";
 import YouthLegalDevelopmentProgram from "./pages/YouthLegalDevelopmentProgram";
 import Tarieven from "./pages/Tarieven";
 
@@ -67,6 +68,7 @@ const App = () => (
             <Route path="/geheimhouding" element={<Geheimhouding />} />
             <Route path="/privacy" element={<Privacy />} />
             <Route path="/vacatures" element={<Vacatures />} />
+            <Route path="/vacatures/:slug" element={<VacatureDetail />} />
             <Route path="/youth-legal-development-program" element={<YouthLegalDevelopmentProgram />} />
             <Route path="/tarieven" element={<Tarieven />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
