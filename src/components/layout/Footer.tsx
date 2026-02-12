@@ -72,14 +72,14 @@ const Footer = () => {
                 <Mail className="w-4 h-4" />
                 <span>info@hbmjuristen.nl</span>
               </a>
-              <div className="flex items-start gap-3 text-foreground font-medium">
+              <a href="https://maps.google.com/?q=Singel+126-130+Amsterdam" target="_blank" rel="noopener noreferrer" className="flex items-start gap-3 text-foreground font-medium hover:text-primary hover:font-semibold transition-colors">
                 <MapPin className="w-4 h-4 mt-0.5 flex-shrink-0" />
                 <span>Singel 126-130<br />1015 AE Amsterdam<br />Nederland</span>
-              </div>
-              <div className="flex items-start gap-3 text-foreground font-medium">
+              </a>
+              <a href="https://maps.google.com/?q=Rue+Mozart+Bd+d'Anfa+Casablanca" target="_blank" rel="noopener noreferrer" className="flex items-start gap-3 text-foreground font-medium hover:text-primary hover:font-semibold transition-colors">
                 <MapPin className="w-4 h-4 mt-0.5 flex-shrink-0" />
                 <span>Rue Mozart et Bd d'Anfa<br />Casablanca 20250<br />Marokko</span>
-              </div>
+              </a>
             </div>
             
             {/* Social links */}
