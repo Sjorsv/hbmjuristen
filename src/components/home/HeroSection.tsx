@@ -1,5 +1,5 @@
 import { useState, useEffect, useCallback } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion } from 'framer-motion';
 import heroImage1 from '@/assets/hero-office.jpg';
 import heroImage2 from '@/assets/hero-slide-2.jpg';
 import heroImage3 from '@/assets/hero-slide-3.jpg';
@@ -53,18 +53,17 @@ const HeroSection = () => {
           className="relative overflow-hidden rounded-2xl"
         >
           <div className="relative w-full h-[400px] md:h-[500px] lg:h-[550px]">
-            <AnimatePresence mode="wait">
+            {slides.map((slide, index) => (
               <motion.img
-                key={current}
-                src={slides[current].src}
-                alt={slides[current].alt}
+                key={index}
+                src={slide.src}
+                alt={slide.alt}
                 className="absolute inset-0 w-full h-full object-cover"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                exit={{ opacity: 0 }}
-                transition={{ duration: 0.6, ease: 'easeInOut' }}
+                initial={false}
+                animate={{ x: `${(index - current) * 100}%` }}
+                transition={{ duration: 0.8, ease: [0.4, 0, 0.2, 1] }}
               />
-            </AnimatePresence>
+            ))}
 
             {/* Dot indicators */}
             <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex items-center gap-2 z-10">
