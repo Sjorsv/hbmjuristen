@@ -1,6 +1,9 @@
 import { Link } from 'react-router-dom';
 import { Phone, Mail, MapPin } from 'lucide-react';
 import logo from '@/assets/logo.png';
+import logoNjv from '@/assets/logo-njv.png';
+import logoNmv from '@/assets/logo-nmv.png';
+import logoBb from '@/assets/logo-bb.png';
 
 const footerLinks = {
   'Rechtsgebieden': [
@@ -157,7 +160,17 @@ const Footer = () => {
             </div>
           ))}
         </div>
-      </div>
+
+          {/* Membership logos */}
+          <div className="lg:col-span-5 mt-6 pt-6 border-t border-border">
+            <p className="text-sm text-muted-foreground mb-4">HBM Juristen is lid van de NMv, NJV en SBB.</p>
+            <div className="flex items-center gap-8">
+              <img src={logoNjv} alt="Nederlandse Juristen Vereniging" className="h-10 w-auto object-contain" />
+              <img src={logoNmv} alt="NMv" className="h-10 w-auto object-contain" />
+              <img src={logoBb} alt="SBB" className="h-10 w-auto object-contain" />
+            </div>
+          </div>
+        </div>
       
       {/* Bottom bar */}
       <div className="border-t border-border">
