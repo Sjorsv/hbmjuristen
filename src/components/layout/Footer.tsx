@@ -30,7 +30,7 @@ const footerLinks = {
     { name: 'Klachtenprocedure', href: '/klachtenprocedure' },
     { name: 'Privacyverklaring', href: '/privacy' },
     { name: 'Geheimhouding', href: '/geheimhouding' },
-    { name: 'Partner-Beleid', href: '/partner-beleid' },
+    { name: 'Partnerbeleid', href: '/partner-beleid' },
     { name: 'Kostenbeleid', href: '/kostenbeleid' },
     { name: 'Audit', href: '/audit' },
     { name: 'Acceptatiebeleid', href: '/acceptatiebeleid' },
