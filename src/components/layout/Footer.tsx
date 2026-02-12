@@ -161,13 +161,23 @@ const Footer = () => {
           ))}
         </div>
 
-          {/* Membership logos */}
+          {/* Membership logos & languages */}
           <div className="lg:col-span-5 mt-6 pt-6 border-t border-border">
-            <p className="text-sm text-muted-foreground mb-4">HBM Juristen is lid van de NMv, NJV en SBB.</p>
-            <div className="flex items-center gap-8">
-              <img src={logoNjv} alt="Nederlandse Juristen Vereniging" className="h-10 w-auto object-contain" />
-              <img src={logoNmv} alt="NMv" className="h-10 w-auto object-contain" />
-              <img src={logoBb} alt="SBB" className="h-10 w-auto object-contain" />
+            <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-6">
+              <div>
+                <p className="text-sm font-semibold text-muted-foreground mb-4">HBM Juristen is lid van de NMv, NJV en SBB.</p>
+                <div className="flex items-center gap-8">
+                  <img src={logoNjv} alt="Nederlandse Juristen Vereniging" className="h-10 w-auto object-contain" />
+                  <img src={logoNmv} alt="NMv" className="h-10 w-auto object-contain" />
+                  <img src={logoBb} alt="SBB" className="h-10 w-auto object-contain" />
+                </div>
+              </div>
+              <div className="flex items-center gap-5 text-sm text-muted-foreground">
+                <span className="inline-flex items-center gap-1.5">🇳🇱 Nederlands</span>
+                <span className="inline-flex items-center gap-1.5">🇬🇧 English</span>
+                <span className="inline-flex items-center gap-1.5">🇸🇦 العربية</span>
+                <span className="inline-flex items-center gap-1.5">🇨🇳 中文</span>
+              </div>
             </div>
           </div>
         </div>
