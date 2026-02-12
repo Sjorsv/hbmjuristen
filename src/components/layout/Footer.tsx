@@ -56,8 +56,7 @@ const Footer = () => {
               />
             </Link>
             <p className="text-muted-foreground max-w-sm mb-6">
-              HBM Juristen biedt deskundige juridische hulp aan particulieren en ondernemers. 
-              Betrokken, resultaatgericht en altijd bereikbaar.
+              HBM Juristen biedt deskundige juridische hulp aan particulieren en ondernemers.
             </p>
             
             {/* Contact info */}
