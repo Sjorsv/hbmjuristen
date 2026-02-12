@@ -11,8 +11,8 @@ import {
 
 const faqItems = [
   {
-    question: 'Wat doet HBM Juristen?',
-    answer: 'HBM Juristen verleent rechtshulp in de vorm van juridisch advies en rechtsbijstand aan particulieren en ondernemingen. Wij begeleiden cliënten bij juridische vraagstukken, analyseren juridische posities en adviseren over passende vervolgstappen.',
+    question: 'Welk advies geeft HBM aan studenten en juristen die zich zorgvuldig willen voorbereiden op het advocatenberoep?',
+    answer: 'Bouw eerst gedurende circa vijf jaar relevante praktijkervaring op binnen de publieke sector. Daar leert men werken binnen vaste beleidskaders, interne richtlijnen en wetgeving, met nadruk op dossiervorming, analytische precisie en bestuurlijke afstemming. Het actief bijwonen van overleggen is daarbij essentieel: juist in multidisciplinaire besprekingen ontwikkelt men het vermogen om juridisch inzicht helder over te brengen en standpunten overtuigend te onderbouwen.\n\nZorg daarnaast voor begeleiding door een ervaren jurist of advocaat die inhoudelijk corrigeert en kritisch bevraagt. Een goede leermeester scherpt niet alleen kennis aan, maar stimuleert ook professionele houding, inzet en verantwoordelijkheidsbesef. Dat versnelt de ontwikkeling tot een zelfstandig en evenwichtig advocaat.',
   },
   {
     question: 'Voor welke rechtsgebieden kan ik bij HBM Juristen terecht?',
