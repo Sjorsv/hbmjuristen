@@ -34,12 +34,12 @@ const practiceAreas = [
     href: '/rechtsgebieden/personen-familierecht',
   },
   {
-    title: 'Arbeids Mediation',
+    title: 'Arbeidsmediation',
     description: 'Professionele bemiddeling bij arbeidsconflicten en geschillen.',
     href: '/rechtsgebieden/arbeids-mediation',
   },
   {
-    title: 'Family Mediation',
+    title: 'Familiemediation',
     description: 'Bemiddeling bij familiezaken zoals echtscheiding en omgang.',
     href: '/rechtsgebieden/family-mediation',
   },
