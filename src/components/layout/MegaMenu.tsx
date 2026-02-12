@@ -84,7 +84,7 @@ const MegaMenu = ({ isOpen, onClose }: MegaMenuProps) => {
                   onClick={onClose}
                   className="arrow-link"
                 >
-                  Bekijk alle rechtsgebieden
+                  Bekijk alle expertises
                   <ArrowRight className="w-4 h-4" />
                 </Link>
               </div>
