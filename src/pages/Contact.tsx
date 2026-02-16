@@ -317,12 +317,18 @@ const Contact = () => {
                     <Clock className="w-5 h-5 text-primary" />
                   </div>
                   <div>
-                    <p className="font-medium text-foreground">
+                    <p className="font-medium text-foreground mb-2">
                       Openingstijden
                     </p>
-                    <p className="text-sm text-muted-foreground">
-                      Ma - Vr: 09:00 - 17:30
-                    </p>
+                    <div className="text-sm text-muted-foreground space-y-0.5">
+                      <p>Maandag: 08:30 - 18:00</p>
+                      <p>Dinsdag: 08:30 - 18:00</p>
+                      <p>Woensdag: 08:30 - 18:00</p>
+                      <p>Donderdag: 08:30 - 18:00</p>
+                      <p>Vrijdag: 08:30 - 18:00</p>
+                      <p>Zaterdag: 09:00 - 15:00</p>
+                      <p>Zondag: 09:00 - 15:00</p>
+                    </div>
                   </div>
                 </div>
               </div>
