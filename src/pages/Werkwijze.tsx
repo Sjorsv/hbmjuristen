@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import { ArrowLeft } from 'lucide-react';
 import { motion } from 'framer-motion';
 import Layout from '@/components/layout/Layout';
-import buildingImage from '@/assets/building-exterior.jpg';
+import headerBuildings from '@/assets/header-buildings.jpg';
 
 const Werkwijze = () => {
   return (
@@ -42,7 +42,7 @@ const Werkwijze = () => {
           className="relative h-[300px] md:h-[400px] rounded-2xl overflow-hidden"
         >
           <img 
-            src={buildingImage} 
+            src={headerBuildings} 
             alt="HBM Juristen kantoor"
             className="w-full h-full object-cover"
           />

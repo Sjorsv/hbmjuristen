@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { ArrowRight, ArrowLeft } from 'lucide-react';
 import Layout from '@/components/layout/Layout';
+import headerFlagsRow from '@/assets/header-flags-row.jpg';
 
 const practiceAreas = [
   {
@@ -107,6 +108,23 @@ const PracticeAreas = () => {
           </motion.p>
         </div>
       </section>
+
+      {/* Hero image */}
+      <div className="container-editorial">
+        <motion.div 
+          initial={{ opacity: 0, scale: 1.02 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.8, delay: 0.2 }}
+          className="relative h-[300px] md:h-[400px] rounded-2xl overflow-hidden"
+        >
+          <img 
+            src={headerFlagsRow} 
+            alt="Internationale vlaggen"
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-foreground/20 to-transparent" />
+        </motion.div>
+      </div>
 
       <section className="container-editorial py-10 md:py-14">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

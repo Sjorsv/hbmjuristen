@@ -5,6 +5,7 @@ import { ArrowLeft, Phone, Mail, MapPin, Clock, MessageCircle, Building } from '
 import Layout from '@/components/layout/Layout';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
+import headerOfficeMeeting from '@/assets/header-office-meeting.jpg';
 import { Textarea } from '@/components/ui/textarea';
 import { Label } from '@/components/ui/label';
 import { useToast } from '@/hooks/use-toast';
@@ -88,6 +89,23 @@ const Contact = () => {
           </motion.p>
         </div>
       </section>
+
+      {/* Hero image */}
+      <div className="container-editorial">
+        <motion.div 
+          initial={{ opacity: 0, scale: 1.02 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.8, delay: 0.2 }}
+          className="relative h-[300px] md:h-[400px] rounded-2xl overflow-hidden"
+        >
+          <img 
+            src={headerOfficeMeeting} 
+            alt="HBM Juristen kantoor"
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-foreground/20 to-transparent" />
+        </motion.div>
+      </div>
 
       {/* Contact Content */}
       <section className="container-editorial py-10 md:py-14">
