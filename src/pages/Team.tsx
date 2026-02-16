@@ -11,26 +11,6 @@ import teamReus from '@/assets/team-reus.jpg';
 
 const teamMembers = [
   {
-    name: 'W. Elabadi',
-    role: 'Partner-advocaat',
-    image: teamElabadi,
-    bio: [
-      'Mevrouw Elabadi is advocate in Marokko en heeft ondernemingsrecht gestudeerd aan de Universiteit van Casablanca en rechten en financiën gestudeerd aan de École Supérieure de Commerce de Paris (ESCP) in Parijs.',
-      'Verder heeft mevrouw Elabadi heeft een juridische specialisatie opgedaan aan de City Law School in Londen.',
-      'Mevrouw Elabadi is gespecialiseerd in verschillende rechtsgebieden waaronder het ondernemingsrecht en financieel recht. Zij is werkzaam in heel Marokko met ruime internationale ervaring op het gebied procesvoering.',
-    ],
-    languages: 'Arabisch, Frans en Engels',
-  },
-  {
-    name: 'A. El Khaili',
-    role: 'Partner-advocaat',
-    image: teamElkhaili,
-    bio: [
-      'De heer A. El Khaili is advocaat in Marokko (Noord-Afrika) en gespecialiseerd in het (islamitisch) familierecht, strafrecht, commercieel recht en vastgoed- en erfrecht.',
-    ],
-    languages: 'Arabisch, Frans en Engels',
-  },
-  {
     name: 'J. Akbib',
     role: 'Partner-advocaat',
     image: teamAkbib,
@@ -52,6 +32,26 @@ const teamMembers = [
       'Door zijn zorgvuldige werkwijze, analytisch inzicht en professionele begeleiding is hij een betrouwbare partner voor ondernemingen en particulieren die behoefte hebben aan deskundige juridische ondersteuning. Daarnaast is hij gecertificeerd als interne auditor, beoordeelt hij periodiek o.a. op kwaliteitsbeheersing, controleert informatiebeveiligingsmaatregelen en onderzoekt arbeidsveiligheid en gezondheidsrisico\'s in lijn met de laatste ISO-normen.',
     ],
     languages: 'Nederlands, Arabisch, Chinees en Engels',
+  },
+  {
+    name: 'W. Elabadi',
+    role: 'Partner-advocaat',
+    image: teamElabadi,
+    bio: [
+      'Mevrouw Elabadi is advocate in Marokko en heeft ondernemingsrecht gestudeerd aan de Universiteit van Casablanca en rechten en financiën gestudeerd aan de École Supérieure de Commerce de Paris (ESCP) in Parijs.',
+      'Verder heeft mevrouw Elabadi heeft een juridische specialisatie opgedaan aan de City Law School in Londen.',
+      'Mevrouw Elabadi is gespecialiseerd in verschillende rechtsgebieden waaronder het ondernemingsrecht en financieel recht. Zij is werkzaam in heel Marokko met ruime internationale ervaring op het gebied procesvoering.',
+    ],
+    languages: 'Arabisch, Frans en Engels',
+  },
+  {
+    name: 'A. El Khaili',
+    role: 'Partner-advocaat',
+    image: teamElkhaili,
+    bio: [
+      'De heer A. El Khaili is advocaat in Marokko (Noord-Afrika) en gespecialiseerd in het (islamitisch) familierecht, strafrecht, commercieel recht en vastgoed- en erfrecht.',
+    ],
+    languages: 'Arabisch, Frans en Engels',
   },
   {
     name: 'A. Zaki',
