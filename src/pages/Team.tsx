@@ -12,7 +12,7 @@ import teamReus from '@/assets/team-reus.jpg';
 const teamMembers = [
   {
     name: 'W. Elabadi',
-    role: 'Partner-advocaat Marokko',
+    role: 'Partner-advocaat',
     image: teamElabadi,
     bio: [
       'Mevrouw Elabadi is advocate in Marokko en heeft ondernemingsrecht gestudeerd aan de Universiteit van Casablanca en rechten en financiën gestudeerd aan de École Supérieure de Commerce de Paris (ESCP) in Parijs.',
@@ -23,7 +23,7 @@ const teamMembers = [
   },
   {
     name: 'A. El Khaili',
-    role: 'Partner-advocaat Marokko',
+    role: 'Partner-advocaat',
     image: teamElkhaili,
     bio: [
       'De heer A. El Khaili is advocaat in Marokko (Noord-Afrika) en gespecialiseerd in het (islamitisch) familierecht, strafrecht, commercieel recht en vastgoed- en erfrecht.',
@@ -32,7 +32,7 @@ const teamMembers = [
   },
   {
     name: 'J. Akbib',
-    role: 'Partner-advocaat Marokko',
+    role: 'Partner-advocaat',
     image: teamAkbib,
     bio: [
       'Mevrouw Akbib is advocaat in Marokko en gespecialiseerd op douane-regelgeving in Marokko, een nichegebied waarin zij zich heeft onderscheiden als deskundige.',
