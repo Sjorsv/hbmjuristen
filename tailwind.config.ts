@@ -14,8 +14,8 @@ export default {
     },
     extend: {
       fontFamily: {
-        serif: ['Verdana', 'Geneva', 'sans-serif'],
-        sans: ['Source Sans 3', 'system-ui', 'sans-serif'],
+        serif: ['Newsreader', 'Georgia', 'serif'],
+        sans: ['Be Vietnam Pro', 'system-ui', 'sans-serif'],
       },
       fontSize: {
         'display-sm': ['2rem', { lineHeight: '1.2', letterSpacing: '-0.01em' }],

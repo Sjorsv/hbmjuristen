@@ -67,7 +67,7 @@ const PracticeAreasSection = () => {
           className="mb-12"
         >
           <h2 className="text-3xl md:text-4xl font-serif text-foreground">
-            Ontdek onze rechtsgebieden
+            Ontdek onze <em className="italic">rechtsgebieden</em>
           </h2>
         </motion.div>
 

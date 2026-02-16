@@ -35,7 +35,7 @@ const AboutUs = () => {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="text-3xl md:text-4xl lg:text-5xl font-serif text-foreground"
           >
-            Wie zijn wij
+            Wie zijn <em className="italic">wij</em>
           </motion.h1>
         </div>
         
@@ -122,7 +122,7 @@ const AboutUs = () => {
             className="space-y-10"
           >
             <h2 className="text-3xl md:text-4xl font-serif text-foreground">
-              Toen en nu
+              Toen en <em className="italic">nu</em>
             </h2>
 
             <p className="text-lg text-foreground leading-relaxed">
@@ -163,7 +163,7 @@ const AboutUs = () => {
             transition={{ duration: 0.6 }}
           >
             <h2 className="text-3xl md:text-4xl font-serif text-foreground mb-10">
-              Meer over HBM Juristen
+              Meer over <em className="italic">HBM Juristen</em>
             </h2>
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

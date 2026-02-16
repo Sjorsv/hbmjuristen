@@ -35,7 +35,7 @@ const AboutSection = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
           >
             <h2 className="text-3xl md:text-4xl font-serif text-foreground mb-6">
-              Onze cliënten succesvol maken
+              Onze cliënten <em className="italic">succesvol maken</em>
             </h2>
             <div className="space-y-4 text-muted-foreground leading-relaxed">
               <p>
