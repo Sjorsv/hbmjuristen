@@ -139,7 +139,7 @@ const Team = () => {
                     className="w-full h-full object-cover object-top"
                   />
                 </div>
-                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-primary via-primary/90 to-transparent pt-16 pb-5 px-5">
+                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-primary/80 via-primary/50 to-transparent pt-20 pb-5 px-5">
                   <h3 className="text-lg font-serif font-medium text-primary-foreground">
                     {member.name}
                   </h3>
