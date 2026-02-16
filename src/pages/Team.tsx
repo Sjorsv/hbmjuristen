@@ -101,7 +101,7 @@ const Team = () => {
               transition={{ duration: 0.6, delay: 0.1 }}
               className="text-3xl md:text-4xl lg:text-5xl font-serif text-foreground"
             >
-              Ons team
+              Ons <em className="italic">team</em>
             </motion.h1>
             
             <motion.p

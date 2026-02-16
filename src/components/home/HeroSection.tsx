@@ -36,7 +36,7 @@ const HeroSection = () => {
         >
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-serif text-foreground mb-4 leading-tight">
             Wij zijn <span className="text-primary font-bold">HBM Juristen</span>, uw 
-            <br className="hidden md:block" /> partner in juridisch advies
+            <br className="hidden md:block" /> partner in <em className="italic">juridisch advies</em>
           </h1>
           <p className="text-lg md:text-xl text-foreground font-sans">
             Deskundig, betrokken en resultaatgericht
