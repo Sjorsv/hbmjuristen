@@ -4,6 +4,7 @@ import { ArrowLeft, ArrowRight, Mail, Briefcase, GraduationCap, Clock, MapPin } 
 import Layout from '@/components/layout/Layout';
 import { Button } from '@/components/ui/button';
 import { vacatures } from '@/data/vacatures';
+import headerMeetingRoom from '@/assets/header-meeting-room.jpg';
 
 const Vacatures = () => {
   return (
@@ -46,6 +47,23 @@ const Vacatures = () => {
           </div>
         </div>
       </section>
+
+      {/* Hero image */}
+      <div className="container-editorial">
+        <motion.div 
+          initial={{ opacity: 0, scale: 1.02 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.8, delay: 0.2 }}
+          className="relative h-[300px] md:h-[400px] rounded-2xl overflow-hidden"
+        >
+          <img 
+            src={headerMeetingRoom} 
+            alt="Vergaderruimte"
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-foreground/20 to-transparent" />
+        </motion.div>
+      </div>
 
       {/* Vacatures */}
       <section className="container-editorial py-10 md:py-14">

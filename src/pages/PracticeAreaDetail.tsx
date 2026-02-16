@@ -4,6 +4,19 @@ import { ArrowRight, ArrowLeft, Phone } from 'lucide-react';
 import Layout from '@/components/layout/Layout';
 import { Button } from '@/components/ui/button';
 import heroImage from '@/assets/hero-office.jpg';
+import headerMorocco from '@/assets/header-morocco.jpg';
+import headerChina from '@/assets/header-china.jpg';
+import headerEuFlag from '@/assets/header-eu-flag.jpg';
+import headerFlagsInternational from '@/assets/header-flags-international.jpg';
+import headerFlagsRow from '@/assets/header-flags-row.jpg';
+
+const practiceAreaImages: Record<string, string> = {
+  'marokko': headerMorocco,
+  'china': headerChina,
+  'bestuursrecht': headerEuFlag,
+  'vreemdelingenrecht': headerFlagsInternational,
+  'verbintenissenrecht': headerFlagsRow,
+};
 
 // Practice area data - can be expanded for other areas
 const practiceAreasData: Record<string, {
@@ -279,7 +292,7 @@ const PracticeAreaDetail = () => {
             className="relative h-[300px] md:h-[400px] rounded-2xl overflow-hidden"
           >
             <img 
-              src={heroImage} 
+              src={slug && practiceAreaImages[slug] ? practiceAreaImages[slug] : heroImage} 
               alt={practiceArea.title}
               className="w-full h-full object-cover"
             />
