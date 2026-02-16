@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { ArrowLeft, Phone, Mail, MapPin, Clock, MessageCircle } from 'lucide-react';
+import { ArrowLeft, Phone, Mail, MapPin, Clock, MessageCircle, Building } from 'lucide-react';
 import Layout from '@/components/layout/Layout';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -16,11 +16,12 @@ const Contact = () => {
     name: '',
     email: '',
     phone: '',
+    location: '',
     subject: '',
     message: '',
   });
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     const { name, value } = e.target;
     setFormData(prev => ({ ...prev, [name]: value }));
   };
@@ -41,6 +42,7 @@ const Contact = () => {
       name: '',
       email: '',
       phone: '',
+      location: '',
       subject: '',
       message: '',
     });
@@ -140,16 +142,33 @@ const Contact = () => {
                   />
                 </div>
                 <div className="space-y-2">
-                  <Label htmlFor="subject">Onderwerp *</Label>
-                  <Input
-                    id="subject"
-                    name="subject"
-                    value={formData.subject}
+                  <Label htmlFor="location">Kies een vestiging *</Label>
+                  <select
+                    id="location"
+                    name="location"
+                    value={formData.location}
                     onChange={handleChange}
-                    placeholder="Waar gaat uw vraag over?"
                     required
-                  />
+                    className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+                  >
+                    <option value="" disabled>Selecteer een vestiging</option>
+                    <option value="nederland">Nederland</option>
+                    <option value="china">China</option>
+                    <option value="marokko">Marokko</option>
+                  </select>
                 </div>
+              </div>
+
+              <div className="space-y-2">
+                <Label htmlFor="subject">Onderwerp *</Label>
+                <Input
+                  id="subject"
+                  name="subject"
+                  value={formData.subject}
+                  onChange={handleChange}
+                  placeholder="Waar gaat uw vraag over?"
+                  required
+                />
               </div>
               
               <div className="space-y-2">
