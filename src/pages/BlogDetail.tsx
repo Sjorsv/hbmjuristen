@@ -222,6 +222,23 @@ const blogPosts: Record<string, BlogPost> = {
       'Tegelijkertijd dwingt de groeiende dossiervoorraad de IND tot organisatorische aanpassingen en pilotprocedures om snelheid en efficiëntie te verbeteren. Hoe deze maatregelen zich verhouden tot de rechtszekerheid van individuele verzoekers, blijft onderwerp van juridische en politieke discussie in 2026.',
     ],
   },
+  'vergismoord-marokko': {
+    slug: 'vergismoord-marokko',
+    type: 'pers',
+    category: 'Pers',
+    title: 'Persverklaring - Vergismoord in Marokko',
+    excerpt: 'HBM Juristen is door NAPNieuws benaderd met het verzoek een algemene juridische toelichting te geven naar aanleiding van berichtgeving over een strafzaak in Marrakech.',
+    date: '4 februari 2023',
+    author: 'HBM Juristen',
+    readTime: '3 min leestijd',
+    image: insight1,
+    content: [
+      'HBM Juristen is door NAPNieuws benaderd met het verzoek een algemene juridische toelichting te geven naar aanleiding van berichtgeving over een strafzaak in Marrakech waarin aan twee Nederlandse verdachten de doodstraf is opgelegd.',
+      'Op verzoek van de redactie heeft HBM Juristen een inhoudelijk neutrale persverklaring afgegeven over de juridische context van de doodstraf binnen het Marokkaanse recht. De verklaring gaf in algemene termen duiding over de positie van de doodstraf in het Marokkaanse strafrecht en de feitelijke praktijk van niet-uitvoering sinds 1993.',
+      'HBM Juristen is op geen enkele wijze betrokken bij de onderliggende strafzaak, treedt niet op voor partijen in deze procedure en heeft geen inhoudelijke rol in de afhandeling daarvan. De bijdrage van het kantoor beperkte zich strikt tot een juridische duiding op verzoek van de media.',
+      'De NAPNieuws-publicatie is te raadplegen via de volgende link: https://www.napnieuws.nl/2023/02/04/doodstraf-voor-amsterdammers-is-vooral-een-waarschuwing/',
+    ],
+  },
 };
 
 const relatedPosts = [
