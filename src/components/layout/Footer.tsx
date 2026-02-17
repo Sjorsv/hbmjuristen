@@ -175,15 +175,15 @@ const Footer = () => {
               <div className="flex items-center gap-4 text-sm text-muted-foreground">
                 <span className="inline-flex items-center gap-1.5 cursor-pointer hover:text-primary transition-colors">
                   <svg width="18" height="12" viewBox="0 0 20 14" className="rounded-sm flex-shrink-0"><rect width="20" height="4.67" fill="#AE1C28"/><rect y="4.67" width="20" height="4.67" fill="#FFF"/><rect y="9.33" width="20" height="4.67" fill="#21468B"/></svg>
-                  NL
+                  Nederlands
                 </span>
                 <span className="inline-flex items-center gap-1.5 cursor-pointer hover:text-primary transition-colors">
                   <svg width="18" height="12" viewBox="0 0 20 14" className="rounded-sm flex-shrink-0"><rect width="20" height="14" fill="#012169"/><path d="M0,0 L20,14 M20,0 L0,14" stroke="#FFF" strokeWidth="2.5"/><path d="M0,0 L20,14 M20,0 L0,14" stroke="#C8102E" strokeWidth="1.5"/><path d="M10,0 V14 M0,7 H20" stroke="#FFF" strokeWidth="4"/><path d="M10,0 V14 M0,7 H20" stroke="#C8102E" strokeWidth="2.5"/></svg>
-                  EN
+                  English
                 </span>
                 <span className="inline-flex items-center gap-1.5 cursor-pointer hover:text-primary transition-colors">
                   <svg width="18" height="12" viewBox="0 0 24 16" className="rounded-sm flex-shrink-0"><rect width="24" height="16" fill="#006C35"/><text x="12" y="7" fill="#FFFFFF" fontSize="3" textAnchor="middle" fontFamily="serif">لا إله إلا الله</text><rect x="4" y="10" width="16" height="1.5" rx="0.5" fill="#FFFFFF"/></svg>
-                  AR
+                  العربية
                 </span>
                 <span className="inline-flex items-center gap-1.5 cursor-pointer hover:text-primary transition-colors">
                   <svg width="18" height="12" viewBox="0 0 20 14" className="rounded-sm flex-shrink-0"><rect width="20" height="14" fill="#DE2910"/><circle cx="5" cy="5" r="2" fill="#FFDE00"/></svg>
