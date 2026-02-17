@@ -13,8 +13,8 @@ const footerLinks = {
     { name: 'Vreemdelingenrecht', href: '/rechtsgebieden/vreemdelingenrecht' },
     { name: 'Arbeidsmediation', href: '/rechtsgebieden/arbeids-mediation' },
     { name: 'Familiemediation', href: '/rechtsgebieden/family-mediation' },
+    { name: 'Marokkaans Recht', href: '/rechtsgebieden/marokko' },
     { name: 'China', href: '/rechtsgebieden/china' },
-    { name: 'Marokko', href: '/rechtsgebieden/marokko' },
   ],
   'Over HBM': [
     { name: 'Missie & Visie', href: '/over-ons/missie-visie' },
