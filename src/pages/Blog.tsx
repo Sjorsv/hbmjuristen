@@ -8,7 +8,7 @@ import insight2 from '@/assets/insight-2.jpg';
 import insight3 from '@/assets/insight-3.jpg';
 import headerMorocco from '@/assets/header-morocco.jpg';
 
-type CategoryType = 'all' | 'arbeidsrecht' | 'nieuws' | 'bestuursrecht' | 'consumentenrecht' | 'vreemdelingenrecht';
+type CategoryType = 'all' | 'arbeidsrecht' | 'nieuws' | 'bestuursrecht' | 'consumentenrecht' | 'vreemdelingenrecht' | 'civiel-recht';
 
 interface Article {
   id: string;
@@ -84,13 +84,13 @@ const articles: Article[] = [
   },
   {
     id: '8',
-    category: 'Consumentenrecht',
-    categorySlug: 'consumentenrecht',
-    title: 'Uw rechten bij online aankopen',
-    excerpt: 'Wat u moet weten over retourneren en garantie bij webwinkels.',
+    category: 'Civiel recht',
+    categorySlug: 'civiel-recht',
+    title: 'Mediation in Nederland: tussen praktijk en aankomende wetgeving',
+    excerpt: 'Mediation is in Nederland al jaren een vaste waarde binnen de rechtspraktijk, maar opmerkelijk genoeg zonder eigen, zelfstandige wettelijke regeling.',
     date: '10 december 2024',
     image: insight2,
-    href: '/blog/online-aankopen-rechten',
+    href: '/blog/mediation-nederland',
   },
 ];
 
@@ -100,6 +100,7 @@ const categoryFilters: { value: CategoryType; label: string }[] = [
   { value: 'nieuws', label: 'Nieuws' },
   { value: 'bestuursrecht', label: 'Bestuursrecht' },
   { value: 'consumentenrecht', label: 'Consumentenrecht' },
+  { value: 'civiel-recht', label: 'Civiel recht' },
   { value: 'vreemdelingenrecht', label: 'Vreemdelingenrecht' },
 ];
 
