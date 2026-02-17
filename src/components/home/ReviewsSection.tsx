@@ -1,4 +1,4 @@
-import { Star, ChevronLeft, ChevronRight } from 'lucide-react';
+import { Star } from 'lucide-react';
 import { motion } from 'framer-motion';
 import {
   Carousel,
@@ -7,36 +7,49 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from '@/components/ui/carousel';
+import { Avatar, AvatarFallback } from '@/components/ui/avatar';
 
 const reviews = [
   {
-    name: 'Fatima Masjedi',
-    text: 'Very happy with my experience with mr. Hamich from hbm juristen! He\'s always been attentive and fast when I needed help, no matter the time or place. He\'s highly reliable and I got great results every time. Highly recommend!',
+    name: 'Maria Bakker',
+    initials: 'MB',
+    text: 'HBM Juristen reageren ontzettend snel, denken heel fijn mee met onze situatie en kwamen met zeer solide juridische argumenten.',
     rating: 5,
   },
   {
-    name: 'Shreyasi Das',
-    text: 'It was great having the conversation with Khalid V. It was a clear and concise interview, and all doubts were cleared. Looking forward to more!',
+    name: 'Chaima El Harchioui',
+    initials: 'CE',
+    text: 'Ik ben zeer goed bijgestaan door HBM Juristen. De jurist was bevlogen en vastberaden om het beste resultaat te behalen voor mij. Ik ben zeer tevreden met de uitkomst, die mijn verwachtingen hebben overtroffen. Ik raad HBM Juristen aan!',
     rating: 5,
   },
   {
     name: 'Assia Deboun',
-    text: 'HBM Juristen heeft mijn ontslagzaak gewonnen, maar belangrijker nog: ze gaven me mijn zelfvertrouwen terug. De jurist begreep mij en gaf mij kracht om deze moeilijke periode door te komen.',
+    initials: 'AD',
+    text: 'HBM Juristen heeft mijn ontslagzaak gewonnen, maar belangrijker nog: ze gaven me mijn zelfvertrouwen terug. De jurist begreep mij en gaf mij kracht om deze spannende zaak met succes door te zetten. Fijne is dat ik nog altijd kan bellen voor kosteloos advies.',
     rating: 5,
   },
   {
-    name: 'Mohammed El Amrani',
-    text: 'Uitstekende service en zeer professioneel. Ze hebben mij geholpen met een complex arbeidsgeschil en het resultaat was boven verwachting. Ik beveel HBM Juristen van harte aan.',
+    name: 'Tenichia Vyent',
+    initials: 'TV',
+    text: 'Opnieuw heb ik de diensten van HBM mbt een zaak nodig gehad en ik ben weer super snel geholpen. Alle afspraken komt hij netjes na. Als ik 10 sterren kon geven had ik dit gedaan!! Ik raad iedereen aan om in zee te gaan met dit kantoor!',
     rating: 5,
   },
   {
-    name: 'Lisa van der Berg',
-    text: 'Ik was erg tevreden over de begeleiding bij mijn mediationtraject. De communicatie was helder en ze hebben mij stap voor stap door het proces geleid.',
+    name: 'Maarten Poleij',
+    initials: 'MP',
+    text: 'Ik dank de heer Hamich voor zijn inzet en bemiddeling met de IND, ook ben ik tevreden over het resultaat hiervan. Ik kan HBM juristen daarom aanbevelen en zal een eventuele volgende keer zeker weer een beroep op hen doen.',
     rating: 5,
   },
   {
-    name: 'Ahmed Hassan',
-    text: 'Professional, betrouwbaar en altijd bereikbaar. HBM Juristen heeft mij fantastisch geholpen met mijn zaak. De persoonlijke aanpak maakt echt het verschil.',
+    name: 'Shirley Lie A Tjam',
+    initials: 'SL',
+    text: 'Waar ik de hoop had opgegeven ben ik door jullie uitstekend geholpen. Heel veel dank',
+    rating: 5,
+  },
+  {
+    name: 'Jovanca Lapé',
+    initials: 'JL',
+    text: 'Mijn ervaring was goed. Kreeg snel hulp van een medewerker goeie informatie en advies mijn dank is groot.',
     rating: 5,
   },
 ];
@@ -91,9 +104,16 @@ const ReviewsSection = () => {
                     </blockquote>
                     
                     {/* Author */}
-                    <p className="font-medium text-foreground">
-                      {review.name}
-                    </p>
+                    <div className="flex items-center gap-3">
+                      <Avatar className="h-9 w-9">
+                        <AvatarFallback className="bg-primary/10 text-primary text-sm font-medium">
+                          {review.initials}
+                        </AvatarFallback>
+                      </Avatar>
+                      <p className="font-medium text-foreground">
+                        {review.name}
+                      </p>
+                    </div>
                   </div>
                 </CarouselItem>
               ))}
