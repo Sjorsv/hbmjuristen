@@ -8,7 +8,6 @@ import insight3 from '@/assets/insight-3.jpg';
 
 interface PressArticle {
   id: string;
-  category: string;
   title: string;
   excerpt: string;
   date: string;
@@ -19,30 +18,11 @@ interface PressArticle {
 const pressArticles: PressArticle[] = [
   {
     id: '1',
-    category: 'Nieuws',
-    title: 'HBM Juristen opent nieuw kantoor in Amsterdam Centrum',
-    excerpt: 'Uitbreiding van onze dienstverlening met een nieuwe locatie aan de Keizersgracht.',
-    date: '5 januari 2025',
+    title: 'Persverklaring - Vergismoord in Marokko',
+    excerpt: 'HBM Juristen is door NAPNieuws benaderd met het verzoek een algemene juridische toelichting te geven naar aanleiding van berichtgeving over een strafzaak in Marrakech.',
+    date: '4 februari 2023',
     image: insight1,
-    href: '/pers/nieuw-kantoor',
-  },
-  {
-    id: '2',
-    category: 'Arbeidsrecht',
-    title: 'HBM Juristen wint belangrijke arbeidsrechtzaak',
-    excerpt: 'Succesvolle uitspraak voor cliënt in ontslagprocedure.',
-    date: '20 december 2024',
-    image: insight3,
-    href: '/pers/arbeidsrechtzaak',
-  },
-  {
-    id: '3',
-    category: 'Nieuws',
-    title: 'HBM Juristen in de media over huurrecht wijzigingen',
-    excerpt: 'Onze expertise over de nieuwe huurwetgeving werd uitgelicht in landelijke media.',
-    date: '15 december 2024',
-    image: insight2,
-    href: '/pers/media-huurrecht',
+    href: '/pers/vergismoord-marokko',
   },
 ];
 
@@ -110,10 +90,6 @@ const Press = () => {
                     alt={article.title}
                     className="w-full h-56 object-cover transition-transform duration-500 group-hover:scale-105"
                   />
-                  {/* Category badge */}
-                  <span className="absolute top-4 left-4 bg-primary text-primary-foreground text-xs font-medium px-3 py-1 rounded-full">
-                    {article.category}
-                  </span>
                 </div>
 
                 {/* Content */}
