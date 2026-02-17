@@ -168,6 +168,7 @@ const Footer = () => {
                 <div className="flex items-center gap-8">
                   <img src={logoNmv} alt="NMv" className="h-10 w-auto object-contain" />
                   <img src={logoNjv} alt="Nederlandse Juristen Vereniging" className="h-10 w-auto object-contain" />
+                  <img src={logoBb} alt="SBB" className="h-10 w-auto object-contain" />
                 </div>
               </div>
               <div className="flex items-center gap-5 text-sm text-muted-foreground">
