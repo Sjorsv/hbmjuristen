@@ -59,7 +59,7 @@ const Header = () => {
             <img 
               src={logo} 
               alt="HBM Juristen - Juridisch advies & rechtsbijstand" 
-              className="h-14 w-auto"
+              className="h-10 w-auto"
             />
           </Link>
 

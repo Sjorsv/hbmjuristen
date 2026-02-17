@@ -52,7 +52,7 @@ const Footer = () => {
               <img 
                 src={logo} 
                 alt="HBM Juristen - Juridisch advies & rechtsbijstand" 
-                className="h-16 w-auto"
+                className="h-12 w-auto"
               />
             </Link>
             <p className="text-muted-foreground max-w-sm mb-6">
