@@ -55,7 +55,7 @@ const teamMembers = [
   },
   {
     name: 'A. Zaki',
-    role: 'Juriste',
+    role: 'Juriste en Klachtenfunctionaris',
     image: teamZaki,
     bio: [
       'Mevrouw A. Zaki is juriste en heeft een specialisatie in het bedrijfsrecht verworven aan zowel de Marokkaanse universiteit van Casablanca als aan de Franse universiteit van Nice.',
