@@ -15,10 +15,10 @@ const insights = [
   },
   {
     category: 'Nieuws',
-    title: 'Hoge Raad verduidelijkt regels voor transitievergoeding',
+    title: 'Drie formele trajecten met het ministerie',
     date: '15 januari 2025',
     image: insight2,
-    href: '/blog/transitievergoeding',
+    href: '/blog/drie-formele-trajecten',
   },
   {
     category: 'Nieuws',
