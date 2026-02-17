@@ -6,6 +6,7 @@ import { Button } from '@/components/ui/button';
 import insight1 from '@/assets/insight-1.jpg';
 import insight2 from '@/assets/insight-2.jpg';
 import insight3 from '@/assets/insight-3.jpg';
+import headerMorocco from '@/assets/header-morocco.jpg';
 
 interface BlogPost {
   slug: string;
@@ -21,6 +22,22 @@ interface BlogPost {
 }
 
 const blogPosts: Record<string, BlogPost> = {
+  'bezoek-universiteit-utrecht': {
+    slug: 'bezoek-universiteit-utrecht',
+    type: 'blog',
+    category: 'Nieuws',
+    title: 'Bezoek Universiteit Utrecht (Ad Informandum) aan HBM Juristen in Marokko',
+    excerpt: 'In april 2024 heeft HBM Juristen studenten van Ad Informandum, verbonden aan de Universiteit Utrecht, ontvangen in Marokko.',
+    date: '12 april 2024',
+    author: 'HBM Juristen',
+    readTime: '2 min leestijd',
+    image: headerMorocco,
+    content: [
+      'In april 2024 heeft HBM Juristen studenten van Ad Informandum, verbonden aan de Universiteit Utrecht, ontvangen in Marokko in het kader van hun studiereis.',
+      'Tijdens het bezoek is een toelichting gegeven op de internationale rechtspraktijk van het kantoor. De studenten hebben daarnaast exclusieve toegang gekregen tot het Hof van Beroep Casablanca, waar zij een rondleiding hebben ontvangen en inzicht kregen in de organisatie en werkwijze van de Marokkaanse rechtspraak.',
+      'HBM Juristen dankt de president van het Hof van Beroep te Casablanca, de betrokken advocaten en juristen, alsmede alle collega\'s die hebben bijgedragen aan de organisatie en inhoudelijke invulling van deze leerzame dag.',
+    ],
+  },
   'rechtsbijstandsstelsel': {
     slug: 'rechtsbijstandsstelsel',
     type: 'blog',

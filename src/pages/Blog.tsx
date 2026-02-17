@@ -6,6 +6,7 @@ import Layout from '@/components/layout/Layout';
 import insight1 from '@/assets/insight-1.jpg';
 import insight2 from '@/assets/insight-2.jpg';
 import insight3 from '@/assets/insight-3.jpg';
+import headerMorocco from '@/assets/header-morocco.jpg';
 
 type CategoryType = 'all' | 'arbeidsrecht' | 'nieuws' | 'bestuursrecht' | 'consumentenrecht' | 'vreemdelingenrecht';
 
@@ -21,6 +22,16 @@ interface Article {
 }
 
 const articles: Article[] = [
+  {
+    id: '0',
+    category: 'Nieuws',
+    categorySlug: 'nieuws',
+    title: 'Bezoek Universiteit Utrecht (Ad Informandum) aan HBM Juristen in Marokko',
+    excerpt: 'In april 2024 heeft HBM Juristen studenten van Ad Informandum, verbonden aan de Universiteit Utrecht, ontvangen in Marokko in het kader van hun studiereis.',
+    date: '12 april 2024',
+    image: headerMorocco,
+    href: '/blog/bezoek-universiteit-utrecht',
+  },
   {
     id: '1',
     category: 'Bestuursrecht',
