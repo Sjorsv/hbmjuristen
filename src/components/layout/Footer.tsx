@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { Phone, Mail, MapPin } from 'lucide-react';
-import logo from '@/assets/logo.png';
+import logo from '@/assets/logo-hbmjuristen.svg';
 import logoNjv from '@/assets/logo-njv.png';
 import logoNmv from '@/assets/logo-nmv.png';
 import logoBb from '@/assets/logo-bb.png';
