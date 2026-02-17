@@ -23,8 +23,8 @@ const practiceAreas = [
     { name: 'Verbintenissenrecht', description: 'Contracten en overeenkomsten', href: '/rechtsgebieden/verbintenissenrecht' },
   ],
   [
+    { name: 'Marokkaans Recht', description: 'Juridische zaken met betrekking tot Marokko', href: '/rechtsgebieden/marokko' },
     { name: 'China', description: 'Juridische zaken met betrekking tot China', href: '/rechtsgebieden/china' },
-    { name: 'Marokko', description: 'Juridische zaken met betrekking tot Marokko', href: '/rechtsgebieden/marokko' },
   ],
 ];
 
