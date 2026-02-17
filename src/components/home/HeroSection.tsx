@@ -57,7 +57,7 @@ const HeroSection = () => {
                 key={index}
                 src={slide.src}
                 alt={slide.alt}
-                className={`absolute inset-0 w-full h-full object-cover ${index === 0 ? 'grayscale' : ''}`}
+                className="absolute inset-0 w-full h-full object-cover"
                 initial={false}
                 animate={{ x: `${(index - current) * 100}%` }}
                 transition={{ duration: 0.8, ease: [0.4, 0, 0.2, 1] }}
