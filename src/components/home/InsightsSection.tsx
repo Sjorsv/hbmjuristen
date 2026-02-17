@@ -4,8 +4,16 @@ import { motion } from 'framer-motion';
 import insight1 from '@/assets/insight-1.jpg';
 import insight2 from '@/assets/insight-2.jpg';
 import insight3 from '@/assets/insight-3.jpg';
+import headerMorocco from '@/assets/header-morocco.jpg';
 
 const insights = [
+  {
+    category: 'Nieuws',
+    title: 'Bezoek Universiteit Utrecht (Ad Informandum) aan HBM Juristen in Marokko',
+    date: '12 april 2024',
+    image: headerMorocco,
+    href: '/blog/bezoek-universiteit-utrecht',
+  },
   {
     category: 'Bestuursrecht',
     title: 'Toegang tot het recht onder druk – waarom herijking van het rechtsbijstandsstelsel noodzakelijk is',
@@ -19,13 +27,6 @@ const insights = [
     date: '15 januari 2025',
     image: insight2,
     href: '/blog/drie-formele-trajecten',
-  },
-  {
-    category: 'Nieuws',
-    title: 'De kern: effectieve toegang tot het recht',
-    date: '8 januari 2025',
-    image: insight3,
-    href: '/blog/effectieve-toegang-recht',
   },
 ];
 
