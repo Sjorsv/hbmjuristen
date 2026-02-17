@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { ArrowLeft } from 'lucide-react';
@@ -8,12 +7,11 @@ import insight2 from '@/assets/insight-2.jpg';
 import insight3 from '@/assets/insight-3.jpg';
 import headerMorocco from '@/assets/header-morocco.jpg';
 
-type CategoryType = 'all' | 'arbeidsrecht' | 'nieuws' | 'bestuursrecht' | 'consumentenrecht' | 'vreemdelingenrecht' | 'civiel-recht' | 'ondernemingsrecht';
+// Categories removed
 
 interface Article {
   id: string;
-  category: string;
-  categorySlug: CategoryType;
+  category?: string;
   title: string;
   excerpt: string;
   date: string;
@@ -25,7 +23,6 @@ const articles: Article[] = [
   {
     id: '0',
     category: 'Nieuws',
-    categorySlug: 'nieuws',
     title: 'Bezoek Universiteit Utrecht (Ad Informandum) aan HBM Juristen in Marokko',
     excerpt: 'In april 2024 heeft HBM Juristen studenten van Ad Informandum, verbonden aan de Universiteit Utrecht, ontvangen in Marokko in het kader van hun studiereis.',
     date: '12 april 2024',
@@ -35,7 +32,7 @@ const articles: Article[] = [
   {
     id: '1',
     category: 'Bestuursrecht',
-    categorySlug: 'bestuursrecht',
+    
     title: 'Toegang tot het recht onder druk – waarom herijking van het rechtsbijstandsstelsel noodzakelijk is',
     excerpt: 'De toegang tot het recht staat in Nederland al geruime tijd onder spanning. Burgers met complexe juridische problemen vinden niet tijdig betaalbare en deskundige ondersteuning.',
     date: '28 januari 2025',
@@ -45,7 +42,6 @@ const articles: Article[] = [
   {
     id: '2',
     category: 'Nieuws',
-    categorySlug: 'nieuws',
     title: 'Drie formele trajecten met het ministerie',
     excerpt: 'HBM Juristen heeft deze problematiek rechtstreeks onder de aandacht gebracht bij het ministerie van Justitie en Veiligheid.',
     date: '15 januari 2025',
@@ -55,7 +51,7 @@ const articles: Article[] = [
   {
     id: '3',
     category: 'Nieuws',
-    categorySlug: 'nieuws',
+    
     title: 'De kern: effectieve toegang tot het recht',
     excerpt: 'Artikel 6 EVRM verplicht staten tot effectieve toegang tot de rechter. Die verplichting ziet niet uitsluitend op het bestaan van procedures.',
     date: '8 januari 2025',
@@ -65,7 +61,7 @@ const articles: Article[] = [
   {
     id: '5',
     category: 'Arbeidsrecht',
-    categorySlug: 'arbeidsrecht',
+    
     title: 'Arbeidsrecht: schijnzelfstandigheid, platformarbeid en handhaving',
     excerpt: 'Het Nederlandse arbeidsrecht bevindt zich in een herijkingsfase. De handhaving op schijnzelfstandigheid is sinds 2025 aanzienlijk aangescherpt.',
     date: '2 januari 2025',
@@ -75,7 +71,6 @@ const articles: Article[] = [
   {
     id: '7',
     category: 'Vreemdelingenrecht',
-    categorySlug: 'vreemdelingenrecht',
     title: 'De Moudawana in ontwikkeling — actuele hervormingen en juridische betekenis',
     excerpt: 'De Marokkaanse Moudawana, het familierechtelijk wetboek van het Koninkrijk Marokko, blijft in beweging sinds de fundamentele hervorming van 2004.',
     date: '15 december 2024',
@@ -85,7 +80,7 @@ const articles: Article[] = [
   {
     id: '8',
     category: 'Civiel recht',
-    categorySlug: 'civiel-recht',
+    
     title: 'Mediation in Nederland: tussen praktijk en aankomende wetgeving',
     excerpt: 'Mediation is in Nederland al jaren een vaste waarde binnen de rechtspraktijk, maar opmerkelijk genoeg zonder eigen, zelfstandige wettelijke regeling.',
     date: '10 december 2024',
@@ -95,7 +90,7 @@ const articles: Article[] = [
   {
     id: '9',
     category: 'Ondernemingsrecht',
-    categorySlug: 'ondernemingsrecht',
+    
     title: 'De handelssector in Marokko: juridische aandachtspunten voor buitenlandse ondernemers',
     excerpt: 'Marokko positioneert zich nadrukkelijk als economische brug tussen Europa en Afrika. Toetreding tot de Marokkaanse markt vereist een gedegen begrip van het lokale handels- en ondernemingsrecht.',
     date: '1 december 2024',
@@ -105,7 +100,7 @@ const articles: Article[] = [
   {
     id: '10',
     category: 'Vreemdelingenrecht',
-    categorySlug: 'vreemdelingenrecht',
+    
     title: 'Vreemdelingenrecht in Nederland: IND-rapporten, vertragingen en rechtsbescherming in 2026',
     excerpt: 'De IND kampt structureel met lange wachttijden en een groeiende werkvoorraad, wat directe gevolgen heeft voor asielzoekers, familie- en migratieprocedures.',
     date: '20 november 2024',
@@ -114,23 +109,8 @@ const articles: Article[] = [
   },
 ];
 
-const categoryFilters: { value: CategoryType; label: string }[] = [
-  { value: 'all', label: 'Alle categorieën' },
-  { value: 'arbeidsrecht', label: 'Arbeidsrecht' },
-  { value: 'nieuws', label: 'Nieuws' },
-  { value: 'bestuursrecht', label: 'Bestuursrecht' },
-  { value: 'consumentenrecht', label: 'Consumentenrecht' },
-  { value: 'civiel-recht', label: 'Civiel recht' },
-  { value: 'vreemdelingenrecht', label: 'Vreemdelingenrecht' },
-  { value: 'ondernemingsrecht', label: 'Ondernemingsrecht' },
-];
-
 const Blog = () => {
-  const [activeCategory, setActiveCategory] = useState<CategoryType>('all');
-
-  const filteredArticles = articles.filter((article) => {
-    return activeCategory === 'all' || article.categorySlug === activeCategory;
-  });
+  const filteredArticles = articles;
 
   return (
     <Layout>
@@ -175,39 +155,6 @@ const Blog = () => {
         </div>
       </section>
 
-      {/* Filters */}
-      <section className="container-editorial py-6 border-b border-border">
-        <motion.div
-          initial={{ opacity: 0, y: 10 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.4, delay: 0.3 }}
-          className="flex flex-wrap gap-2"
-        >
-          {categoryFilters.map((filter) => (
-            <button
-              key={filter.value}
-              onClick={() => setActiveCategory(filter.value)}
-              className={`px-4 py-2 text-sm font-medium rounded-full transition-all duration-200 ${
-                activeCategory === filter.value
-                  ? 'bg-primary text-primary-foreground'
-                  : 'bg-section-grey text-foreground hover:bg-section-grey-darker'
-              }`}
-            >
-              {filter.label}
-            </button>
-          ))}
-        </motion.div>
-
-        {/* Results count */}
-        <motion.p
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.4, delay: 0.4 }}
-          className="mt-4 text-sm text-muted-foreground"
-        >
-          {filteredArticles.length} {filteredArticles.length === 1 ? 'artikel' : 'artikelen'} gevonden
-        </motion.p>
-      </section>
 
       {/* Articles grid */}
       <section className="container-editorial py-10 md:py-14">
@@ -231,10 +178,6 @@ const Blog = () => {
                       alt={article.title}
                       className="w-full h-56 object-cover transition-transform duration-500 group-hover:scale-105"
                     />
-                    {/* Category badge */}
-                    <span className="absolute top-4 left-4 bg-primary text-primary-foreground text-xs font-medium px-3 py-1 rounded-full">
-                      {article.category}
-                    </span>
                   </div>
 
                   {/* Content */}
@@ -253,23 +196,7 @@ const Blog = () => {
               </motion.article>
             ))}
           </div>
-        ) : (
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            className="text-center py-16"
-          >
-            <p className="text-lg text-muted-foreground">
-              Geen artikelen gevonden met de huidige filters.
-            </p>
-            <button
-              onClick={() => setActiveCategory('all')}
-              className="mt-4 text-primary hover:underline"
-            >
-              Reset filters
-            </button>
-          </motion.div>
-        )}
+        ) : null}
       </section>
     </Layout>
   );
