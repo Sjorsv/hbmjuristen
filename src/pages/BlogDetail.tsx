@@ -152,7 +152,7 @@ const BlogDetail = () => {
                 ? 'bg-accent text-accent-foreground' 
                 : 'bg-secondary text-secondary-foreground'
             }`}>
-              {post.type === 'pers' ? 'Pers' : 'Blog'}
+              {post.type === 'pers' ? 'Pers' : 'Blogs'}
             </span>
           </motion.div>
 

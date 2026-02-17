@@ -21,7 +21,7 @@ const navItems = [
   },
   { name: 'Ons team', href: '/over-ons/team' },
   { name: 'Vacatures', href: '/vacatures' },
-  { name: 'Blog', href: '/blog' },
+  { name: 'Blogs', href: '/blog' },
 ];
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);

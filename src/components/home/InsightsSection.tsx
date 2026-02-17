@@ -42,7 +42,7 @@ const InsightsSection = () => {
           className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-12"
         >
           <h2 className="text-3xl md:text-4xl font-serif text-foreground">
-            Inzichten & actualiteit
+            Blogs
           </h2>
           <Link
             to="/blog"
