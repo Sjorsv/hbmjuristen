@@ -164,11 +164,10 @@ const Footer = () => {
           <div className="lg:col-span-5 mt-6 pt-6 border-t border-border mb-0">
             <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-6">
               <div>
-                <p className="text-sm font-semibold text-muted-foreground mb-4">HBM Juristen is lid van de NMv, NJV en SBB.</p>
+                <p className="text-sm font-semibold text-muted-foreground mb-4">HBM Juristen is lid van de NMv, NJv</p>
                 <div className="flex items-center gap-8">
-                  <img src={logoNjv} alt="Nederlandse Juristen Vereniging" className="h-10 w-auto object-contain" />
                   <img src={logoNmv} alt="NMv" className="h-10 w-auto object-contain" />
-                  <img src={logoBb} alt="SBB" className="h-10 w-auto object-contain" />
+                  <img src={logoNjv} alt="Nederlandse Juristen Vereniging" className="h-10 w-auto object-contain" />
                 </div>
               </div>
               <div className="flex items-center gap-5 text-sm text-muted-foreground">
