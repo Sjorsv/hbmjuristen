@@ -125,7 +125,7 @@ const Blog = () => {
               transition={{ duration: 0.6, delay: 0.1 }}
               className="text-3xl md:text-4xl lg:text-5xl font-serif text-foreground"
             >
-              Blog
+              Blogs
             </motion.h1>
             
             <motion.p
