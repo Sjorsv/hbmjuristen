@@ -22,10 +22,10 @@ const insights = [
   },
   {
     category: 'Nieuws',
-    title: 'Wijzigingen in het huurrecht: wat betekent dit voor verhuurders?',
+    title: 'De kern: effectieve toegang tot het recht',
     date: '8 januari 2025',
     image: insight3,
-    href: '/blog/huurrecht-wijzigingen',
+    href: '/blog/effectieve-toegang-recht',
   },
 ];
 

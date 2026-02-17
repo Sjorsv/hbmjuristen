@@ -63,22 +63,40 @@ const blogPosts: Record<string, BlogPost> = {
       'Heeft u vragen over dit onderwerp? Neem dan gerust contact met ons op voor een vrijblijvend gesprek.',
     ],
   },
+  'effectieve-toegang-recht': {
+    slug: 'effectieve-toegang-recht',
+    type: 'blog',
+    category: 'Nieuws',
+    title: 'De kern: effectieve toegang tot het recht',
+    excerpt: 'Artikel 6 EVRM verplicht staten tot effectieve toegang tot de rechter.',
+    date: '8 januari 2025',
+    author: 'HBM Juristen',
+    readTime: '3 min leestijd',
+    image: insight3,
+    content: [
+      'Artikel 6 EVRM verplicht staten tot effectieve toegang tot de rechter. Die verplichting ziet niet uitsluitend op het bestaan van procedures, maar op daadwerkelijke bereikbaarheid van juridische bijstand wanneer dat noodzakelijk is voor een eerlijk proces.',
+      'Het Europees Hof voor de Rechten van de Mens heeft herhaaldelijk benadrukt dat rechtsbescherming praktisch en reëel moet zijn.',
+      'Wanneer burgers geen toevoeging krijgen, maar ook geen commerciële tarieven kunnen dragen, ontstaat een grijs gebied waarin rechtsbescherming feitelijk onbereikbaar wordt. Juist in dat gebied opereren gespecialiseerde juristenpraktijken, vaak tegen sterk gereduceerde tarieven of met aanzienlijke onbetaalde inzet.',
+      'Dat model is maatschappelijk betrokken, maar economisch kwetsbaar.',
+      'Heeft u vragen over dit onderwerp? Neem dan gerust contact met ons op voor een vrijblijvend gesprek.',
+    ],
+  },
 };
 
 const relatedPosts = [
   {
-    title: 'Hoge Raad verduidelijkt regels voor transitievergoeding',
+    title: 'Drie formele trajecten met het ministerie',
     category: 'Nieuws',
     date: '15 januari 2025',
     image: insight2,
-    href: '/actualiteit/transitievergoeding',
+    href: '/blog/drie-formele-trajecten',
   },
   {
-    title: 'Wijzigingen in het huurrecht: wat betekent dit voor verhuurders?',
+    title: 'De kern: effectieve toegang tot het recht',
     category: 'Nieuws',
     date: '8 januari 2025',
     image: insight3,
-    href: '/actualiteit/huurrecht-wijzigingen',
+    href: '/blog/effectieve-toegang-recht',
   },
 ];
 
