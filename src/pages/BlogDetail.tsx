@@ -98,6 +98,31 @@ const blogPosts: Record<string, BlogPost> = {
       'Heeft u vragen over dit onderwerp? Neem dan gerust contact met ons op voor een vrijblijvend gesprek.',
     ],
   },
+  'moudawana-hervormingen': {
+    slug: 'moudawana-hervormingen',
+    type: 'blog',
+    category: 'Vreemdelingenrecht',
+    title: 'De Moudawana in ontwikkeling — actuele hervormingen en juridische betekenis',
+    excerpt: 'De Marokkaanse Moudawana, het familierechtelijk wetboek van het Koninkrijk Marokko, blijft in beweging sinds de fundamentele hervorming van 2004.',
+    date: '15 december 2024',
+    author: 'HBM Juristen',
+    readTime: '6 min leestijd',
+    image: insight1,
+    content: [
+      'De Marokkaanse Moudawana, het familierechtelijk wetboek van het Koninkrijk Marokko, blijft in beweging. Sinds de fundamentele hervorming van 2004 is het uitgangspunt dat het familierecht zowel bescherming biedt aan het gezin als aansluit bij maatschappelijke ontwikkelingen. In 2023 en 2024 zijn opnieuw voorstellen besproken ter actualisering van bepalingen rond huwelijk, echtscheiding, gezag en vermogensverhoudingen.',
+      '## Minimumhuwelijksleeftijd en gezag',
+      'Een belangrijk aandachtspunt betreft de aanscherping van uitzonderingen op het minimumhuwelijk van 18 jaar. Rechters beschikken thans nog over beoordelingsruimte, maar de tendens is gericht op verdere beperking en strengere motiveringseisen. Daarnaast wordt gekeken naar verduidelijking van de positie van de moeder bij voogdij- en gezagskwesties, met name wanneer ouders gescheiden leven.',
+      '## Huwelijksvermogensrecht',
+      'Ook het huwelijksvermogensrecht krijgt meer aandacht. Hoewel de Moudawana geen automatische gemeenschap van goederen kent, biedt zij ruimte voor contractuele afspraken bij huwelijkssluiting. In de praktijk blijken dergelijke afspraken vaak te ontbreken, wat bij echtscheiding tot bewijsdiscussies leidt over bijdragen aan vermogensvorming. De rechtsontwikkeling laat zien dat rechters meer gewicht toekennen aan aantoonbare economische participatie van beide echtgenoten.',
+      '## Erfrecht',
+      'Op het terrein van erfrecht blijft de traditionele systematiek leidend, met vaste verdelingsregels. Hervormingsdiscussies raken aan de vraag in hoeverre binnen het bestaande kader ruimte bestaat voor aanvullende testamentaire planning. Voor personen met dubbele nationaliteit of vermogen in meerdere landen ontstaan daardoor complexe internationaal privaatrechtelijke situaties.',
+      '## Relevantie voor de Marokkaanse diaspora',
+      'Voor de Marokkaanse diaspora, waaronder Marokkaanse Nederlanders, is dit bijzonder relevant. Echtscheidingen uitgesproken in Nederland moeten in Marokko afzonderlijk worden erkend. Onroerend goed in Marokko valt in beginsel onder Marokkaans recht, ongeacht een eventuele Nederlandse rechtskeuze. Dit kan leiden tot parallelle procedures en uiteenlopende uitkomsten.',
+      'De hervormingen vinden plaats binnen het constitutionele bestel van het Koninkrijk, met respect voor de nationale identiteit en de centrale rol van de monarch als waarborg van institutionele stabiliteit. Juridische modernisering wordt aldus vormgegeven als geleidelijke ontwikkeling binnen het bestaande staatsrechtelijke kader.',
+      '## Preventieve structurering',
+      'Voor cliënten met grensoverschrijdende belangen geldt dat preventieve structurering essentieel is. Huwelijkscontracten, rechtskeuzeclausules en testamentaire voorzieningen kunnen toekomstige geschillen aanzienlijk beperken. In een rechtsgebied dat zowel cultureel als juridisch gelaagd is, vereist effectieve advisering een combinatie van inhoudelijke kennis en strategisch inzicht.',
+    ],
+  },
 };
 
 const relatedPosts = [
