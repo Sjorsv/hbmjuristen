@@ -8,7 +8,7 @@ import insight2 from '@/assets/insight-2.jpg';
 import insight3 from '@/assets/insight-3.jpg';
 import headerMorocco from '@/assets/header-morocco.jpg';
 
-type CategoryType = 'all' | 'arbeidsrecht' | 'nieuws' | 'bestuursrecht' | 'consumentenrecht' | 'vreemdelingenrecht' | 'civiel-recht';
+type CategoryType = 'all' | 'arbeidsrecht' | 'nieuws' | 'bestuursrecht' | 'consumentenrecht' | 'vreemdelingenrecht' | 'civiel-recht' | 'ondernemingsrecht';
 
 interface Article {
   id: string;
@@ -92,6 +92,16 @@ const articles: Article[] = [
     image: insight2,
     href: '/blog/mediation-nederland',
   },
+  {
+    id: '9',
+    category: 'Ondernemingsrecht',
+    categorySlug: 'ondernemingsrecht',
+    title: 'De handelssector in Marokko: juridische aandachtspunten voor buitenlandse ondernemers',
+    excerpt: 'Marokko positioneert zich nadrukkelijk als economische brug tussen Europa en Afrika. Toetreding tot de Marokkaanse markt vereist een gedegen begrip van het lokale handels- en ondernemingsrecht.',
+    date: '1 december 2024',
+    image: insight1,
+    href: '/blog/handelssector-marokko',
+  },
 ];
 
 const categoryFilters: { value: CategoryType; label: string }[] = [
@@ -102,6 +112,7 @@ const categoryFilters: { value: CategoryType; label: string }[] = [
   { value: 'consumentenrecht', label: 'Consumentenrecht' },
   { value: 'civiel-recht', label: 'Civiel recht' },
   { value: 'vreemdelingenrecht', label: 'Vreemdelingenrecht' },
+  { value: 'ondernemingsrecht', label: 'Ondernemingsrecht' },
 ];
 
 const Blog = () => {
