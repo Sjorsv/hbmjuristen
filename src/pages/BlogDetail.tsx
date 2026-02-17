@@ -21,29 +21,24 @@ interface BlogPost {
 }
 
 const blogPosts: Record<string, BlogPost> = {
-  'ontslagrecht-2025': {
-    slug: 'ontslagrecht-2025',
+  'rechtsbijstandsstelsel': {
+    slug: 'rechtsbijstandsstelsel',
     type: 'blog',
-    category: 'Arbeidsrecht',
-    title: 'Nieuwe wetgeving rondom het ontslagrecht in 2025',
-    excerpt: 'De belangrijkste wijzigingen in het ontslagrecht die per 2025 van kracht worden.',
+    category: 'Bestuursrecht',
+    title: 'Toegang tot het recht onder druk – waarom herijking van het rechtsbijstandsstelsel noodzakelijk is',
+    excerpt: 'De toegang tot het recht staat in Nederland al geruime tijd onder spanning. Burgers met complexe juridische problemen vinden niet tijdig betaalbare en deskundige ondersteuning.',
     date: '28 januari 2025',
-    author: 'Hassan Bouchnafa',
-    readTime: '5 min leestijd',
+    author: 'HBM Juristen',
+    readTime: '4 min leestijd',
     image: insight1,
     content: [
-      'Per 1 januari 2025 zijn er belangrijke wijzigingen doorgevoerd in het Nederlandse ontslagrecht. Deze veranderingen hebben gevolgen voor zowel werkgevers als werknemers. In dit artikel bespreken wij de belangrijkste punten waar u rekening mee moet houden.',
-      '## Wijzigingen in de transitievergoeding',
-      'De berekening van de transitievergoeding is aangepast. Werknemers hebben nu recht op een transitievergoeding vanaf de eerste werkdag, ongeacht de duur van het dienstverband. De hoogte van de vergoeding is vastgesteld op 1/3 maandsalaris per gewerkt jaar.',
-      '## Strengere eisen aan de ontslaggronden',
-      'De wetgever heeft de eisen aan de verschillende ontslaggronden aangescherpt. Met name bij ontslag wegens disfunctioneren moet de werkgever kunnen aantonen dat er een gedegen verbetertraject is doorlopen. Dit traject moet minimaal drie maanden duren en goed gedocumenteerd zijn.',
-      '## Herplaatsingsverplichting',
-      'De herplaatsingsverplichting is uitgebreid. Werkgevers moeten nu ook actief zoeken naar herplaatsingsmogelijkheden binnen het concern. Dit betekent dat ook vacatures bij zuster- en moederondernemingen moeten worden meegenomen in de afweging.',
-      '## Wat betekent dit voor u?',
-      'Als werkgever is het belangrijk om uw ontslagprocedures tegen het licht te houden. Zorg ervoor dat dossieropbouw tijdig en zorgvuldig plaatsvindt. Als werknemer is het goed om te weten dat uw rechtspositie op verschillende punten is versterkt.',
-      '## Conclusie',
-      'De wijzigingen in het ontslagrecht per 2025 zorgen voor een betere balans tussen de belangen van werkgevers en werknemers. Het is echter wel van belang dat beide partijen goed op de hoogte zijn van hun rechten en plichten.',
-      'Heeft u vragen over de nieuwe wetgeving of uw specifieke situatie? Neem dan gerust contact met ons op voor een vrijblijvend gesprek.',
+      'De toegang tot het recht staat in Nederland al geruime tijd onder spanning. In de dagelijkse praktijk wordt zichtbaar wat cijfers slechts gedeeltelijk tonen: burgers met complexe juridische problemen vinden niet tijdig betaalbare en deskundige ondersteuning. De vraag naar inhoudelijke rechtsbijstand groeit, terwijl het stelsel van gesubsidieerde rechtsbijstand slechts een beperkt deel van de rechtszoekenden bereikt.',
+      'Op grond van de Wet op de rechtsbijstand kunnen uitsluitend advocaten – en in specifieke gevallen mediators – aanspraak maken op publieke financiering. Dat systeem is historisch verklaarbaar. Het beroep van advocaat kent een beschermde titel, verplichte beroepsopleiding, tuchtrecht en toezicht door de Nederlandse orde van advocaten en de Raad voor Rechtsbijstand.',
+      '## De praktijk van 2026 is echter breder',
+      'Gespecialiseerde juristenpraktijken behandelen inmiddels structureel complexe zaken binnen onder meer het bestuursrecht, vreemdelingenrecht, arbeidsrecht en civiel recht. Zij voeren bezwaar- en beroepsprocedures, stellen processtukken op, begeleiden cliënten bij zittingen en dragen bij aan inhoudelijke rechtsontwikkeling. De kwaliteit van deze werkzaamheden is in veel gevallen gelijkwaardig aan die van traditionele sociale advocatuur. Toch ontbreekt iedere structurele mogelijkheid om – waar maatschappelijke nood evident is – een beroep te doen op publieke middelen.',
+      '## Een wezenlijke spanning tussen systeem en realiteit',
+      'Dat leidt tot een wezenlijke spanning tussen systeem en realiteit.',
+      'Heeft u vragen over dit onderwerp of uw specifieke situatie? Neem dan gerust contact met ons op voor een vrijblijvend gesprek.',
     ],
   },
 };
