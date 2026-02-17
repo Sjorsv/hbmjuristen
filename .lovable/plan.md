@@ -1,30 +1,20 @@
 
-# Arabisch (AR) toevoegen aan taalschakelaar
+# Logo scherp maken: PNG naar SVG
 
-## Wat wordt er aangepast
+## Probleem
+De header en footer gebruiken `logo.png`, wat onscherp kan worden bij schaling (vooral op retina-schermen). Er staat al een `logo.svg` in het project.
 
-In de utility bar bovenaan de website wordt de taalschakelaar uitgebreid van **NL / EN** naar **NL / EN / AR**.
+## Oplossing
+De import in twee bestanden wijzigen van `logo.png` naar `logo.svg`:
 
-## Wijziging
+### Wijzigingen
 
-**Bestand:** `src/components/layout/UtilityBar.tsx`
+**1. `src/components/layout/Header.tsx`**
+- Import wijzigen van `@/assets/logo.png` naar `@/assets/logo.svg`
 
-De huidige code (regel 29-37):
-```text
-NL / EN
-```
-
-Wordt:
-```text
-NL / EN / AR
-```
-
-Er wordt een extra scheidingsteken (/) en een AR-knop toegevoegd, met dezelfde styling als de bestaande taalbuttons.
+**2. `src/components/layout/Footer.tsx`**
+- Import wijzigen van `@/assets/logo.png` naar `@/assets/logo.svg`
 
 ---
 
-## Technische details
-
-- Toevoegen van een extra `<span>` met "/" scheidingsteken
-- Toevoegen van een nieuwe `<button>` voor AR met dezelfde classes als EN (opacity-70 standaard, hover naar opacity-100)
-- Geen nieuwe dependencies of andere bestanden nodig
+**Opmerking:** Als de bestaande `logo.svg` niet het juiste logo is, kun je een nieuwe SVG uploaden en dan passen we die aan. SVG is altijd de beste keuze voor logo's omdat het op elk formaat en scherm scherp blijft.
