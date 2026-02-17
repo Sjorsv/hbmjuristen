@@ -294,25 +294,7 @@ const BlogDetail = () => {
               Terug naar overzicht
             </Link>
           </motion.div>
-          
-          {/* Tags */}
-          <motion.div
-            initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.4, delay: 0.1 }}
-            className="flex gap-2 mb-4"
-          >
-            <span className="bg-primary text-primary-foreground text-xs font-medium px-3 py-1 rounded-full">
-              {post.category}
-            </span>
-            <span className={`text-xs font-medium px-3 py-1 rounded-full ${
-              post.type === 'pers' 
-                ? 'bg-accent text-accent-foreground' 
-                : 'bg-secondary text-secondary-foreground'
-            }`}>
-              {post.type === 'pers' ? 'Pers' : 'Blogs'}
-            </span>
-          </motion.div>
+
 
           <motion.h1 
             initial={{ opacity: 0, y: 20 }}
