@@ -7,11 +7,11 @@ import insight3 from '@/assets/insight-3.jpg';
 
 const insights = [
   {
-    category: 'Arbeidsrecht',
-    title: 'Nieuwe wetgeving rondom het ontslagrecht in 2025',
+    category: 'Bestuursrecht',
+    title: 'Toegang tot het recht onder druk – waarom herijking van het rechtsbijstandsstelsel noodzakelijk is',
     date: '28 januari 2025',
     image: insight1,
-    href: '/blog/ontslagrecht-2025',
+    href: '/blog/rechtsbijstandsstelsel',
   },
   {
     category: 'Nieuws',

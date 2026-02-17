@@ -23,13 +23,13 @@ interface Article {
 const articles: Article[] = [
   {
     id: '1',
-    category: 'Arbeidsrecht',
-    categorySlug: 'arbeidsrecht',
-    title: 'Nieuwe wetgeving rondom het ontslagrecht in 2025',
-    excerpt: 'De belangrijkste wijzigingen in het ontslagrecht die per 2025 van kracht worden.',
+    category: 'Bestuursrecht',
+    categorySlug: 'bestuursrecht',
+    title: 'Toegang tot het recht onder druk – waarom herijking van het rechtsbijstandsstelsel noodzakelijk is',
+    excerpt: 'De toegang tot het recht staat in Nederland al geruime tijd onder spanning. Burgers met complexe juridische problemen vinden niet tijdig betaalbare en deskundige ondersteuning.',
     date: '28 januari 2025',
     image: insight1,
-    href: '/blog/ontslagrecht-2025',
+    href: '/blog/rechtsbijstandsstelsel',
   },
   {
     id: '2',
