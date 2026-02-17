@@ -41,6 +41,28 @@ const blogPosts: Record<string, BlogPost> = {
       'Heeft u vragen over dit onderwerp of uw specifieke situatie? Neem dan gerust contact met ons op voor een vrijblijvend gesprek.',
     ],
   },
+  'drie-formele-trajecten': {
+    slug: 'drie-formele-trajecten',
+    type: 'blog',
+    category: 'Nieuws',
+    title: 'Drie formele trajecten met het ministerie',
+    excerpt: 'HBM Juristen heeft deze problematiek rechtstreeks onder de aandacht gebracht bij het ministerie van Justitie en Veiligheid.',
+    date: '15 januari 2025',
+    author: 'HBM Juristen',
+    readTime: '4 min leestijd',
+    image: insight2,
+    content: [
+      'HBM Juristen heeft deze problematiek niet louter publiekelijk aangekaart, maar ook rechtstreeks onder de aandacht gebracht bij het ministerie van Justitie en Veiligheid.',
+      'In de afgelopen periode hebben drie formele correspondentie- en overlegtrajecten plaatsgevonden:',
+      'Een eerste inhoudelijke briefwisseling over de exclusieve toegang van advocaten tot gesubsidieerde rechtsbijstand, waarin is bepleit om kwaliteitscriteria centraal te stellen in plaats van uitsluitend titelgebonden toegang.',
+      'Een vervolgreactie waarin concreet is voorgesteld om te onderzoeken of gecertificeerde juristen onder strikte kwaliteitsvoorwaarden binnen het bestaande stelsel kunnen opereren.',
+      'Een nadere schriftelijke uitwisseling naar aanleiding van de reactie van het ministerie, waarin is benadrukt dat de maatschappelijke behoefte aan betaalbare juridische bijstand structureel groter is dan het huidige stelsel kan dragen.',
+      '## Reactie van het ministerie',
+      'In de beantwoording heeft het ministerie bevestigd dat de toegang tot het recht voortdurende aandacht heeft en dat er onderzoek loopt naar alternatieve organisatievormen binnen de juridische sector. Tegelijkertijd is aangegeven dat het te ver zou voeren om de volledige groep juristen onder een nieuw wettelijk kader te brengen.',
+      'Die reactie verdient respect, maar vraagt ook om verdere verdieping. Het debat is immers geen principieel beroepsdebat, maar een systeemvraagstuk.',
+      'Heeft u vragen over dit onderwerp? Neem dan gerust contact met ons op voor een vrijblijvend gesprek.',
+    ],
+  },
 };
 
 const relatedPosts = [
