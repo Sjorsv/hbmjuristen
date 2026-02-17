@@ -64,13 +64,13 @@ const articles: Article[] = [
   },
   {
     id: '5',
-    category: 'Bestuursrecht',
-    categorySlug: 'bestuursrecht',
-    title: 'Bezwaar maken tegen een besluit van de gemeente',
-    excerpt: 'Stap voor stap uitleg over het bezwaarprocedure bij overheidsbesluiten.',
+    category: 'Arbeidsrecht',
+    categorySlug: 'arbeidsrecht',
+    title: 'Arbeidsrecht: schijnzelfstandigheid, platformarbeid en handhaving',
+    excerpt: 'Het Nederlandse arbeidsrecht bevindt zich in een herijkingsfase. De handhaving op schijnzelfstandigheid is sinds 2025 aanzienlijk aangescherpt.',
     date: '2 januari 2025',
     image: insight2,
-    href: '/blog/bezwaar-gemeente',
+    href: '/blog/schijnzelfstandigheid-handhaving',
   },
   {
     id: '7',
