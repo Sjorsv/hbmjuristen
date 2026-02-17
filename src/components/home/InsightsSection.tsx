@@ -48,7 +48,7 @@ const InsightsSection = () => {
             to="/blog"
             className="arrow-link"
           >
-            Meer artikelen
+            Meer blogs
             <ArrowRight className="w-4 h-4" />
           </Link>
         </motion.div>
