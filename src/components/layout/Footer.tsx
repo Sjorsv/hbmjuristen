@@ -23,6 +23,7 @@ const footerLinks = {
     { name: 'Werkwijze', href: '/werkwijze' },
     { name: 'Tarieven', href: '/tarieven' },
     { name: 'Vacatures', href: '/vacatures' },
+    { name: 'FAQ', href: '/faq' },
     { name: 'Blogs', href: '/blog' },
     { name: 'Pers', href: '/pers' },
   ],
@@ -35,7 +36,7 @@ const footerLinks = {
     { name: 'Audit', href: '/audit' },
     { name: 'Acceptatiebeleid', href: '/acceptatiebeleid' },
     { name: 'E-mailbeleid', href: '/e-mailbeleid' },
-    { name: 'FAQ', href: '/faq' },
+    { name: 'Youth Program', href: '/youth-legal-development-program' },
     { name: 'Artificial Intelligence', href: '/artificial-intelligence' },
   ],
 };
