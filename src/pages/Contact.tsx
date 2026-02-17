@@ -18,7 +18,6 @@ const Contact = () => {
     email: '',
     phone: '',
     location: '',
-    subject: '',
     message: '',
   });
 
@@ -44,7 +43,6 @@ const Contact = () => {
       email: '',
       phone: '',
       location: '',
-      subject: '',
       message: '',
     });
     setIsSubmitting(false);
@@ -134,7 +132,7 @@ const Contact = () => {
                   />
                 </div>
                 <div className="space-y-2">
-                  <Label htmlFor="email">E-mail *</Label>
+                <Label htmlFor="email">E-mail</Label>
                   <Input
                     id="email"
                     name="email"
@@ -142,14 +140,13 @@ const Contact = () => {
                     value={formData.email}
                     onChange={handleChange}
                     placeholder="uw@email.nl"
-                    required
                   />
                 </div>
               </div>
               
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                 <div className="space-y-2">
-                  <Label htmlFor="phone">Telefoonnummer</Label>
+                  <Label htmlFor="phone">Telefoonnummer *</Label>
                   <Input
                     id="phone"
                     name="phone"
@@ -157,16 +154,16 @@ const Contact = () => {
                     value={formData.phone}
                     onChange={handleChange}
                     placeholder="06-12345678"
+                    required
                   />
                 </div>
                 <div className="space-y-2">
-                  <Label htmlFor="location">Kies een vestiging *</Label>
+                  <Label htmlFor="location">Kies een vestiging</Label>
                   <select
                     id="location"
                     name="location"
                     value={formData.location}
                     onChange={handleChange}
-                    required
                     className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
                   >
                     <option value="" disabled>Selecteer een vestiging</option>
@@ -177,18 +174,6 @@ const Contact = () => {
                 </div>
               </div>
 
-              <div className="space-y-2">
-                <Label htmlFor="subject">Onderwerp *</Label>
-                <Input
-                  id="subject"
-                  name="subject"
-                  value={formData.subject}
-                  onChange={handleChange}
-                  placeholder="Waar gaat uw vraag over?"
-                  required
-                />
-              </div>
-              
               <div className="space-y-2">
                 <Label htmlFor="message">Bericht *</Label>
                 <Textarea
