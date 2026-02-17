@@ -102,6 +102,16 @@ const articles: Article[] = [
     image: insight1,
     href: '/blog/handelssector-marokko',
   },
+  {
+    id: '10',
+    category: 'Vreemdelingenrecht',
+    categorySlug: 'vreemdelingenrecht',
+    title: 'Vreemdelingenrecht in Nederland: IND-rapporten, vertragingen en rechtsbescherming in 2026',
+    excerpt: 'De IND kampt structureel met lange wachttijden en een groeiende werkvoorraad, wat directe gevolgen heeft voor asielzoekers, familie- en migratieprocedures.',
+    date: '20 november 2024',
+    image: insight3,
+    href: '/blog/vreemdelingenrecht-ind-2026',
+  },
 ];
 
 const categoryFilters: { value: CategoryType; label: string }[] = [

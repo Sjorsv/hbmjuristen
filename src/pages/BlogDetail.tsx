@@ -197,6 +197,31 @@ const blogPosts: Record<string, BlogPost> = {
       'De handelssector in Marokko biedt aanzienlijke kansen voor buitenlandse investeerders. De combinatie van geografische ligging, infrastructuurprojecten zoals Tanger Med en economische modernisering maakt het land aantrekkelijk. Tegelijkertijd vereist succesvol ondernemen een geïntegreerde juridische benadering waarin ondernemingsrecht, fiscaal recht, valutarecht en internationaal privaatrecht samenkomen. Strategische voorbereiding voorkomt dat commerciële ambities stranden in procedurele of administratieve obstakels.',
     ],
   },
+  'vreemdelingenrecht-ind-2026': {
+    slug: 'vreemdelingenrecht-ind-2026',
+    type: 'blog',
+    category: 'Vreemdelingenrecht',
+    title: 'Vreemdelingenrecht in Nederland: IND-rapporten, vertragingen en rechtsbescherming in 2026',
+    excerpt: 'De IND kampt structureel met lange wachttijden en een groeiende werkvoorraad, wat directe gevolgen heeft voor asielzoekers, familie- en migratieprocedures.',
+    date: '20 november 2024',
+    author: 'HBM Juristen',
+    readTime: '7 min leestijd',
+    image: insight3,
+    content: [
+      'In Nederland vormt de Vreemdelingenwet 2000 samen met het Vreemdelingenbesluit 2000 de kern van het vreemdelingenrecht. De uitvoering hiervan is in handen van de Immigratie- en Naturalisatiedienst (IND). De laatste jaarcijfers laten zien dat de IND structureel kampt met lange wachttijden en een groeiende werkvoorraad, wat directe gevolgen heeft voor asielzoekers, familie- en migratieprocedures.',
+      '## Achterstanden en wachttijden',
+      'Volgens de jaarstatistiek van de IND over 2025–2026 blijft de achterstand in asielprocedures sterk oplopen. Hoewel het aantal eerste aanvragen daalde van ruim 32 000 in 2024 naar circa 24 000 in 2025, steeg het totale aantal openstaande zaken naar meer dan 51 000 rond 1 januari 2026. De gemiddelde wachttijd in de algemene procedure nam toe tot 67 weken, aanzienlijk langer dan de wettelijk voorgeschreven maximale beslistermijn van zes maanden.',
+      'Deze statistiek valt samen met concrete uitkomsten uit de cijferanalyse van december 2025: de IND nam in die maand minder asielbesluiten dan voorzien — ongeveer 1 910 in plaats van de verwachte 3 340 — doordat de behandeling van zaken meer tijd kost dan eerder geraamd.',
+      '## Gevolgen voor gezinshereniging en dwangsommen',
+      'De vertragingen hebben niet alleen betrekking op asielaanvragen, maar ook op gezinshereniging en reguliere migratieprocessen. In 2024 betaalde de staat meer dan € 36,8 miljoen aan dwangsommen omdat de IND te laat besliste in asiel- en familieherenigingsprocedures. Het aantal rechtszaken tegen vertragingen is de laatste jaren sterk gestegen, wat de uitvoeringsdruk verder vergroot.',
+      'Een andere ontwikkeling is dat de IND momenteel nog zaken behandelt met aanvraagdata tot september 2023, wat wijst op aanzienlijke achterstanden in de procesvolgorde.',
+      '## EU-Asiel- en Migratiepact',
+      'Naast statistische vertragingen staan belangrijke beleidswijzigingen op stapel. Per 12 juni 2026 treedt het nieuwe EU-Asiel- en Migratiepact in werking, waarmee de Nederlandse procedure naar verwachting wordt vereenvoudigd. Zo zullen processtappen zoals de voornemen- en zienswijzeprocedure worden afgeschaft om de doorlooptijd te verkorten, wat de uitvoering door de IND moet verlichten.',
+      '## Rechtsbescherming',
+      'In de rechtspraktijk betekent deze situatie dat aanvragen — of het nu gaat om asiel, gezinshereniging of arbeidsmigratie — structureel langer in behandeling blijven dan wettelijk is vastgelegd. Dit heeft directe effecten op rechtsbescherming, want te late IND-besluiten kunnen aanleiding geven tot juridische procedures tegen de staat en tot de toekenning van dwangsommen. De rechtsbescherming van vreemdelingen blijft afhankelijk van tijdige bezwaar- en beroepsprocedures bij rechtbanken en de Raad van State.',
+      'Tegelijkertijd dwingt de groeiende dossiervoorraad de IND tot organisatorische aanpassingen en pilotprocedures om snelheid en efficiëntie te verbeteren. Hoe deze maatregelen zich verhouden tot de rechtszekerheid van individuele verzoekers, blijft onderwerp van juridische en politieke discussie in 2026.',
+    ],
+  },
 };
 
 const relatedPosts = [
