@@ -38,7 +38,7 @@ const HeroSection = () => {
             Wij zijn <span className="text-primary font-bold">HBM</span>, een toonaangevend <em className="italic">juristenpraktijk</em>
           </h1>
           <p className="text-lg md:text-xl text-foreground font-sans">
-            Solutions start here.
+            Making our clients and people successful.
           </p>
         </motion.div>
       </div>
