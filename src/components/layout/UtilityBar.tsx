@@ -75,6 +75,8 @@ const languages = [
 
 const UtilityBar = () => {
   const [currentLang, setCurrentLang] = useState('NL');
+  const [showPhone, setShowPhone] = useState(false);
+  const [showEmail, setShowEmail] = useState(false);
 
   const renderFlag = (code: string) => {
     switch (code) {
@@ -97,20 +99,40 @@ const UtilityBar = () => {
         <div className="flex items-center justify-between py-2 text-sm">
           {/* Contact info */}
           <div className="hidden md:flex items-center gap-6">
-            <a 
-              href="tel:+31202157540" 
-              className="flex items-center gap-2 hover:opacity-80 transition-opacity"
-            >
-              <Phone className="w-3.5 h-3.5" />
-              <span>020-215 75 40</span>
-            </a>
-            <a 
-              href="mailto:info@hbmjuristen.nl" 
-              className="flex items-center gap-2 hover:opacity-80 transition-opacity"
-            >
-              <Mail className="w-3.5 h-3.5" />
-              <span>info@hbmjuristen.nl</span>
-            </a>
+            {showPhone ? (
+              <a 
+                href="tel:+31202157540" 
+                className="flex items-center gap-2 hover:opacity-80 transition-opacity"
+              >
+                <Phone className="w-3.5 h-3.5" />
+                <span>020-215 75 40</span>
+              </a>
+            ) : (
+              <button 
+                onClick={() => setShowPhone(true)}
+                className="flex items-center gap-2 hover:opacity-80 transition-opacity"
+              >
+                <Phone className="w-3.5 h-3.5" />
+                <span>Bel ons</span>
+              </button>
+            )}
+            {showEmail ? (
+              <a 
+                href="mailto:info@hbmjuristen.nl" 
+                className="flex items-center gap-2 hover:opacity-80 transition-opacity"
+              >
+                <Mail className="w-3.5 h-3.5" />
+                <span>info@hbmjuristen.nl</span>
+              </a>
+            ) : (
+              <button 
+                onClick={() => setShowEmail(true)}
+                className="flex items-center gap-2 hover:opacity-80 transition-opacity"
+              >
+                <Mail className="w-3.5 h-3.5" />
+                <span>E-mail ons</span>
+              </button>
+            )}
           </div>
           
           {/* Language & social */}
